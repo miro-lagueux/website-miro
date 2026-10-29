@@ -1,103 +1,106 @@
 /* =========================================================
-   Miro Lagueux — Portfolio
-   - English text lives in index.html
-   - French text lives in FR below (same keys as data-i18n)
-   - No cookies, no localStorage: language is kept in the URL (?lang=fr)
+   Miro Lagueux — Portfolio (v2)
+   - Le texte FRANÇAIS (par défaut) est dans index.html
+   - Le texte ANGLAIS est dans EN ci-dessous (mêmes clés que data-i18n)
+   - Aucun témoin, aucun stockage : la langue est gardée dans l'URL (?lang=en)
    ========================================================= */
 
-const FR = {
-  "meta.title": "Miro Lagueux — Implantation LMS et formation numérique",
-  "meta.desc": "Spécialiste autonome en implantation LMS et en formation numérique. Configuration de plateformes, portails à votre image, contenu de formation en ligne. FR / EN / ES. Disponible en 2027.",
+const EN = {
+  "meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
+  "meta.desc": "Turnkey training focused on lasting behaviour change. SCORM packages, HTML design, LMS consulting, EN-FR translation, writing, video and AI.",
 
-  "nav.home": "Accueil",
+  "nav.home": "Home",
   "nav.services": "Services",
-  "nav.approach": "Approche",
-  "nav.work": "Réalisations",
-  "nav.about": "À propos",
+  "nav.approach": "Approach",
+  "nav.work": "Track record",
+  "nav.about": "About",
   "nav.contact": "Contact",
 
-  "home.eyebrow": "Travailleur autonome · Disponible en 2027",
-  "home.title": "Des plateformes de formation <em>vraiment</em> utilisées.",
-  "home.lead": "J’aide les organisations à lancer, structurer et personnaliser leur LMS, de la configuration aux portails à leur image, jusqu’au contenu de formation prêt à l’emploi.",
-  "home.cta1": "Voir les services",
-  "home.cta2": "Me joindre sur LinkedIn",
-  "home.meta": "À distance · Canada et Mexique · FR / EN / ES",
+  "home.eyebrow": "Learning technology · LMS · Linguistics",
+  "home.title": "Training that <em>changes behaviour</em>.",
+  "home.lead": "Anyone can create content today. I design turnkey training that lastingly changes how people work, and I measure the results.",
+  "home.cta1": "View services",
+  "home.cta2": "Get in touch",
 
-  "services.title": "Ce que je peux faire pour votre organisation.",
-  "services.sub": "De la première configuration à une plateforme que votre équipe gère en toute autonomie.",
-  "s1.t": "Implantation LMS",
-  "s1.d": "Configuration et déploiement, du démarrage au lancement.",
-  "s2.t": "Portails et tableaux de bord",
-  "s2.d": "Portails de formation et tableaux de bord fidèles à votre image de marque.",
-  "s3.t": "Contenu de formation en ligne",
-  "s3.d": "Structure de cours, scripts de narration et quiz prêts à intégrer.",
-  "s4.t": "Gabarits et communications",
-  "s4.d": "Attestations et courriels de notification, conçus une fois et réutilisés.",
-  "s5.t": "Formation des administrateurs",
-  "s5.d": "Votre équipe gère la plateforme de façon autonome, guides à l’appui.",
-  "s6.t": "Traduction et localisation",
-  "s6.d": "Contenu de formation FR / EN / ES naturel, pas une traduction littérale.",
+  "services.title": "Everything you need for training that pays off.",
+  "services.sub": "From design to LMS integration, one single point of contact.",
+  "s1.t": "Turnkey SCORM packages",
+  "s1.d": "Your existing training converted to SCORM, or custom modules built from scratch.",
+  "s2.t": "HTML design & editors",
+  "s2.d": "Polished templates, portals and content that work in your LMS editors.",
+  "s3.t": "E-learning content",
+  "s3.d": "Interactive learning paths designed to drive action, not just inform.",
+  "s4.t": "Learning technology & LMS consulting",
+  "s4.d": "Choose, configure and run your LMS so it truly serves your goals.",
+  "s5.t": "Translation & localization EN ↔ FR",
+  "s5.d": "A linguist’s eye: content that reads naturally and speaks to your audience.",
+  "s6.t": "Writing & language editing",
+  "s6.d": "Clear, precise, error-free text, from narration scripts to user guides.",
+  "s7.t": "Video editing & microlearning",
+  "s7.d": "Short, effective learning videos and video user guides.",
+  "s8.t": "AI in learning",
+  "s8.d": "Bring AI into content creation, with sound practices and clear guardrails.",
 
-  "approach.title": "Une démarche claire en quatre étapes.",
-  "approach.sub": "Aucune surprise&nbsp;: vous savez où on en est à chaque étape.",
-  "a1.t": "Découvrir",
-  "a1.d": "Besoins, publics cibles et contraintes.",
-  "a2.t": "Structurer",
-  "a2.d": "Programmes, rôles et processus.",
-  "a3.t": "Construire",
-  "a3.d": "Configuration, design et contenu.",
-  "a4.t": "Transférer",
-  "a4.d": "Formation, documentation et soutien.",
+  "approach.title": "Creating content is easy. <em>Changing behaviour</em> is my job.",
+  "approach.sub": "Training doesn’t end when the learner closes the module. I measure, analyze the data and aim for tangible, lasting results.",
+  "a1.t": "Before",
+  "a1.d": "Measure learners’ starting skills.",
+  "a2.t": "During",
+  "a2.d": "Track progress and adjust along the way.",
+  "a3.t": "After",
+  "a3.d": "Validate learning as soon as training ends.",
+  "a4.t": "On the job",
+  "a4.d": "Measure real-world application in the workplace, some time later.",
 
-  "work.title": "Projets types.",
-  "work.sub": "Les projets sont anonymisés par respect de la confidentialité des clients.",
-  "w1.tag": "Municipalité",
-  "w1.t": "Portail de formation des employés",
-  "w1.d": "Portail et tableau de bord à l’image de l’organisation, qui centralisent la formation obligatoire et facultative.",
-  "w2.tag": "Santé",
-  "w2.t": "Parcours de formation obligatoire",
-  "w2.d": "Programmes structurés avec attestations de réussite automatisées.",
-  "w3.tag": "Commerce et services",
-  "w3.t": "Accueil des nouveaux employés",
-  "w3.d": "Programme d’intégration pour des équipes réparties sur plusieurs sites.",
-  "w4.tag": "Organisme de formation",
-  "w4.t": "Catalogue et inscriptions",
-  "w4.d": "Catalogue de formations public avec un parcours d’inscription simplifié.",
+  "work.title": "Experience you can measure.",
+  "work.sub": "From professional orders to SMEs, public services and large corporations.",
+  "w1.t": "years of experience",
+  "w1.d": "in training and learning technology.",
+  "w2.t": "LMS implementations",
+  "w2.d": "large-scale projects completed over the last 7 years.",
+  "w3.t": "years in behaviour change",
+  "w3.d": "creating content for large corporations.",
+  "k1": "Professional orders",
+  "k2": "Small and medium-sized businesses",
+  "k3": "Public services",
+  "k4": "Large corporations",
 
-  "about.title": "La langue, la structure et la technologie.",
-  "about.p": "Formé en linguistique et en rédaction professionnelle, je me suis spécialisé en implantation de LMS, là où se rencontrent la langue, la structure et la technologie. Je fais le pont entre les besoins des équipes de formation et ce que la plateforme peut réellement faire, et je rédige le contenu entre les deux.",
-  "about.l1": "Langues",
-  "about.v1": "Français · Anglais · Espagnol",
-  "about.l2": "Mode de travail",
-  "about.v2": "À distance — Canada et Mexique",
-  "about.l3": "Outils",
-  "c1": "Plateformes LMS",
-  "c3": "Outils auteurs e-learning",
-  "c4": "Narration vocale IA",
-  "c5": "Importations Excel / CSV",
+  "about.title": "A linguist by training, a learning technologist by trade.",
+  "about.p": "At Skillable / Humance, I spent three years designing training content focused on lasting behaviour change for large corporations. I have also completed more than 100 large-scale LMS implementation projects. Today, I offer a turnkey product: design, writing, integration and measurement of results.",
+  "about.l1": "Education",
+  "about.v1": "Linguistics and professional writing",
+  "about.l2": "Languages",
+  "about.v2": "French · English",
+  "about.l3": "Expertise",
+  "c1": "Data analysis",
+  "c2": "Video editing",
+  "c3": "Generative AI",
 
-  "contact.title": "Un projet pour 2027? <em>Parlons-en.</em>",
-  "contact.p": "Le plus simple est de m’écrire sur LinkedIn. Parlez-moi de votre plateforme, de votre échéancier et de vos objectifs.",
-  "contact.note": "Aucun formulaire, aucun témoin (cookie) ni outil de suivi sur ce site.",
+  "contact.title": "A training project? <em>Let’s talk.</em>",
+  "contact.p": "Write to me by email or on LinkedIn. Tell me about your audience, your goals and your timeline.",
+  "contact.note": "No forms, no cookies and no tracking on this site.",
 
-  "legal.link": "Confidentialité",
-  "legal.title": "Confidentialité et mentions légales",
-  "legal.p1": "Ce site ne recueille aucun renseignement personnel. Il n’utilise aucun formulaire, aucun témoin (cookie), aucun outil d’analyse ni traceur tiers, et ne charge aucune police ou aucun script externe.",
-  "legal.p2": "L’hébergeur peut conserver des journaux techniques usuels (comme l’adresse IP et le type de navigateur) à des fins de sécurité et de fonctionnement.",
-  "legal.p3": "Votre choix de langue est conservé uniquement dans l’adresse de la page. Site publié par Miro Lagueux.",
-  "legal.close": "Fermer",
+  "legal.link": "Privacy",
+  "legal.title": "Privacy & legal notice",
+  "legal.p1": "This website does not collect personal information. It uses no forms, no cookies, no analytics and no third-party trackers, and it loads no external fonts or scripts.",
+  "legal.p2": "The hosting provider may keep standard technical logs (such as IP address and browser type) for security and operation purposes.",
+  "legal.p3": "Your language choice is kept only in the page address. Site published by Miro Lagueux.",
+  "legal.close": "Close",
 
-  "aria.lang": "Langue",
+  "aria.lang": "Language",
   "aria.menu": "Menu",
-  "aria.prev": "Section précédente",
-  "aria.next": "Section suivante"
+  "aria.prev": "Previous section",
+  "aria.next": "Next section",
+  "aria.qc": "Flag of Quebec",
+  "aria.ca": "Flag of Canada"
 };
 
 /* ---------------------------------------------------------
-   Elements
+   Éléments
    --------------------------------------------------------- */
 const html     = document.documentElement;
 const app      = document.querySelector(".app");
+const stage    = document.querySelector(".stage");
 const panels   = [...document.querySelectorAll(".panel")];
 const ids      = panels.map(p => p.dataset.panel);
 const navLinks = [...document.querySelectorAll(".nav a")];
@@ -111,16 +114,16 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("tot").textContent  = String(ids.length).padStart(2, "0");
 
 /* ---------------------------------------------------------
-   Language
+   Langue (français par défaut)
    --------------------------------------------------------- */
-const EN = {};   // English originals captured from the HTML
-document.querySelectorAll("[data-i18n]").forEach(el => { EN[el.dataset.i18n] = el.innerHTML; });
-document.querySelectorAll("[data-i18n-aria]").forEach(el => { EN[el.dataset.i18nAria] = el.getAttribute("aria-label"); });
-EN["meta.title"] = document.title;
-EN["meta.desc"]  = metaDesc.content;
+const FR = {};
+document.querySelectorAll("[data-i18n]").forEach(el => { FR[el.dataset.i18n] = el.innerHTML; });
+document.querySelectorAll("[data-i18n-aria]").forEach(el => { FR[el.dataset.i18nAria] = el.getAttribute("aria-label"); });
+FR["meta.title"] = document.title;
+FR["meta.desc"]  = metaDesc.content;
 
 function setLang(lang, updateUrl = true) {
-  const dict = lang === "fr" ? FR : EN;
+  const dict = lang === "en" ? EN : FR;
   html.lang = lang;
 
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -139,7 +142,8 @@ function setLang(lang, updateUrl = true) {
 
   if (updateUrl) {
     const url = new URL(location.href);
-    url.searchParams.set("lang", lang);
+    if (lang === "en") url.searchParams.set("lang", "en");
+    else url.searchParams.delete("lang");
     history.replaceState(null, "", url);
   }
 }
@@ -147,16 +151,17 @@ function setLang(lang, updateUrl = true) {
 document.querySelectorAll(".lang button").forEach(b =>
   b.addEventListener("click", () => setLang(b.dataset.lang)));
 
-const urlLang = new URLSearchParams(location.search).get("lang");
-const startLang = urlLang === "fr" || urlLang === "en"
-  ? urlLang
-  : (navigator.language || "en").toLowerCase().startsWith("fr") ? "fr" : "en";
-setLang(startLang, false);
+setLang(new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr", false);
 
 /* ---------------------------------------------------------
-   Panels (hash navigation: #services, #about, ...)
+   Sections
    --------------------------------------------------------- */
 let current = 0;
+
+function closeMenu() {
+  app.classList.remove("menu-open");
+  menuBtn.setAttribute("aria-expanded", "false");
+}
 
 function show(id, focus = false) {
   const i = Math.max(0, ids.indexOf(id));
@@ -174,7 +179,7 @@ function show(id, focus = false) {
     else a.removeAttribute("aria-current");
   });
 
-  document.querySelector(".stage").dataset.num = panels[i].dataset.num;
+  stage.dataset.num = panels[i].dataset.num;
   document.getElementById("cur").textContent = String(i + 1).padStart(2, "0");
   document.getElementById("bar").style.width = ((i + 1) / ids.length * 100) + "%";
   prevBtn.disabled = i === 0;
@@ -190,18 +195,9 @@ function go(step) {
 }
 
 window.addEventListener("hashchange", () => show(location.hash.slice(1), true));
-show(location.hash.slice(1) || "home");
-
 prevBtn.addEventListener("click", () => go(-1));
 nextBtn.addEventListener("click", () => go(1));
 
-/* ---------------------------------------------------------
-   Mobile menu
-   --------------------------------------------------------- */
-function closeMenu() {
-  app.classList.remove("menu-open");
-  menuBtn.setAttribute("aria-expanded", "false");
-}
 menuBtn.addEventListener("click", () => {
   const open = !app.classList.contains("menu-open");
   app.classList.toggle("menu-open", open);
@@ -209,9 +205,10 @@ menuBtn.addEventListener("click", () => {
 });
 navLinks.forEach(a => a.addEventListener("click", closeMenu));
 
+show(location.hash.slice(1) || "home");
+
 /* ---------------------------------------------------------
-   Keyboard, wheel and swipe → change section
-   (only when the active panel doesn't need its own scroll)
+   Clavier, molette et balayage
    --------------------------------------------------------- */
 const busy = () => legal.open || app.classList.contains("menu-open");
 const panelScrolls = () => {
@@ -220,7 +217,7 @@ const panelScrolls = () => {
 };
 
 document.addEventListener("keydown", e => {
-  if (busy() || e.target.closest("input, textarea")) return;
+  if (busy()) return;
   if (["ArrowRight", "PageDown"].includes(e.key) || (e.key === "ArrowDown" && !panelScrolls())) { e.preventDefault(); go(1); }
   if (["ArrowLeft", "PageUp"].includes(e.key)   || (e.key === "ArrowUp"   && !panelScrolls())) { e.preventDefault(); go(-1); }
   if (e.key === "Escape") closeMenu();
@@ -244,12 +241,11 @@ window.addEventListener("touchend", e => {
 }, { passive: true });
 
 /* ---------------------------------------------------------
-   Privacy dialog
+   Fenêtre confidentialité
    --------------------------------------------------------- */
 document.getElementById("legalOpen").addEventListener("click", () => legal.showModal());
 document.getElementById("legalClose").addEventListener("click", () => legal.close());
 legal.addEventListener("click", e => {
   const r = legal.getBoundingClientRect();
-  const outside = e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
-  if (outside) legal.close();
+  if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) legal.close();
 });
