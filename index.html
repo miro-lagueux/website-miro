@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Miro Lagueux — LMS Implementation &amp; Digital Learning</title>
+  <meta name="description" content="Independent LMS implementation and digital learning specialist. Platform configuration, branded portals, e-learning content. FR / EN / ES. Available in 2027.">
+  <meta name="theme-color" content="#050505">
+
+  <!-- LinkedIn / social preview (replace the domain once you have it) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miro Lagueux — LMS Implementation & Digital Learning">
+  <meta property="og:description" content="Learning platforms people actually use. FR / EN / ES · Available in 2027.">
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='12' y='43' font-family='Arial' font-weight='700' font-size='28' fill='%23f2f2f2'%3EML%3C/text%3E%3Ccircle cx='52' cy='41' r='4' fill='%23c8ff2e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ HEADER ============ -->
+  <header class="top">
+    <a class="brand" href="#home">Miro Lagueux<b>.</b></a>
+
+    <nav class="nav" id="nav">
+      <a href="#home"><i>01</i><span data-i18n="nav.home">Home</span></a>
+      <a href="#services"><i>02</i><span data-i18n="nav.services">Services</span></a>
+      <a href="#approach"><i>03</i><span data-i18n="nav.approach">Approach</span></a>
+      <a href="#work"><i>04</i><span data-i18n="nav.work">Work</span></a>
+      <a href="#about"><i>05</i><span data-i18n="nav.about">About</span></a>
+      <a href="#contact"><i>06</i><span data-i18n="nav.contact">Contact</span></a>
+    </nav>
+
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language" data-i18n-aria="aria.lang">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu" data-i18n-aria="aria.menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PANELS ============ -->
+  <main class="stage">
+
+    <!-- 01 HOME -->
+    <section class="panel is-active" data-panel="home" data-num="01" aria-labelledby="t-home">
+      <div class="wrap">
+        <p class="eyebrow live" data-i18n="home.eyebrow">Independent · Available in 2027</p>
+        <h1 id="t-home" tabindex="-1" data-i18n="home.title">Learning platforms people <em>actually</em> use.</h1>
+        <p class="lead" data-i18n="home.lead">I help organizations launch, structure and customize their LMS — from configuration to branded portals and ready-to-use training content.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#services"><span data-i18n="home.cta1">View services</span> <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener"><span data-i18n="home.cta2">Contact me on LinkedIn</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="meta" data-i18n="home.meta">Remote · Canada &amp; Mexico · FR / EN / ES</p>
+      </div>
+    </section>
+
+    <!-- 02 SERVICES -->
+    <section class="panel" data-panel="services" data-num="02" aria-labelledby="t-services">
+      <div class="wrap">
+        <div class="head">
+          <div>
+            <p class="eyebrow" data-i18n="nav.services">Services</p>
+            <h2 id="t-services" tabindex="-1" data-i18n="services.title">What I can do for your organization.</h2>
+          </div>
+          <p class="sub" data-i18n="services.sub">From first configuration to a platform your team runs on its own.</p>
+        </div>
+        <div class="grid g3">
+          <article class="card"><span class="n">01</span><h3 data-i18n="s1.t">LMS implementation</h3><p data-i18n="s1.d">Configuration and deployment, from kickoff to launch.</p></article>
+          <article class="card"><span class="n">02</span><h3 data-i18n="s2.t">Portals &amp; dashboards</h3><p data-i18n="s2.d">Branded learning portals and dashboards that match your identity.</p></article>
+          <article class="card"><span class="n">03</span><h3 data-i18n="s3.t">E-learning content</h3><p data-i18n="s3.d">Course structure, narration scripts and quizzes, ready to integrate.</p></article>
+          <article class="card"><span class="n">04</span><h3 data-i18n="s4.t">Templates &amp; communications</h3><p data-i18n="s4.d">Certificates and notification emails, built once and reused.</p></article>
+          <article class="card"><span class="n">05</span><h3 data-i18n="s5.t">Admin training</h3><p data-i18n="s5.d">Your team runs the platform on its own, with clear guides.</p></article>
+          <article class="card"><span class="n">06</span><h3 data-i18n="s6.t">Translation &amp; localization</h3><p data-i18n="s6.d">Natural FR / EN / ES learning content, not literal translation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 APPROACH -->
+    <section class="panel" data-panel="approach" data-num="03" aria-labelledby="t-approach">
+      <div class="wrap">
+        <div class="head">
+          <div>
+            <p class="eyebrow" data-i18n="nav.approach">Approach</p>
+            <h2 id="t-approach" tabindex="-1" data-i18n="approach.title">A clear process in four steps.</h2>
+          </div>
+          <p class="sub" data-i18n="approach.sub">No surprises: you know where we stand at every stage.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="n">01</span><h3 data-i18n="a1.t">Discover</h3><p data-i18n="a1.d">Needs, audiences and constraints.</p></li>
+          <li class="step"><span class="n">02</span><h3 data-i18n="a2.t">Structure</h3><p data-i18n="a2.d">Programs, roles and workflows.</p></li>
+          <li class="step"><span class="n">03</span><h3 data-i18n="a3.t">Build</h3><p data-i18n="a3.d">Configuration, design and content.</p></li>
+          <li class="step"><span class="n">04</span><h3 data-i18n="a4.t">Hand off</h3><p data-i18n="a4.d">Training, documentation and support.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 WORK -->
+    <section class="panel" data-panel="work" data-num="04" aria-labelledby="t-work">
+      <div class="wrap">
+        <div class="head">
+          <div>
+            <p class="eyebrow" data-i18n="nav.work">Work</p>
+            <h2 id="t-work" tabindex="-1" data-i18n="work.title">Typical projects.</h2>
+          </div>
+          <p class="sub" data-i18n="work.sub">Projects are anonymized to respect client confidentiality.</p>
+        </div>
+        <div class="grid g2">
+          <article class="card work"><span class="tag" data-i18n="w1.tag">Municipality</span><h3 data-i18n="w1.t">Employee training portal</h3><p data-i18n="w1.d">Branded portal and dashboard centralizing mandatory and optional training.</p></article>
+          <article class="card work"><span class="tag" data-i18n="w2.tag">Healthcare</span><h3 data-i18n="w2.t">Mandatory training paths</h3><p data-i18n="w2.d">Structured programs with automated completion certificates.</p></article>
+          <article class="card work"><span class="tag" data-i18n="w3.tag">Retail &amp; services</span><h3 data-i18n="w3.t">Staff onboarding</h3><p data-i18n="w3.d">Onboarding program for teams spread across several locations.</p></article>
+          <article class="card work"><span class="tag" data-i18n="w4.tag">Training provider</span><h3 data-i18n="w4.t">Catalogue &amp; registration</h3><p data-i18n="w4.d">Public course catalogue with a streamlined registration path.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 ABOUT -->
+    <section class="panel" data-panel="about" data-num="05" aria-labelledby="t-about">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow" data-i18n="nav.about">About</p>
+          <h2 id="t-about" tabindex="-1" data-i18n="about.title">Language, structure and technology.</h2>
+          <p class="lead" data-i18n="about.p">Trained in linguistics and professional writing, I specialized in LMS implementation, where language, structure and technology meet. I bridge the gap between what training teams need and what the platform can actually do — and I write the content in between.</p>
+        </div>
+        <dl class="facts">
+          <div><dt data-i18n="about.l1">Languages</dt><dd data-i18n="about.v1">French · English · Spanish</dd></div>
+          <div><dt data-i18n="about.l2">Work mode</dt><dd data-i18n="about.v2">Remote — Canada &amp; Mexico</dd></div>
+          <div>
+            <dt data-i18n="about.l3">Toolkit</dt>
+            <dd class="chips">
+              <span data-i18n="c1">LMS platforms</span>
+              <span>HTML / CSS (WYSIWYG)</span>
+              <span data-i18n="c3">E-learning authoring</span>
+              <span data-i18n="c4">AI voice narration</span>
+              <span data-i18n="c5">Excel / CSV imports</span>
+              <span>Microsoft 365</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 06 CONTACT -->
+    <section class="panel" data-panel="contact" data-num="06" aria-labelledby="t-contact">
+      <div class="wrap">
+        <p class="eyebrow live" data-i18n="nav.contact">Contact</p>
+        <h1 id="t-contact" tabindex="-1" class="contact-title" data-i18n="contact.title">Have a project for 2027? <em>Let’s talk.</em></h1>
+        <p class="lead" data-i18n="contact.p">The fastest way to reach me is LinkedIn. Tell me about your platform, your timeline and what you want to achieve.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener"><span data-i18n="home.cta2">Contact me on LinkedIn</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="meta" data-i18n="contact.note">No forms, no cookies, no tracking on this site.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bottom">
+    <span class="copy">© <span id="year">2027</span> Miro Lagueux</span>
+
+    <div class="pager">
+      <button type="button" class="arrow" id="prev" aria-label="Previous section" data-i18n-aria="aria.prev">←</button>
+      <span class="count"><b id="cur">01</b> / <span id="tot">06</span></span>
+      <span class="bar"><span id="bar"></span></span>
+      <button type="button" class="arrow" id="next" aria-label="Next section" data-i18n-aria="aria.next">→</button>
+    </div>
+
+    <button type="button" class="link" id="legalOpen" data-i18n="legal.link">Privacy</button>
+  </footer>
+</div>
+
+<!-- ============ PRIVACY / LEGAL ============ -->
+<dialog id="legal" aria-labelledby="legalTitle">
+  <h2 id="legalTitle" data-i18n="legal.title">Privacy &amp; legal notice</h2>
+  <p data-i18n="legal.p1">This website does not collect personal information. It uses no forms, no cookies, no analytics and no third-party trackers, and it loads no external fonts or scripts.</p>
+  <p data-i18n="legal.p2">The hosting provider may keep standard technical logs (such as IP address and browser type) for security and operation purposes.</p>
+  <p data-i18n="legal.p3">Your language choice is kept only in the page address. Site published by Miro Lagueux.</p>
+  <button type="button" class="btn btn-primary" id="legalClose" data-i18n="legal.close">Close</button>
+</dialog>
+</body>
+</html>
