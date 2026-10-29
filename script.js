@@ -7,7 +7,7 @@
 
 const EN = {
   "meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
-  "meta.desc": "Turnkey training focused on lasting behaviour change. SCORM packages, HTML design, LMS consulting, EN-FR translation, writing, video and AI.",
+  "meta.desc": "Turnkey training focused on lasting behaviour adoption. SCORM packages, HTML design, LMS consulting, EN-FR translation and localization, writing, video/microlearning and AI.",
 
   "nav.home": "Home",
   "nav.services": "Services",
@@ -23,7 +23,7 @@ const EN = {
   "home.cta2": "Get in touch",
 
   "services.title": "Everything you need for training that pays off.",
-  "services.sub": "From design to LMS integration, one single point of contact.",
+  "services.sub": "From design and LMS integration to measuring final results, one single point of contact.",
   "s1.t": "Turnkey SCORM packages",
   "s1.d": "Your existing training converted to SCORM, or custom modules built from scratch.",
   "s2.t": "HTML design & editors",
@@ -41,7 +41,7 @@ const EN = {
   "s8.t": "AI in learning",
   "s8.d": "Bring AI into content creation, with sound practices and clear guardrails.",
 
-  "approach.title": "Creating content is easy. <em>Changing behaviour</em> is my job.",
+  "approach.title": "Creating content is one thing. <em>Driving behaviour adoption and measuring it</em> is another.",
   "approach.sub": "Training doesn’t end when the learner closes the module. I measure, analyze the data and aim for tangible, lasting results.",
   "a1.t": "Before",
   "a1.d": "Measure learners’ starting skills.",
@@ -56,29 +56,27 @@ const EN = {
   "work.sub": "From professional orders to SMEs, public services and large corporations.",
   "w1.t": "years of experience",
   "w1.d": "in training and learning technology.",
-  "w2.t": "LMS implementations",
+  "w2.t": "LMS implementation and behaviour change projects",
   "w2.d": "large-scale projects completed over the last 7 years.",
-  "w3.t": "years in behaviour change",
-  "w3.d": "creating content for large corporations.",
   "k1": "Professional orders",
   "k2": "Small and medium-sized businesses",
   "k3": "Public services",
   "k4": "Large corporations",
 
   "about.title": "A linguist by training, a learning technologist by trade.",
-  "about.p": "At Skillable / Humance, I spent three years designing training content focused on lasting behaviour change for large corporations. I have also completed more than 100 large-scale LMS implementation projects. Today, I offer a turnkey product: design, writing, integration and measurement of results.",
+  "about.p": "I have designed training content focused on lasting behaviour adoption for large corporations. I have also completed more than 100 large-scale LMS implementation projects. Today, I offer a turnkey product: design, writing, integration and measurement of results.",
   "about.l1": "Education",
-  "about.v1": "Linguistics and professional writing",
+  "about.v1": "Linguistics and professional writing, translation, learning technology",
   "about.l2": "Languages",
   "about.v2": "French · English",
   "about.l3": "Expertise",
   "c1": "Data analysis",
   "c2": "Video editing",
-  "c3": "Generative AI",
+  "c3": "Generative and agentic AI",
 
   "contact.title": "A training project? <em>Let’s talk.</em>",
   "contact.p": "Write to me by email or on LinkedIn. Tell me about your audience, your goals and your timeline.",
-  "contact.note": "No forms, no cookies and no tracking on this site.",
+  "contact.note": "No forms, no cookies, no personal data and no tracking on this site.",
 
   "legal.link": "Privacy",
   "legal.title": "Privacy & legal notice",
