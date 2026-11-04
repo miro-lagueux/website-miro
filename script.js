@@ -7,7 +7,7 @@
 
 const EN = {
   "meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
-  "meta.desc": "Complete learning paths, interactive SCORM training and quizzes (iSpring, Articulate), FR-EN writing, translation and localization, LMS management and content integration, Microsoft 365 and AI.",
+  "meta.desc": "Complete learning paths, interactive SCORM training and quizzes (iSpring, Articulate), FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation.",
 
   "nav.home": "Home",
   "nav.services": "Services",
@@ -32,8 +32,13 @@ const EN = {
   "s3.d": "I write, edit and adapt your training content, scripts and guides in French and English.",
   "s4.t": "LMS management & content integration",
   "s4.d": "I configure and administer your platform and integrate your content so it stays reliable and up to date.",
-  "s5.t": "Microsoft 365 & AI",
-  "s5.d": "I bring Office and AI into your training and content creation processes, with sound practices.",
+  "s5.t": "AI-assisted content creation",
+  "s5.d": "I use AI and Microsoft 365 to produce your content faster, without compromising quality or accuracy.",
+  "s6.t": "Microlearning videos, tutorials & technical guides",
+  "s6.d": "I produce and edit learning videos, tutorials and clear technical guides to support your users.",
+  "t6a": "Video editing",
+  "t6b": "Microlearning",
+  "t6c": "Tutorials",
 
   "approach.title": "Creating content is one thing. <em>Driving behaviour adoption and measuring it</em> is another.",
   "approach.sub": "Training doesn’t end when the learner closes the module. I measure, analyze the data and aim for tangible, lasting results.",
