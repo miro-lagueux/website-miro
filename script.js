@@ -39,6 +39,8 @@ const EN = {
   "t6a": "Video editing",
   "t6b": "Microlearning",
   "t6c": "Tutorials",
+  "t1a": "Learning technology",
+  "t1c": "Behaviour change",
 
   "approach.title": "Creating content is one thing. <em>Driving behaviour adoption and measuring it</em> is another.",
   "approach.sub": "Training doesn’t end when the learner closes the module. I measure, analyze the data and aim for tangible, lasting results.",
