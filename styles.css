@@ -265,7 +265,7 @@ dialog .btn { margin-top: 8px; height: 42px; }
   .head { margin-bottom: 12px; }
   .lead { font-size: .88rem; }
   .btns { margin-top: 16px; gap: 8px; }
-  .about .lead { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+  .about .lead { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -296,10 +296,201 @@ dialog .btn { margin-top: 8px; height: 42px; }
   .svc .card { padding: 10px 14px; }
   .svc .card p { display: none; }
   .svc .card h3 { font-size: .9rem; margin: 2px 0 0; }
+  .svc .n { display: none; }
   .svc .tags { padding-top: 5px; }
   .svc .tags li { font-size: .64rem; padding: 2px 8px; }
 }
 @media (max-width: 560px) and (max-height: 700px) {
   .svc .n, .svc .tags { display: none; }
   .svc .card { padding: 8px 12px; }
+}
+
+/* =========================================================
+   Page « Offre » (offre.html) : défilement permis
+   Toutes les règles sont limitées à body.page-offre
+   ========================================================= */
+html:has(body.page-offre) { height: auto; scroll-behavior: smooth; }
+body.page-offre {
+  height: auto; overflow: auto; overscroll-behavior: auto; line-height: 1.55;
+  background-image: radial-gradient(50vmax 40vmax at 92% -10%, var(--accent-soft), transparent 60%);
+  background-repeat: no-repeat;
+}
+.page-offre .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--pad); }
+.page-offre.menu-open { overflow: hidden; }
+/* ---------- En-tête ---------- */
+.page-offre .top {
+  position: sticky; top: 0; z-index: 20; height: 72px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 0 var(--pad); background: rgba(255, 255, 255, .92);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+}
+.page-offre .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; }
+.page-offre .brand img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--accent); }
+.page-offre .brand b { color: var(--accent); }
+.page-offre .nav { display: flex; gap: clamp(14px, 2.2vw, 34px); }
+.page-offre .nav a { font-size: .88rem; color: var(--muted); position: relative; padding: 6px 0; transition: color .2s; }
+.page-offre .nav a:hover, .page-offre .nav a[aria-current="page"] { color: var(--fg); }
+.page-offre .nav a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--accent); }
+.page-offre .tools { display: flex; align-items: center; gap: 10px; }
+.page-offre .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.page-offre .lang button { font-size: .72rem; font-weight: 600; letter-spacing: .08em; padding: 6px 11px; border-radius: 999px; color: var(--muted); }
+.page-offre .lang button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.page-offre .menu-btn { display: none; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 999px; position: relative; }
+.page-offre .menu-btn span { position: absolute; left: 12px; right: 12px; height: 1.5px; background: var(--fg); transition: transform .3s var(--ease); }
+.page-offre .menu-btn span:first-child { top: 16px; }
+.page-offre .menu-btn span:last-child { top: 22px; }
+.page-offre.menu-open .menu-btn span:first-child { transform: translateY(3px) rotate(45deg); }
+.page-offre.menu-open .menu-btn span:last-child { transform: translateY(-3px) rotate(-45deg); }
+
+/* ---------- Typographie ---------- */
+.page-offre .eyebrow { display: flex; align-items: center; gap: 10px; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+.page-offre .eyebrow::before { content: ""; width: 18px; height: 2px; background: var(--accent); }
+.page-offre h1 { font-size: clamp(2.3rem, 6vw, 5rem); line-height: 1; letter-spacing: -.045em; max-width: 16ch; }
+.page-offre h2 { font-size: clamp(1.7rem, 3.4vw, 2.8rem); line-height: 1.06; letter-spacing: -.035em; max-width: 22ch; }
+.page-offre h3 { font-weight: 600; letter-spacing: -.01em; }
+.page-offre .lead { font-size: clamp(1rem, 1.4vw, 1.2rem); color: var(--soft); max-width: 60ch; margin-top: 24px; }
+.page-offre .head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 32px; }
+.page-offre .sub { color: var(--muted); max-width: 40ch; font-size: .95rem; text-align: right; }
+
+.page-offre .hero { padding-top: clamp(48px, 10vh, 110px); padding-bottom: clamp(24px, 5vh, 48px); }
+.page-offre .block { padding-top: clamp(48px, 9vh, 96px); }
+
+/* ---------- Boutons ---------- */
+.page-offre .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.page-offre .btn { display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid var(--line-hi); font-size: .92rem; font-weight: 500; white-space: nowrap; transition: background .25s, color .25s, border-color .25s, transform .25s var(--ease); }
+.page-offre .btn:hover { transform: translateY(-1px); }
+.page-offre .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.page-offre .btn-primary:hover { background: var(--fg); border-color: var(--fg); }
+.page-offre .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ---------- Forfaits ---------- */
+.page-offre .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: stretch; }
+.page-offre .plan { position: relative; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); padding: 28px; transition: border-color .3s, box-shadow .3s; }
+.page-offre .plan:hover { border-color: var(--accent); box-shadow: 0 14px 40px -24px rgba(29, 78, 216, .5); }
+.page-offre .plan.featured { background: #fff; border: 2px solid var(--accent); box-shadow: 0 18px 50px -28px rgba(29, 78, 216, .55); }
+.page-offre .badge { position: absolute; top: -13px; left: 26px; background: var(--accent); color: #fff; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
+.page-offre .plan-tag { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+.page-offre .plan h3 { font-size: 1.35rem; margin: 8px 0 8px; letter-spacing: -.02em; }
+.page-offre .plan-desc { color: var(--muted); font-size: .92rem; }
+.page-offre .price { margin: 22px 0 18px; padding-bottom: 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.page-offre .price strong { display: block; color: var(--fg); font-size: 2.3rem; letter-spacing: -.04em; line-height: 1.1; }
+.page-offre .incl { display: grid; gap: 9px; font-size: .9rem; color: var(--soft); }
+.page-offre .incl li { position: relative; padding-left: 26px; }
+.page-offre .incl li::before { content: ""; position: absolute; left: 0; top: .25em; width: 16px; height: 16px; border-radius: 50%; background: var(--accent-soft); }
+.page-offre .incl li::after { content: ""; position: absolute; left: 5px; top: calc(.25em + 4px); width: 6px; height: 3px; border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: rotate(-45deg); }
+.page-offre .delay { margin-top: auto; padding-top: 20px; font-size: .85rem; color: var(--muted); }
+.page-offre .delay strong { color: var(--fg); }
+
+/* ---------- À la carte ---------- */
+.page-offre .table-wrap { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.page-offre .alc { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.page-offre .alc th { text-align: left; background: var(--accent); color: #fff; font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 14px 20px; }
+.page-offre .alc th:last-child, .page-offre .alc td:last-child { text-align: right; white-space: nowrap; }
+.page-offre .alc td { padding: 14px 20px; border-top: 1px solid var(--line); }
+.page-offre .alc td:last-child { font-weight: 600; }
+.page-offre .alc tbody tr:nth-child(even) { background: var(--card); }
+
+/* ---------- Démarche ---------- */
+.page-offre .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.page-offre .steps li { border-top: 2px solid var(--accent); padding-top: 18px; }
+.page-offre .n { font-size: .72rem; font-weight: 700; letter-spacing: .1em; color: var(--accent); }
+.page-offre .steps h3 { font-size: 1.15rem; margin: 8px 0 6px; }
+.page-offre .steps p { color: var(--muted); font-size: .92rem; }
+
+/* ---------- Conditions ---------- */
+.page-offre .terms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.page-offre .terms > div { border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; background: var(--card); }
+.page-offre .terms h3 { font-size: 1rem; margin-bottom: 6px; }
+.page-offre .terms p { color: var(--muted); font-size: .92rem; }
+
+/* ---------- Contact ---------- */
+.page-offre .cta { padding-top: clamp(64px, 12vh, 120px); padding-bottom: clamp(64px, 12vh, 120px); }
+.page-offre .cta h2 { font-size: clamp(2rem, 5vw, 4rem); line-height: 1.02; }
+
+/* ---------- Pied de page ---------- */
+.page-offre .bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 20px var(--pad); border-top: 1px solid var(--line); font-size: .78rem; color: var(--muted); }
+.page-offre .copy { display: flex; align-items: center; gap: 14px; }
+.page-offre .flags { display: flex; gap: 8px; }
+.page-offre .flag { width: 33px; height: 22px; border-radius: 3px; box-shadow: 0 0 0 1px var(--line); display: block; }
+
+/* =========================================================
+   Adaptatif
+   ========================================================= */
+@media screen and (max-width: 980px) {
+  .page-offre .plans { grid-template-columns: 1fr; max-width: 560px; }
+  .page-offre .plan.featured { order: -1; }
+  .page-offre .steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 900px) {
+  .page-offre .menu-btn { display: block; }
+  .page-offre .nav { position: fixed; left: 0; right: 0; top: 72px; bottom: 0; flex-direction: column; justify-content: center; gap: 4px; padding: 0 var(--pad); background: var(--bg); opacity: 0; visibility: hidden; transition: opacity .3s, visibility 0s linear .3s; }
+  .page-offre.menu-open .nav { opacity: 1; visibility: visible; transition: opacity .3s, visibility 0s; }
+  .page-offre .nav a { font-size: clamp(1.8rem, 8vw, 2.6rem); font-weight: 600; letter-spacing: -.03em; color: var(--fg); padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .page-offre .nav a[aria-current="page"] { color: var(--accent); }
+  .page-offre .nav a[aria-current="page"]::after { display: none; }
+  .page-offre.menu-open { overflow: hidden; }
+  .page-offre .head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .page-offre .sub { text-align: left; }
+}
+@media screen and (max-width: 560px) {
+  .page-offre .top { height: 60px; }
+  .page-offre .nav { top: 60px; }
+  .page-offre .brand img { width: 32px; height: 32px; }
+  .page-offre .plan { padding: 22px; }
+  .page-offre .steps, .page-offre .terms { grid-template-columns: 1fr; }
+  .page-offre .alc td, .page-offre .alc th { padding: 12px 14px; }
+  .page-offre .alc { font-size: .88rem; }
+  .page-offre .btn { height: 44px; padding: 0 18px; font-size: .88rem; }
+  .page-offre .valid { display: none; }
+}
+
+/* =========================================================
+   Impression / PDF : document d'offre propre sur papier lettre
+   ========================================================= */
+@media print {
+  @page { size: letter; margin: 11mm 13mm 11mm; }
+  .page-offre * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body.page-offre { background: #fff; font-size: 10pt; }
+  .page-offre .top { position: static; height: auto; padding: 0 0 10px; backdrop-filter: none; border-bottom: 2px solid var(--accent); }
+  .page-offre .nav, .page-offre .tools, .page-offre .btns, .page-offre .cta .btns { display: none !important; }
+  .page-offre .wrap { padding: 0; max-width: none; }
+  .page-offre .hero { padding: 18px 0 6px; }
+  .page-offre h1 { font-size: 24pt; max-width: none; }
+  .page-offre h2 { font-size: 15pt; max-width: none; }
+  .page-offre .lead { font-size: 10.5pt; margin-top: 10px; max-width: none; }
+  .page-offre .block { padding-top: 12px; }
+  .page-offre .steps li { padding-top: 8px; }
+  .page-offre .steps h3 { margin: 4px 0 2px; }
+  .page-offre .terms h3 { font-size: 9.5pt; margin-bottom: 2px; }
+  .page-offre h2 { margin-bottom: 0; }
+  .page-offre .plans { break-inside: avoid; }
+  .page-offre .head { flex-direction: row; break-after: avoid; page-break-after: avoid; }
+  .page-offre .table-wrap { break-inside: avoid; }
+  .page-offre .steps { gap: 12px; }
+  .page-offre .steps h3 { font-size: 10.5pt; }
+  .page-offre .badge { left: 14px; }
+  .page-offre .head { margin-bottom: 10px; }
+  .page-offre .sub { font-size: 9pt; }
+  .page-offre .eyebrow { margin-bottom: 6px; }
+  .page-offre .plans { gap: 8px; }
+  .page-offre .plan { padding: 14px; break-inside: avoid; box-shadow: none !important; }
+  .page-offre .plan h3 { font-size: 12pt; }
+  .page-offre .price strong { font-size: 17pt; }
+  .page-offre .price { margin: 10px 0; padding-bottom: 10px; }
+  .page-offre .incl { gap: 3px; font-size: 8.5pt; }
+  .page-offre .incl li { padding-left: 20px; }
+  .page-offre .plan-desc { font-size: 8.8pt; }
+  .page-offre .delay { padding-top: 8px; font-size: 8.5pt; }
+  .page-offre .badge { top: -9px; font-size: 6.5pt; padding: 3px 8px; }
+  .page-offre .alc { font-size: 9pt; }
+  .page-offre .alc td, .page-offre .alc th { padding: 4px 12px; }
+  .page-offre .steps li, .page-offre .terms > div { break-inside: avoid; }
+  .page-offre .steps p, .page-offre .terms p { font-size: 8.5pt; line-height: 1.4; }
+  .page-offre .terms > div { padding: 8px 12px; }
+  .page-offre .terms { gap: 8px; }
+  .page-offre .cta { padding: 12px 0 0; break-inside: avoid; }
+  .page-offre .cta .lead { margin-top: 6px; }
+  .page-offre .cta h2 { font-size: 16pt; }
+  .page-offre .cta::after { content: "info@mirolagueux.com  ·  linkedin.com/in/mirolagueux  ·  mirolagueux.com"; display: block; margin-top: 8px; font-weight: 600; color: var(--accent); }
+  .page-offre .bottom { padding: 8px 0 0; margin-top: 10px; }
 }
