@@ -1,5 +1,5 @@
 /* =========================================================
-   Miro Lagueux — Script unique du site (index.html + offre.html)
+   Miro Lagueux — Script unique du site (index.html, offre.html, demos.html)
    - Le texte FRANÇAIS (par défaut) est dans les fichiers HTML
    - Le texte ANGLAIS est dans EN ci-dessous (mêmes clés que data-i18n)
    - Aucun témoin, aucun stockage : la langue est gardée dans l'URL (?lang=en)
@@ -8,7 +8,7 @@
 const EN = {
   /* ---------- Accueil (index.html) ---------- */
   "meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
-  "meta.desc": "Complete learning paths, interactive SCORM training and quizzes (iSpring, Articulate), FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation.",
+  "meta.desc": "Complete learning paths, interactive SCORM training and quizzes (Articulate Rise and Storyline, iSpring, Adobe Captivate), FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation.",
 
   "nav.home": "Home",
   "nav.services": "Services",
@@ -16,6 +16,7 @@ const EN = {
   "nav.work": "Track record",
   "nav.about": "About",
   "nav.offer": "Offer",
+  "nav.demos": "Demos",
   "nav.contact": "Contact",
 
   "home.eyebrow": "Learning technology · LMS · Linguistics",
@@ -96,115 +97,163 @@ const EN = {
   "aria.ca": "Flag of Canada",
 
   /* ---------- Page Offre (offre.html) ---------- */
-  "om.title": "Service offer — Miro Lagueux",
-  "om.desc": "Articulate e-learning and LMS integration packages: content conversion, custom interactive module and behaviour change learning path.",
+  "of.meta.title": "Service offer — Miro Lagueux",
+  "of.meta.desc": "Small assignments and complete e-learning projects: LMS integration, translation, job aids, interactive modules with macro and micro design, behaviour change learning paths.",
   "mail.subject": "Quote request",
+  "of.eyebrow": "Service offer",
+  "of.title": "From small tasks <em>to complete projects</em>.",
+  "of.lead": "A job aid to produce, a module to integrate into your LMS or a complete learning path: I adapt to the size of your need. Every engagement starts with a free written quote.",
+  "of.cta.quote": "Request a quote",
+  "of.cta.pdf": "Download the offer as PDF",
 
+  "of.alc.eyebrow": "À la carte",
+  "of.alc.title": "A specific need? <em>No task is too small.</em>",
+  "of.alc.sub": "For a one-off need, an update or extra help for your team. You only pay for what you need.",
+  "of.alc.h1": "Service",
+  "of.alc.h2": "Rate",
+  "of.a1": "LMS integration and SCORM testing of an existing module",
+  "of.a1p": "$250 / module",
+  "of.a2": "Job aid, quick reference or technical guide",
+  "of.a2p": "Starting at $300",
+  "of.a3": "Video or tutorial (up to 3 min)",
+  "of.a3p": "Starting at $600",
+  "of.a4": "Translation and localization FR ↔ EN",
+  "of.a4p": "$0.20 / word",
+  "of.a5": "Writing and language editing",
+  "of.rate": "$75 / h",
+  "of.a6": "Update of an existing module",
+  "of.a7": "Learning technology and LMS consulting",
 
-  "hero.eyebrow": "Service offer",
-  "hero.title": "Clear packages, <em>measurable results</em>.",
-  "hero.lead": "I create your interactive training in Articulate and integrate it into your LMS, turnkey. Choose a package or build your project à la carte: every engagement starts with a free written quote.",
-  "cta.quote": "Request a quote",
-  "cta.pdf": "Download the offer as PDF",
+  "of.plans.eyebrow": "Complete projects",
+  "of.plans.title": "Going further: three packages.",
+  "of.plans.sub": "Starting prices for a module of about 15 to 20 minutes. The final price is set in the written quote, based on complexity and volume.",
+  "of.from": "Starting at",
+  "of.delay": "Indicative timeline",
+  "of.badge": "Most requested",
+  "of.pr1": "$1,500",
+  "of.pr2": "$4,000",
+  "of.pr3": "$10,000",
+  "of.p1.tag": "Conversion",
+  "of.p1.t": "Fast-track online",
+  "of.p1.d": "Your existing content (PowerPoint, PDF, Word) turned into an interactive online module.",
+  "of.p1.i1": "Tool chosen to match the style you want",
+  "of.p1.i2": "Interactive layout of your content",
+  "of.p1.i3": "Knowledge check quiz",
+  "of.p1.i4": "1 round of revisions",
+  "of.p1.i5": "Tested SCORM package, ready for your LMS",
+  "of.p1.delay": "1 to 2 weeks",
+  "of.p2.tag": "Custom",
+  "of.p2.t": "Custom interactive module",
+  "of.p2.d": "Training designed from A to Z to get your learners acting, not just informed.",
+  "of.p2.i1": "Needs analysis and learning objectives",
+  "of.p2.i2": "<b>Macro design</b>: high-level training plan, approved by you",
+  "of.p2.i3": "<b>Micro design</b>: detailed screen-by-screen plan, approved by you",
+  "of.p2.i4": "Scenarios and interactions",
+  "of.p2.i5": "Quizzes and final assessment",
+  "of.p2.i6": "Realistic next-generation AI narration (FR or EN)",
+  "of.p2.i7": "2 rounds of revisions",
+  "of.p2.i8": "Integration and testing in your LMS",
+  "of.p2.i9": "Source files included",
+  "of.p2.delay": "3 to 5 weeks",
+  "of.p3.tag": "Complete path",
+  "of.p3.t": "Behaviour change",
+  "of.p3.d": "A learning path measured all the way to the workplace, for tangible and lasting results.",
+  "of.p3.i1": "Everything in the custom package",
+  "of.p3.i2": "Macro and micro design of the full path, approved by you",
+  "of.p3.i3": "Learning path of 3 modules or more",
+  "of.p3.i4": "Job aids and quick references",
+  "of.p3.i5": "Measurement before, during and after training",
+  "of.p3.i6": "Follow-up on on-the-job application",
+  "of.p3.i7": "Results analysis report",
+  "of.p3.delay": "6 to 10 weeks",
 
-  "plans.eyebrow": "Packages",
-  "plans.title": "Three ways to work together.",
-  "plans.sub": "Starting prices for a module of about 15 to 20 minutes. The final price depends on complexity, volume and timelines.",
-  "from": "Starting at",
-  "delay": "Timeline",
-  "badge": "Most requested",
-  "pr1": "$1,500",
-  "pr2": "$4,000",
-  "pr3": "$10,000",
+  "of.style.eyebrow": "Style and narration",
+  "of.style.title": "You choose the style of your training.",
+  "of.tools.t": "The right tool for the right need",
+  "of.tools.d": "Each tool has its own style: clean microlearning, interactive scenarios, simulations or quizzes. I work with several tools and recommend the one that suits your audience and your LMS.",
+  "of.tools.link": "Compare styles on the Demos page",
+  "of.voice.t": "AI narration or human voice",
+  "of.voice.d": "Narration is produced with the latest speech synthesis models: natural, expressive and highly realistic, in French and English.",
+  "of.voice.d2": "Prefer a real voice? I work with <a href=\"https://www.evelyneaudet.com/\" target=\"_blank\" rel=\"noopener\">Evelyne Audet</a>, a Montréal radio and TV host and professional narrator. Rates on request.",
+  "of.voice.tag1": "Realistic AI voice",
+  "of.voice.tag2": "Human voice",
 
-  "p1.tag": "Conversion",
-  "p1.t": "Fast-track online",
-  "p1.d": "Your existing content (PowerPoint, PDF, Word) turned into an interactive online module.",
-  "p1.i1": "Articulate Rise or Storyline module",
-  "p1.i2": "Interactive layout of your content",
-  "p1.i3": "Knowledge check quiz",
-  "p1.i4": "1 round of revisions",
-  "p1.i5": "Tested SCORM package, ready for your LMS",
-  "p1.delay": "1 to 2 weeks",
+  "of.proc.eyebrow": "Process",
+  "of.proc.title": "How it works.",
+  "of.proc.sub": "For custom modules and learning paths, nothing is produced until you have approved the macro design, then the micro design.",
+  "of.o1.t": "Discovery call",
+  "of.o1.d": "30 minutes, free of charge, to understand your need, your audience and your constraints.",
+  "of.o2.t": "Written quote",
+  "of.o2.d": "Deliverables, indicative timeline and price, approved before any work begins.",
+  "of.o3.t": "Macro design",
+  "of.o3.d": "High-level plan: objectives, structure, approach and assessment. <b>You approve it.</b>",
+  "of.o4.t": "Micro design",
+  "of.o4.d": "Detailed plan: content, screens, interactions and narration. <b>You approve it.</b>",
+  "of.o5.t": "Production and revisions",
+  "of.o5.d": "Development true to the approved micro design, then revisions according to the package.",
+  "of.o6.t": "Delivery and integration",
+  "of.o6.d": "Go-live and testing in your LMS, then results measurement depending on the package.",
 
-  "p2.tag": "Custom",
-  "p2.t": "Custom interactive module",
-  "p2.d": "Training designed from A to Z to get your learners acting, not just informed.",
-  "p2.i1": "Needs analysis and learning objectives",
-  "p2.i2": "Storyboarding and writing",
-  "p2.i3": "Scenarios and Storyline interactions",
-  "p2.i4": "Quizzes and final assessment",
-  "p2.i5": "AI voice narration (FR or EN)",
-  "p2.i6": "2 rounds of revisions",
-  "p2.i7": "Integration and testing in your LMS",
-  "p2.i8": "Source files included",
-  "p2.delay": "3 to 5 weeks",
+  "of.terms.eyebrow": "Terms",
+  "of.terms.title": "Simple and transparent.",
+  "of.c1.t": "Payment",
+  "of.c1.d": "No payment upfront. Completed work is invoiced monthly. For larger projects, payment milestones are agreed in the quote. Prices in Canadian dollars.",
+  "of.c2.t": "Timelines",
+  "of.c2.d": "Timelines are indicative. In practice, work is generally delivered as quickly as possible.",
+  "of.c3.t": "Revisions",
+  "of.c3.d": "The rounds included in the package are covered. Additional revisions are billed at the hourly rate.",
+  "of.c4.t": "What you provide",
+  "of.c4.d": "The source content, a subject matter expert available for approvals and test access to your LMS.",
+  "of.c5.t": "Deliverables and ownership",
+  "of.c5.d": "All deliverables are handed over to you and belong to you once paid. A copy is also kept on my server, which makes future updates easier.",
+  "of.c6.t": "Hosting and security",
+  "of.c6.d": "All project data is hosted and maintained in Canada, in the Microsoft Azure cloud, according to the highest security standards.",
 
-  "p3.tag": "Complete path",
-  "p3.t": "Behaviour change",
-  "p3.d": "A learning path measured all the way to the workplace, for tangible and lasting results.",
-  "p3.i1": "Everything in the custom package",
-  "p3.i2": "Learning path of 3 modules or more",
-  "p3.i3": "Job aids and quick references",
-  "p3.i4": "Measurement before, during and after training",
-  "p3.i5": "Follow-up on on-the-job application",
-  "p3.i6": "Results analysis report",
-  "p3.delay": "6 to 10 weeks",
+  "of.cta.title": "A project, big or small? <br><em>Let’s talk.</em>",
+  "of.cta.lead": "Tell me about your need: I’ll reply with a written quote within 2 business days.",
+  "of.valid": "Rates in effect at the time of viewing. Final quote provided in writing.",
 
-  "alc.eyebrow": "À la carte",
-  "alc.title": "A specific need? I adapt.",
-  "alc.sub": "To complement a package or for a one-off assignment.",
-  "alc.h1": "Service",
-  "alc.h2": "Rate",
-  "a1": "LMS integration and SCORM testing of an existing module",
-  "a1p": "$250 / module",
-  "a2": "Translation and localization FR ↔ EN",
-  "a2p": "$0.20 / word",
-  "a3": "Writing and language editing",
-  "rate": "$75 / h",
-  "a4": "Video or tutorial (up to 3 min)",
-  "a4p": "Starting at $600",
-  "a5": "Job aid or technical guide",
-  "a5p": "Starting at $300",
-  "a6": "Update of an existing module",
-  "a7": "Learning technology and LMS consulting",
-
-  "proc.eyebrow": "Process",
-  "proc.title": "How it works.",
-  "o1.t": "Discovery call",
-  "o1.d": "30 minutes, free of charge, to understand your need, your audience and your constraints.",
-  "o2.t": "Written quote",
-  "o2.d": "Deliverables, timeline and fixed price, approved before any work begins.",
-  "o3.t": "Production and revisions",
-  "o3.d": "You approve each key step: storyboard, prototype, final version.",
-  "o4.t": "Delivery and integration",
-  "o4.d": "Go-live and testing in your LMS, then results measurement depending on the package.",
-
-  "terms.eyebrow": "Terms",
-  "terms.title": "Simple and transparent.",
-  "c1.t": "Payment",
-  "c1.d": "30% deposit at kickoff, balance on delivery. Milestone payments for projects over $10,000. Prices in Canadian dollars.",
-  "c2.t": "Revisions",
-  "c2.d": "The rounds included in the package are covered. Additional revisions are billed at the hourly rate.",
-  "c3.t": "What you provide",
-  "c3.d": "The source content, a subject matter expert available for approvals and test access to your LMS.",
-  "c4.t": "Ownership",
-  "c4.d": "You own the delivered content once paid in full. Articulate tool licences are on me.",
-
-  "cta.title": "Have a project in mind? <br><em>Let’s talk.</em>",
-  "cta.lead": "Tell me about your need: I’ll reply with a written quote within 2 business days.",
-  "valid": "Rates in effect at the time of viewing. Final quote provided in writing."
+  /* ---------- Page Démos (demos.html) ---------- */
+  "dm.meta.title": "Demos — Miro Lagueux",
+  "dm.meta.desc": "E-learning demos built with Articulate Rise, Articulate Storyline, iSpring and Adobe Captivate. Page under construction.",
+  "dm.eyebrow": "Demos",
+  "dm.title": "Choose <em>your style</em>.",
+  "dm.lead": "Each tool gives a different result. Try the demos, compare the styles, then tell me which one suits your audience: I’ll use it for your project.",
+  "dm.notice.t": "Page under construction",
+  "dm.notice.d": "The demos are in development and will be added soon. In the meantime, I can show you examples during a discovery call.",
+  "dm.list.eyebrow": "Coming soon",
+  "dm.list.title": "A preview of each style.",
+  "dm.soon": "Coming soon",
+  "dm.d1.t": "Microlearning",
+  "dm.d1.d": "A short, clean and responsive module, ideal on desktop and on mobile.",
+  "dm.d2.t": "Branching scenario",
+  "dm.d2.d": "A realistic situation where every choice has consequences, to practise the right behaviours.",
+  "dm.d3.t": "Interactive quiz",
+  "dm.d3.d": "Varied questions with instant feedback, to validate learning.",
+  "dm.d4.t": "Software simulation",
+  "dm.d4.d": "Learners practise a task in software, step by step, in guided then independent mode.",
+  "dm.v5": "Voice",
+  "dm.d5.tag": "Narration",
+  "dm.d5.t": "AI voice or human voice",
+  "dm.d5.d": "Audio samples to compare next-generation AI narration with a professional voice.",
+  "dm.d6.tag": "Support tools",
+  "dm.d6.t": "Job aid and video",
+  "dm.d6.d": "A quick reference and a short video tutorial to support on-the-job application.",
+  "dm.cta.title": "Want to see an example <br><em>right now?</em>",
+  "dm.cta.lead": "Write to me: I’ll show you examples tailored to your need during a free 30-minute call.",
+  "dm.cta.offer": "See the service offer"
 };
 
 /* =========================================================
-   Commun aux deux pages : langue et menu mobile
+   Commun à toutes les pages : langue et menu mobile
    ========================================================= */
 const html     = document.documentElement;
-const isOffer  = document.body.classList.contains("page-offre");
-const menuRoot = isOffer ? document.body : document.querySelector(".app");
+const isSub    = document.body.classList.contains("page-sub");
+const pageKey  = document.body.classList.contains("page-offre") ? "of" : document.body.classList.contains("page-demos") ? "dm" : "";
+const menuRoot = isSub ? document.body : document.querySelector(".app");
 const menuBtn  = document.querySelector(".menu-btn");
 const metaDesc = document.querySelector('meta[name="description"]');
-const META     = isOffer ? ["om.title", "om.desc"] : ["meta.title", "meta.desc"];
+const META     = pageKey ? [pageKey + ".meta.title", pageKey + ".meta.desc"] : ["meta.title", "meta.desc"];
 
 /* Textes français d'origine, lus dans le HTML */
 const FR = {};
@@ -269,29 +318,29 @@ document.querySelectorAll(".nav a").forEach(a => a.addEventListener("click", clo
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-if (isOffer) initOffer(); else initHome();
+if (isSub) initSub(); else initHome();
 
 /* =========================================================
-   Page Offre
+   Pages Offre et Démos
    ========================================================= */
-function initOffer() {
+function initSub() {
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
-  /* PDF : impression du navigateur (mise en page dédiée dans styles.css) */
-  document.getElementById("printBtn").addEventListener("click", () => window.print());
+  /* PDF de l'offre : impression du navigateur (mise en page dédiée dans styles.css) */
+  document.getElementById("printBtn")?.addEventListener("click", () => window.print());
 }
 
 /* =========================================================
    Accueil : sections plein écran, sans défilement
    ========================================================= */
 function initHome() {
-  const app     = menuRoot;
-  const stage   = document.querySelector(".stage");
-  const panels  = [...document.querySelectorAll(".panel")];
-  const ids     = panels.map(p => p.dataset.panel);
+  const app      = menuRoot;
+  const stage    = document.querySelector(".stage");
+  const panels   = [...document.querySelectorAll(".panel")];
+  const ids      = panels.map(p => p.dataset.panel);
   const navLinks = [...document.querySelectorAll(".nav a")];
-  const prevBtn = document.getElementById("prev");
-  const nextBtn = document.getElementById("next");
-  const legal   = document.getElementById("legal");
+  const prevBtn  = document.getElementById("prev");
+  const nextBtn  = document.getElementById("next");
+  const legal    = document.getElementById("legal");
   let current = 0;
 
   document.getElementById("tot").textContent = String(ids.length).padStart(2, "0");
@@ -329,7 +378,6 @@ function initHome() {
   nextBtn.addEventListener("click", () => go(1));
   show(location.hash.slice(1) || "home");
 
-  /* Clavier, molette et balayage */
   const busy = () => legal.open || app.classList.contains("menu-open");
   const panelScrolls = () => {
     const p = panels[current];
@@ -360,7 +408,6 @@ function initHome() {
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
   }, { passive: true });
 
-  /* Fenêtre confidentialité */
   document.getElementById("legalOpen").addEventListener("click", () => legal.showModal());
   document.getElementById("legalClose").addEventListener("click", () => legal.close());
   legal.addEventListener("click", e => {
