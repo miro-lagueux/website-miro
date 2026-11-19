@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d4ed8">
+<meta name="robots" content="noindex">
+<title>PAR 5 · Je réfléchis à la tâche — Démo job aid</title>
+<style>
+/* =========================================================
+   Job aid PAR 5 — Étape 1 : Je réfléchis à la tâche
+   Démo autonome : aucun script ni police externe, aucune donnée transmise.
+   ========================================================= */
+:root{
+  --accent:#1d4ed8; --accent-dk:#1e3a8a; --accent-soft:#eef2fd;
+  --fg:#0e1116; --soft:#3d434d; --muted:#6b7280; --line:#e2e5ea; --bg:#f4f6fb; --card:#fff;
+  --ok:#15803d; --ok-soft:#e8f6ee; --no:#c62828; --no-soft:#fdecec; --na:#64748b; --na-soft:#eef1f5;
+  --radius:18px; --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);color:var(--fg);background:var(--bg);line-height:1.45;-webkit-font-smoothing:antialiased;padding-bottom:110px}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+
+/* ---------- Barre du haut ---------- */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1240px;margin:0 auto;padding:14px clamp(14px,3vw,28px)}
+.back{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:600;font-size:.92rem;text-decoration:none}
+.back:hover{text-decoration:underline;text-underline-offset:3px}
+.lang{display:flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px}
+.lang button{font-size:.75rem;font-weight:700;letter-spacing:.08em;padding:7px 13px;border-radius:999px;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
+
+/* ---------- Carte principale (format paysage) ---------- */
+.sheet{max-width:1240px;margin:0 auto clamp(14px,3vw,28px);background:var(--card);border-radius:24px;box-shadow:0 24px 60px -36px rgba(29,78,216,.45);overflow:hidden;border:1px solid var(--line)}
+.hero{position:relative;background:linear-gradient(120deg,var(--accent) 0%,#2f5fe6 60%,#4a7af0 100%);color:#fff;padding:clamp(20px,3.2vw,34px) clamp(20px,3.6vw,40px);display:flex;align-items:center;gap:clamp(14px,2.4vw,26px);overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-80px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.08)}
+.badge{flex:none;width:clamp(56px,7vw,78px);height:clamp(56px,7vw,78px);border-radius:20px;background:#fff;color:var(--accent);display:grid;place-items:center;font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;box-shadow:0 12px 30px -12px rgba(0,0,0,.35)}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.hero h1{font-size:clamp(1.6rem,3.6vw,2.7rem);line-height:1.05;letter-spacing:-.03em;margin-top:4px}
+.hero p.sub{opacity:.9;margin-top:6px;font-size:clamp(.92rem,1.3vw,1.02rem);max-width:60ch}
+.demo-tag{position:absolute;top:14px;right:16px;z-index:1;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 10px}
+
+/* ---------- Bandeau d'état ---------- */
+.status{display:flex;align-items:center;gap:14px;padding:14px clamp(20px,3.6vw,40px);border-bottom:1px solid var(--line);background:var(--accent-soft);font-weight:600;transition:background .25s,color .25s}
+.status .dot{flex:none;width:14px;height:14px;border-radius:50%;background:var(--accent)}
+.status.ok{background:var(--ok-soft);color:var(--ok)} .status.ok .dot{background:var(--ok)}
+.status.stop{background:var(--no-soft);color:var(--no)} .status.stop .dot{background:var(--no);animation:pulse 1.6s infinite}
+.status.warn{background:#fff7e6;color:#a15c00} .status.warn .dot{background:#e08a00}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(198,40,40,.5)}70%{box-shadow:0 0 0 10px rgba(198,40,40,0)}100%{box-shadow:0 0 0 0 rgba(198,40,40,0)}}
+.progress{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:.82rem;color:var(--muted);font-weight:600;white-space:nowrap}
+.bar{width:120px;height:8px;border-radius:99px;background:#dfe5f5;overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .35s}
+
+/* ---------- Grille paysage ---------- */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:0}
+.col{padding:clamp(18px,3vw,34px) clamp(20px,3.6vw,40px)}
+.col+.col{border-left:1px solid var(--line);background:#fbfcfe}
+.block+.block{margin-top:clamp(20px,3vw,30px)}
+.block h2{display:flex;align-items:center;gap:10px;font-size:1.12rem;letter-spacing:-.01em;margin-bottom:12px}
+.num{flex:none;display:inline-grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--accent);color:#fff;font-size:.88rem;font-weight:800}
+.hint{color:var(--muted);font-size:.88rem;margin:-6px 0 12px}
+
+/* Champs */
+.field{display:grid;gap:6px;margin-bottom:12px}
+.field label{font-size:.82rem;font-weight:700;color:var(--soft);letter-spacing:.02em}
+.field input,.field textarea{width:100%;min-height:52px;border:1.5px solid var(--line);border-radius:14px;padding:13px 16px;background:#fff;font-size:1rem;transition:border-color .2s,box-shadow .2s}
+.field textarea{min-height:76px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(29,78,216,.14)}
+.field.invalid input{border-color:var(--no);box-shadow:0 0 0 4px rgba(198,40,40,.12)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+/* Choix (mode de performance) */
+.choices{display:grid;gap:10px}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice label{display:flex;align-items:center;gap:14px;min-height:60px;padding:12px 16px;border:1.5px solid var(--line);border-radius:16px;background:#fff;cursor:pointer;transition:border-color .2s,background .2s}
+.choice label::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;border:2px solid #b7c0d3;background:#fff;transition:all .2s}
+.choice input:checked+label{border-color:var(--accent);background:var(--accent-soft)}
+.choice input:checked+label::before{border:7px solid var(--accent)}
+.choice input:focus-visible+label{outline:3px solid var(--accent);outline-offset:2px}
+.choice b{display:block;font-size:.98rem}
+.choice small{display:block;color:var(--muted);font-size:.85rem}
+
+/* Pastilles (pièges) */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip label{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:9px 15px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:.9rem;font-weight:500;cursor:pointer;transition:all .2s;user-select:none}
+.chip label::before{content:"+";font-weight:700;color:var(--accent)}
+.chip input:checked+label{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip input:checked+label::before{content:"✓";color:#fff}
+.chip input:focus-visible+label{outline:3px solid var(--accent);outline-offset:2px}
+
+/* Vérifications O / N / N/A */
+.checks{display:grid;gap:12px}
+.check{border:1.5px solid var(--line);border-radius:var(--radius);background:#fff;padding:14px 16px;transition:border-color .2s,background .2s}
+.check.is-o{border-color:#9fd8b4}
+.check.is-n{border-color:#f2a6a6;background:#fffafa}
+.check.is-na{border-color:#cfd6e2}
+.check-top{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+.check .q{font-size:1rem;font-weight:600}
+.seg{display:flex;gap:6px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{min-width:56px;height:48px;display:grid;place-items:center;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-weight:800;font-size:.92rem;cursor:pointer;transition:all .18s;user-select:none}
+.seg input:focus-visible+label{outline:3px solid var(--accent);outline-offset:2px}
+.seg .o:checked+label{background:var(--ok);border-color:var(--ok);color:#fff}
+.seg .n:checked+label{background:var(--no);border-color:var(--no);color:#fff}
+.seg .na:checked+label{background:var(--na);border-color:var(--na);color:#fff}
+.seg label:hover{border-color:var(--accent)}
+.fix{display:none;margin-top:12px}
+.check.is-n .fix{display:grid}
+.fix label{font-size:.82rem;font-weight:700;color:var(--no)}
+.fix input{min-height:48px;border:1.5px solid #f2a6a6;border-radius:12px;padding:11px 14px;width:100%;font-size:.95rem;background:#fff}
+.fix input:focus{outline:none;border-color:var(--no);box-shadow:0 0 0 4px rgba(198,40,40,.12)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin:-4px 0 12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+/* ---------- Barre d'actions (collante) ---------- */
+.actions{position:fixed;left:0;right:0;bottom:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:12px clamp(14px,3vw,28px) calc(12px + env(safe-area-inset-bottom))}
+.actions-in{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:10px}
+.sup{flex:1;min-width:0;display:flex;align-items:center;gap:10px}
+.sup label{font-size:.8rem;font-weight:700;color:var(--soft);white-space:nowrap}
+.sup input{flex:1;min-width:0;height:48px;border:1.5px solid var(--line);border-radius:12px;padding:0 14px;font-size:.95rem;background:#fff}
+.sup input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(29,78,216,.14)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 18px;border-radius:999px;font-weight:700;font-size:.92rem;white-space:nowrap;border:1.5px solid var(--line);background:#fff;transition:background .2s,border-color .2s,color .2s,transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dk)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-icon{width:48px;padding:0}
+.toast{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);opacity:0;background:var(--fg);color:#fff;padding:12px 18px;border-radius:12px;font-size:.9rem;font-weight:600;transition:all .3s;pointer-events:none;z-index:20;max-width:calc(100vw - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.privacy{max-width:1240px;margin:0 auto;padding:0 clamp(14px,3vw,28px) 16px;color:var(--muted);font-size:.8rem;text-align:center}
+
+/* ---------- Adaptatif ---------- */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .col+.col{border-left:0;border-top:1px solid var(--line)}
+}
+@media (max-width:620px){
+  body{padding-bottom:150px}
+  .row2{grid-template-columns:1fr}
+  .check-top{grid-template-columns:auto 1fr;row-gap:12px}
+  .seg{grid-column:1/-1}
+  .seg label{flex:1;min-width:0;height:52px}
+  .seg>span{flex:1;display:flex}
+  .actions-in{flex-wrap:wrap}
+  .sup{flex-basis:100%}
+  .actions .btn-primary{flex:1}
+  .progress .bar{width:70px}
+  .status{flex-wrap:wrap}
+  .demo-tag{display:none}
+}
+
+/* ---------- Impression / PDF (paysage, une page) ---------- */
+@media print{
+  @page{size:letter landscape;margin:9mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff;padding:0;font-size:9.5pt}
+  .topbar,.actions,.toast,.privacy,.demo-tag,.hint,.legend{display:none!important}
+  .sheet{box-shadow:none;border:1px solid #cfd6e2;border-radius:14px;margin:0;max-width:none}
+  .hero{padding:12px 18px}
+  .badge{width:46px;height:46px;font-size:1.5rem;border-radius:12px}
+  .hero h1{font-size:18pt}
+  .hero p.sub{display:none}
+  .status{padding:7px 18px}
+  .grid{grid-template-columns:1fr 1.25fr}
+  .col{padding:10px 18px}
+  .col+.col{border-left:1px solid var(--line);border-top:0}
+  .block+.block{margin-top:10px}
+  .block h2{font-size:10.5pt;margin-bottom:6px}
+  .num{width:20px;height:20px;font-size:8pt;border-radius:6px}
+  .field{margin-bottom:5px;gap:2px}
+  .field input,.field textarea{min-height:0;padding:5px 9px;font-size:9.5pt;border-radius:8px}
+  .field textarea{min-height:34px}
+  .row2{grid-template-columns:1fr 1fr;gap:8px}
+  .choices{gap:4px}
+  .choice label{min-height:0;padding:5px 10px;border-radius:9px}
+  .choice label::before{width:13px;height:13px}
+  .choice input:checked+label::before{border-width:4px}
+  .choice b{font-size:9.5pt}
+  .choice small{font-size:8pt}
+  .chips{gap:4px}
+  .chip label{min-height:0;padding:3px 9px;font-size:8pt}
+  .chip input:not(:checked)+label{opacity:.45}
+  .checks{gap:5px}
+  .check{padding:6px 10px;border-radius:10px;break-inside:avoid}
+  .check .q{font-size:9pt}
+  .seg label{min-width:36px;height:26px;font-size:8pt;border-radius:7px}
+  .fix{margin-top:5px}
+  .fix input{min-height:0;padding:4px 8px;font-size:8.5pt}
+  .print-meta{display:block!important}
+}
+.print-meta{display:none;padding:6px 18px;font-size:8pt;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back" id="backLink" href="../../demos.html">← <span data-t="back">Retour aux démos</span></a>
+  <div class="lang" role="group" aria-label="Langue" data-ta="lang">
+    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</div>
+
+<form class="sheet" id="form" novalidate>
+  <header class="hero">
+    <span class="demo-tag" data-t="demo">Démo</span>
+    <div class="badge" aria-hidden="true">1</div>
+    <div>
+      <p class="eyebrow" data-t="eyebrow">PAR 5 · Santé et sécurité du travail</p>
+      <h1 data-t="title">Je réfléchis à la tâche</h1>
+      <p class="sub" data-t="intro">Prenez deux minutes avant de commencer. Remplissez la fiche, puis envoyez-la à votre supérieur.</p>
+    </div>
+  </header>
+
+  <div class="status" id="status" role="status" aria-live="polite">
+    <span class="dot" aria-hidden="true"></span>
+    <span id="statusText"></span>
+    <span class="progress"><span class="bar"><span id="bar"></span></span><span id="count">0 / 6</span></span>
+  </div>
+
+  <div class="grid">
+    <!-- ===== Colonne gauche ===== -->
+    <div class="col">
+      <section class="block">
+        <h2><span class="num" aria-hidden="true">i</span><span data-t="idTitle">Identification</span></h2>
+        <div class="field" id="f-names">
+          <label for="names" data-t="names">Nom(s)</label>
+          <input id="names" name="names" autocomplete="name" required>
+        </div>
+        <div class="row2">
+          <div class="field" id="f-date">
+            <label for="date" data-t="date">Date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+          <div class="field" id="f-task">
+            <label for="task" data-t="task">Tâche</label>
+            <input id="task" name="task" required>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="num" aria-hidden="true">1</span><span data-t="q1">Dans quel mode de performance suis-je?</span></h2>
+        <div class="choices" role="radiogroup" aria-labelledby="q1lbl">
+          <span id="q1lbl" hidden data-t="q1">Dans quel mode de performance suis-je?</span>
+          <div class="choice"><input type="radio" name="mode" id="m1" value="skill"><label for="m1"><span><b data-t="m1">Compétences</b><small data-t="m1d">J’agis par habitude</small></span></label></div>
+          <div class="choice"><input type="radio" name="mode" id="m2" value="rule"><label for="m2"><span><b data-t="m2">Règles</b><small data-t="m2d">Une règle existe et je la connais</small></span></label></div>
+          <div class="choice"><input type="radio" name="mode" id="m3" value="knowledge"><label for="m3"><span><b data-t="m3">Manque de connaissance</b><small data-t="m3d">Je ne suis pas certain, la situation est nouvelle ou confuse</small></span></label></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2><span class="num" aria-hidden="true">2</span><span data-t="q2">Suis-je dans un ou plusieurs pièges d’erreur?</span></h2>
+        <p class="hint" data-t="q2h">Touchez tous ceux qui s’appliquent.</p>
+        <div class="chips" id="traps"></div>
+        <div class="field" style="margin-top:12px">
+          <label for="trapOther" data-t="other">Autre piège ou précision</label>
+          <textarea id="trapOther" name="trapOther"></textarea>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Colonne droite ===== -->
+    <div class="col">
+      <section class="block">
+        <h2><span class="num" aria-hidden="true">✓</span><span data-t="checksTitle">Mes vérifications avant de commencer</span></h2>
+        <p class="legend"><span><i style="background:var(--ok)"></i><span data-t="lgO">O = Oui</span></span><span><i style="background:var(--no)"></i><span data-t="lgN">N = Non : à corriger avant de commencer</span></span><span><i style="background:var(--na)"></i><span data-t="lgNA">N/A = Ne s’applique pas</span></span></p>
+        <div class="checks" id="checks"></div>
+      </section>
+    </div>
+  </div>
+  <p class="print-meta" id="printMeta"></p>
+</form>
+
+<p class="privacy" data-t="privacy">Démo : vos réponses restent sur votre appareil. Rien n’est enregistré ni transmis par ce site.</p>
+
+<div class="actions">
+  <div class="actions-in">
+    <div class="sup">
+      <label for="supEmail" data-t="sup">Courriel du supérieur</label>
+      <input id="supEmail" type="email" inputmode="email" autocomplete="email" placeholder="superviseur@entreprise.com">
+    </div>
+    <button type="button" class="btn btn-ghost btn-icon" id="resetBtn" aria-label="Réinitialiser" data-ta="reset" title="Réinitialiser">↺</button>
+    <button type="button" class="btn btn-ghost" id="pdfBtn">⤓ <span data-t="pdf">PDF</span></button>
+    <button type="button" class="btn btn-primary" id="sendBtn">✉ <span data-t="send">Envoyer</span></button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="alert"></div>
+
+<script>
+(function(){
+  /* ---------- Contenu bilingue ---------- */
+  var T = {
+    fr: {
+      back:"Retour aux démos", demo:"Démo", lang:"Langue",
+      eyebrow:"PAR 5 · Santé et sécurité du travail", title:"Je réfléchis à la tâche",
+      intro:"Prenez deux minutes avant de commencer. Remplissez la fiche, puis envoyez-la à votre supérieur.",
+      idTitle:"Identification", names:"Nom(s)", date:"Date", task:"Tâche",
+      q1:"Dans quel mode de performance suis-je?",
+      m1:"Compétences", m1d:"J’agis par habitude",
+      m2:"Règles", m2d:"Une règle existe et je la connais",
+      m3:"Manque de connaissance", m3d:"Je ne suis pas certain, la situation est nouvelle ou confuse",
+      q2:"Suis-je dans un ou plusieurs pièges d’erreur?", q2h:"Touchez tous ceux qui s’appliquent.",
+      other:"Autre piège ou précision",
+      traps:["Pression du temps","Distraction ou interruption","Fatigue","Première fois ou tâche rare","Changement à la routine","Excès de confiance","Communication imprécise","Plusieurs tâches à la fois","Environnement inhabituel","Stress"],
+      checksTitle:"Mes vérifications avant de commencer",
+      lgO:"O = Oui", lgN:"N = Non : à corriger avant de commencer", lgNA:"N/A = Ne s’applique pas",
+      checks:[
+        "Existe-t-il une procédure de travail ou un permis pour ma tâche?",
+        "Mes ÉPI, outils et équipements sont-ils conformes et en bon état?",
+        "Mon environnement est-il propre et en ordre?",
+        "Mon travail est-il libre de toute coactivité?",
+        "Ai-je identifié les lignes de tir (mains, brûlure, projection, etc.)?",
+        "Ai-je sur moi ma solution de rinçage d’urgence (corps et yeux), avec une date d’expiration valide?"
+      ],
+      O:"O", N:"N", NA:"N/A", fix:"Ce que je fais avant de commencer",
+      stStart:"Commencez par remplir l’identification et vos vérifications.",
+      stProgress:"Continuez : il reste des vérifications à faire.",
+      stOk:"Tout est conforme : vous pouvez commencer la tâche en sécurité.",
+      stStop:"STOP : corrigez chaque « Non » ou avisez votre supérieur avant de commencer.",
+      stKnow:"Mode « manque de connaissance » : arrêtez et demandez de l’aide avant de commencer.",
+      sup:"Courriel du supérieur", reset:"Réinitialiser", pdf:"PDF", send:"Envoyer",
+      privacy:"Démo : vos réponses restent sur votre appareil. Rien n’est enregistré ni transmis par ce site.",
+      need:"Remplissez le nom et la tâche avant d’envoyer.", needEmail:"Entrez le courriel de votre supérieur.",
+      confirmReset:"Effacer toutes les réponses?", resetDone:"Fiche réinitialisée.", mailOpen:"Votre application de courriel s’ouvre…",
+      subject:"PAR 5 – Je réfléchis à la tâche", mailIntro:"Bonjour,\r\n\r\nVoici ma fiche PAR 5 (étape 1 : Je réfléchis à la tâche).",
+      mode:"Mode de performance", trapsLbl:"Pièges d’erreur", none:"Aucun", notAnswered:"Sans réponse", verdict:"Résultat",
+      mailEnd:"Merci.", printed:"Fiche remplie le", fileName:"PAR5_Je-reflechis"
+    },
+    en: {
+      back:"Back to demos", demo:"Demo", lang:"Language",
+      eyebrow:"PAR 5 · Occupational health and safety", title:"I think about the task",
+      intro:"Take two minutes before you start. Fill out the form, then send it to your supervisor.",
+      idTitle:"Identification", names:"Name(s)", date:"Date", task:"Task",
+      q1:"Which performance mode am I in?",
+      m1:"Skill-based", m1d:"I act out of habit",
+      m2:"Rule-based", m2d:"A rule exists and I know it",
+      m3:"Lack of knowledge", m3d:"I’m not sure, the situation is new or confusing",
+      q2:"Am I in one or more error traps?", q2h:"Tap all that apply.",
+      other:"Other trap or details",
+      traps:["Time pressure","Distraction or interruption","Fatigue","First time or infrequent task","Change in routine","Overconfidence","Unclear communication","Multitasking","Unfamiliar environment","Stress"],
+      checksTitle:"My checks before starting",
+      lgO:"Y = Yes", lgN:"N = No: fix before starting", lgNA:"N/A = Not applicable",
+      checks:[
+        "Is there a work procedure or permit for my task?",
+        "Are my PPE, tools and equipment compliant and in good condition?",
+        "Is my work area clean and tidy?",
+        "Is my work free of any co-activity?",
+        "Have I identified the lines of fire (hands, burns, projections, etc.)?",
+        "Do I carry my emergency rinse solution (body and eyes), with a valid expiry date?"
+      ],
+      O:"Y", N:"N", NA:"N/A", fix:"What I do before starting",
+      stStart:"Start by filling out the identification and your checks.",
+      stProgress:"Keep going: some checks are still missing.",
+      stOk:"Everything is compliant: you can start the task safely.",
+      stStop:"STOP: fix every “No” or notify your supervisor before starting.",
+      stKnow:"“Lack of knowledge” mode: stop and ask for help before starting.",
+      sup:"Supervisor’s email", reset:"Reset", pdf:"PDF", send:"Send",
+      privacy:"Demo: your answers stay on your device. Nothing is saved or sent by this site.",
+      need:"Fill in the name and task before sending.", needEmail:"Enter your supervisor’s email.",
+      confirmReset:"Clear all answers?", resetDone:"Form reset.", mailOpen:"Your email app is opening…",
+      subject:"PAR 5 – I think about the task", mailIntro:"Hello,\r\n\r\nHere is my PAR 5 form (step 1: I think about the task).",
+      mode:"Performance mode", trapsLbl:"Error traps", none:"None", notAnswered:"Not answered", verdict:"Result",
+      mailEnd:"Thank you.", printed:"Form completed on", fileName:"PAR5_Think-about-task"
+    }
+  };
+
+  var lang = new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr";
+  var $ = function(s){ return document.querySelector(s); };
+  var form = $("#form"), toastEl = $("#toast");
+
+  /* ---------- Construction des pastilles et des vérifications ---------- */
+  function buildTraps(){
+    var box = $("#traps"), checked = {};
+    box.querySelectorAll("input:checked").forEach(function(i){ checked[i.value] = true; });
+    box.innerHTML = "";
+    T[lang].traps.forEach(function(label, i){
+      var id = "t" + i;
+      var d = document.createElement("div"); d.className = "chip";
+      d.innerHTML = '<input type="checkbox" name="trap" id="'+id+'" value="'+i+'"'+(checked[i]?" checked":"")+'><label for="'+id+'"></label>';
+      d.querySelector("label").textContent = label;
+      box.appendChild(d);
+    });
+  }
+
+  function buildChecks(){
+    var box = $("#checks"), state = {}, fixes = {};
+    box.querySelectorAll(".check").forEach(function(c, i){
+      var r = c.querySelector("input[type=radio]:checked"); if (r) state[i] = r.value;
+      fixes[i] = c.querySelector(".fix input").value;
+    });
+    box.innerHTML = "";
+    T[lang].checks.forEach(function(q, i){
+      var n = i + 3, nm = "c" + i;
+      var el = document.createElement("div"); el.className = "check"; el.dataset.i = i;
+      el.innerHTML =
+        '<div class="check-top">' +
+          '<span class="num" aria-hidden="true">'+n+'</span>' +
+          '<span class="q" id="q'+nm+'"></span>' +
+          '<div class="seg" role="radiogroup" aria-labelledby="q'+nm+'">' +
+            '<span><input class="o" type="radio" name="'+nm+'" id="'+nm+'o" value="O"><label for="'+nm+'o">'+T[lang].O+'</label></span>' +
+            '<span><input class="n" type="radio" name="'+nm+'" id="'+nm+'n" value="N"><label for="'+nm+'n">'+T[lang].N+'</label></span>' +
+            '<span><input class="na" type="radio" name="'+nm+'" id="'+nm+'na" value="NA"><label for="'+nm+'na">'+T[lang].NA+'</label></span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="fix"><label for="'+nm+'f">'+T[lang].fix+'</label><input id="'+nm+'f" name="'+nm+'f"></div>';
+      el.querySelector(".q").textContent = q;
+      if (state[i]) el.querySelector('input[value="'+state[i]+'"]').checked = true;
+      if (fixes[i]) el.querySelector(".fix input").value = fixes[i];
+      box.appendChild(el);
+    });
+  }
+
+  /* ---------- Langue ---------- */
+  function applyLang(){
+    var d = T[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-t]").forEach(function(el){ var v = d[el.dataset.t]; if (v !== undefined) el.textContent = v; });
+    document.querySelectorAll("[data-ta]").forEach(function(el){ var v = d[el.dataset.ta]; if (v !== undefined) { el.setAttribute("aria-label", v); el.title = v; } });
+    document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
+    $("#backLink").href = "../../demos.html" + (lang === "en" ? "?lang=en" : "");
+    document.title = d.eyebrow.split(" · ")[0] + " · " + d.title + (lang === "en" ? " — Job aid demo" : " — Démo job aid");
+    buildTraps(); buildChecks(); update();
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      lang = b.dataset.lang;
+      var u = new URL(location.href);
+      if (lang === "en") u.searchParams.set("lang","en"); else u.searchParams.delete("lang");
+      history.replaceState(null, "", u);
+      applyLang();
+    });
+  });
+
+  /* ---------- État dynamique ---------- */
+  function answers(){
+    var a = [];
+    document.querySelectorAll("#checks .check").forEach(function(c){
+      var r = c.querySelector("input[type=radio]:checked");
+      a.push({ v: r ? r.value : "", fix: c.querySelector(".fix input").value.trim() });
+    });
+    return a;
+  }
+
+  function update(){
+    var d = T[lang], a = answers(), done = 0, anyN = false;
+    document.querySelectorAll("#checks .check").forEach(function(c, i){
+      c.classList.toggle("is-o", a[i].v === "O");
+      c.classList.toggle("is-n", a[i].v === "N");
+      c.classList.toggle("is-na", a[i].v === "NA");
+      if (a[i].v) done++;
+      if (a[i].v === "N") anyN = true;
+    });
+    var mode = (form.querySelector('input[name="mode"]:checked') || {}).value;
+    $("#count").textContent = done + " / " + a.length;
+    $("#bar").style.width = (done / a.length * 100) + "%";
+
+    var st = $("#status"), cls = "", txt = d.stStart;
+    if (anyN) { cls = "stop"; txt = d.stStop; }
+    else if (mode === "knowledge") { cls = "warn"; txt = d.stKnow; }
+    else if (done === a.length && mode) { cls = "ok"; txt = d.stOk; }
+    else if (done > 0 || mode) { txt = d.stProgress; }
+    st.className = "status" + (cls ? " " + cls : "");
+    $("#statusText").textContent = txt;
+    return { a: a, mode: mode, anyN: anyN, done: done, verdict: txt };
+  }
+  form.addEventListener("change", update);
+  form.addEventListener("input", function(e){ if (e.target.closest(".field")) e.target.closest(".field").classList.remove("invalid"); });
+
+  /* ---------- Validation ---------- */
+  function validate(){
+    var ok = true, first = null;
+    ["names","task"].forEach(function(id){
+      var el = $("#"+id), f = $("#f-"+id);
+      var bad = !el.value.trim();
+      f.classList.toggle("invalid", bad);
+      if (bad) { ok = false; if (!first) first = el; }
+    });
+    if (!ok) { toast(T[lang].need); first.focus(); first.scrollIntoView({behavior:"smooth", block:"center"}); }
+    return ok;
+  }
+
+  /* ---------- Résumé texte (courriel) ---------- */
+  function summary(){
+    var d = T[lang], s = update(), L = [];
+    var modeLbl = { skill:d.m1, rule:d.m2, knowledge:d.m3 }[s.mode] || d.notAnswered;
+    var traps = [];
+    document.querySelectorAll('#traps input:checked').forEach(function(i){ traps.push(d.traps[+i.value]); });
+    var other = $("#trapOther").value.trim(); if (other) traps.push(other);
+    var lbl = { O: lang === "en" ? "YES" : "OUI", N: lang === "en" ? "NO" : "NON", NA: "N/A", "": d.notAnswered };
+
+    L.push(d.mailIntro, "");
+    L.push(d.names + " : " + $("#names").value.trim());
+    L.push(d.date + " : " + $("#date").value);
+    L.push(d.task + " : " + $("#task").value.trim(), "");
+    L.push("1. " + d.mode + " : " + modeLbl);
+    L.push("2. " + d.trapsLbl + " : " + (traps.length ? traps.join(", ") : d.none), "");
+    d.checks.forEach(function(q, i){
+      var r = s.a[i];
+      L.push((i + 3) + ". " + q);
+      L.push("   → " + lbl[r.v] + (r.v === "N" && r.fix ? " — " + d.fix + " : " + r.fix : ""));
+    });
+    L.push("", d.verdict + " : " + s.verdict, "", d.mailEnd);
+    return L.join("\r\n");
+  }
+
+  /* ---------- Actions ---------- */
+  $("#sendBtn").addEventListener("click", function(){
+    if (!validate()) return;
+    var email = $("#supEmail").value.trim();
+    if (!email) { toast(T[lang].needEmail); $("#supEmail").focus(); return; }
+    var subj = T[lang].subject + " – " + $("#task").value.trim() + " – " + $("#date").value;
+    location.href = "mailto:" + encodeURIComponent(email).replace(/%40/g,"@") + "?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(summary());
+    toast(T[lang].mailOpen);
+  });
+
+  $("#pdfBtn").addEventListener("click", function(){
+    if (!validate()) return;
+    update();
+    var d = T[lang], old = document.title;
+    $("#printMeta").textContent = d.printed + " " + new Date().toLocaleString(lang === "en" ? "en-CA" : "fr-CA");
+    var safe = function(s){ return s.trim().replace(/[^\w\-À-ÿ]+/g,"-").replace(/^-+|-+$/g,"").slice(0,40); };
+    document.title = d.fileName + "_" + safe($("#names").value) + "_" + $("#date").value;
+    window.print();
+    setTimeout(function(){ document.title = old; }, 800);
+  });
+
+  $("#resetBtn").addEventListener("click", function(){
+    if (!confirm(T[lang].confirmReset)) return;
+    form.reset(); setToday();
+    document.querySelectorAll(".field.invalid").forEach(function(f){ f.classList.remove("invalid"); });
+    update(); window.scrollTo({top:0, behavior:"smooth"}); toast(T[lang].resetDone);
+  });
+
+  var tId;
+  function toast(msg){
+    toastEl.textContent = msg; toastEl.classList.add("show");
+    clearTimeout(tId); tId = setTimeout(function(){ toastEl.classList.remove("show"); }, 2600);
+  }
+
+  function setToday(){
+    var n = new Date(), p = function(x){ return String(x).padStart(2,"0"); };
+    $("#date").value = n.getFullYear() + "-" + p(n.getMonth() + 1) + "-" + p(n.getDate());
+  }
+
+  setToday();
+  applyLang();
+})();
+</script>
+</body>
+</html>

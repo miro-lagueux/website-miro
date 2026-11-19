@@ -1,0 +1,3 @@
+Deposez ici votre fichier audio renomme exactement : demo-voix.mp3
+Resultat : exemples/demo-voix/demo-voix.mp3
+Supprimez ensuite ce fichier.

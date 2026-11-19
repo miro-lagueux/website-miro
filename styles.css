@@ -481,7 +481,6 @@ body.page-sub {
   .page-offre .info { padding: 10px 14px; }
   .page-offre .info h3 { font-size: 10pt; margin-bottom: 4px; }
   .page-offre .info p { font-size: 8.6pt; margin-bottom: 4px; }
-  .page-offre .info p a::after { content: " (evelyneaudet.com)"; font-weight: 400; }
   .page-sub .tags { margin-top: 4px; }
   .page-sub .tags li { font-size: 7pt; padding: 2px 8px; }
   .page-offre .steps6 { gap: 8px 12px; break-inside: avoid; }
@@ -498,7 +497,7 @@ body.page-sub {
   .page-sub .bottom { padding: 8px 0 0; margin-top: 10px; }
 }
 
-/* Démo en ligne (tuile cliquable) */
+/* Démos en ligne (tuiles cliquables) */
 .page-demos .demo.is-live { border: 2px solid var(--accent); background: #fff; }
 .page-demos .demo.is-live .demo-visual { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #e9eefb, #f8faff); }
 .page-demos .demo.is-live .demo-visual span:last-child { color: var(--accent); }
@@ -507,3 +506,18 @@ body.page-sub {
 .page-demos .demo-visual:hover .play { transform: scale(1.08); }
 .page-demos .demo-btn { margin-top: auto; align-self: flex-start; transform: translateY(12px); display: inline-flex; gap: 8px; align-items: center; background: var(--accent); color: #fff; font-size: .85rem; font-weight: 600; border-radius: 999px; padding: 9px 16px; transition: background .25s; }
 .page-demos .demo-btn:hover { background: var(--fg); }
+
+/* Démo de narration : lecteur audio dans la tuile */
+.page-demos .voice-visual { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #e9eefb, #f8faff); }
+.page-demos .voice-visual span:last-child { color: var(--accent); }
+.page-demos .wave { display: flex; align-items: center; gap: 5px; height: 48px; }
+.page-demos .wave i { display: block; width: 6px; border-radius: 3px; background: var(--accent); animation: wave 1.2s ease-in-out infinite; }
+.page-demos .wave i:nth-child(1) { height: 14px; animation-delay: 0s; }
+.page-demos .wave i:nth-child(2) { height: 30px; animation-delay: .1s; }
+.page-demos .wave i:nth-child(3) { height: 44px; animation-delay: .2s; }
+.page-demos .wave i:nth-child(4) { height: 26px; animation-delay: .3s; }
+.page-demos .wave i:nth-child(5) { height: 40px; animation-delay: .4s; }
+.page-demos .wave i:nth-child(6) { height: 22px; animation-delay: .5s; }
+.page-demos .wave i:nth-child(7) { height: 12px; animation-delay: .6s; }
+@keyframes wave { 0%, 100% { transform: scaleY(.5); } 50% { transform: scaleY(1); } }
+.page-demos .demo-audio { width: 100%; margin-top: auto; transform: translateY(12px); height: 44px; }
