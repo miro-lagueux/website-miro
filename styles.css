@@ -497,3 +497,13 @@ body.page-sub {
   .page-sub .cta::after { content: "info@mirolagueux.com  ·  linkedin.com/in/mirolagueux  ·  mirolagueux.com"; display: block; margin-top: 6px; font-weight: 600; color: var(--accent); }
   .page-sub .bottom { padding: 8px 0 0; margin-top: 10px; }
 }
+
+/* Démo en ligne (tuile cliquable) */
+.page-demos .demo.is-live { border: 2px solid var(--accent); background: #fff; }
+.page-demos .demo.is-live .demo-visual { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #e9eefb, #f8faff); }
+.page-demos .demo.is-live .demo-visual span:last-child { color: var(--accent); }
+.page-demos .play { position: relative; width: 56px; height: 56px; border-radius: 50%; background: var(--accent); box-shadow: 0 10px 30px -10px rgba(29, 78, 216, .7); transition: transform .25s var(--ease); }
+.page-demos .play::after { content: ""; position: absolute; left: 23px; top: 18px; border-left: 15px solid #fff; border-top: 10px solid transparent; border-bottom: 10px solid transparent; }
+.page-demos .demo-visual:hover .play { transform: scale(1.08); }
+.page-demos .demo-btn { margin-top: auto; align-self: flex-start; transform: translateY(12px); display: inline-flex; gap: 8px; align-items: center; background: var(--accent); color: #fff; font-size: .85rem; font-weight: 600; border-radius: 999px; padding: 9px 16px; transition: background .25s; }
+.page-demos .demo-btn:hover { background: var(--fg); }

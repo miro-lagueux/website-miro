@@ -1,0 +1,7 @@
+Déposez ici le CONTENU du dossier « Demo-iSpring (Published) » :
+  - index.html
+  - le dossier data
+Résultat attendu :
+  exemples/ispring/index.html
+  exemples/ispring/data/...
+Supprimez ensuite ce fichier LISEZ-MOI.txt.
