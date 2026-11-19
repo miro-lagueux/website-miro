@@ -215,7 +215,7 @@ const EN = {
 
   /* ---------- Page Démos (demos.html) ---------- */
   "dm.meta.title": "Demos — Miro Lagueux",
-  "dm.meta.desc": "E-learning style demos: microlearning, scenario, quiz, simulation, narration and interactive job aid.",
+  "dm.meta.desc": "E-learning style demos: quiz, microlearning, interactive job aid, narration, scenario and simulation.",
   "dm.eyebrow": "Demos",
   "dm.title": "Choose <em>your style</em>.",
   "dm.lead": "Each style meets a different need. Try the demos, compare them, then tell me which one suits your audience: I’ll take care of the rest.",
@@ -229,6 +229,7 @@ const EN = {
   "dm.d1.tag": "Clean style",
   "dm.d1.t": "Microlearning",
   "dm.d1.d": "A short, clean and responsive module, ideal on desktop and on mobile.",
+  "dm.d1.aria": "Open the microlearning demo in a new tab",
   "dm.v2": "Scenario",
   "dm.d2.tag": "Realistic situation",
   "dm.d2.t": "Branching scenario",
