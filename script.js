@@ -4,12 +4,10 @@
    - Le texte ANGLAIS est dans EN ci-dessous (mêmes clés que data-i18n)
    - Aucun témoin, aucun stockage : la langue est gardée dans l'URL (?lang=en)
    ========================================================= */
-
 const EN = {
   /* ---------- Accueil (index.html) ---------- */
   "meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
   "meta.desc": "Complete learning paths, interactive SCORM training and quizzes (Articulate Rise and Storyline, iSpring, Adobe Captivate), FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation.",
-
   "nav.home": "Home",
   "nav.services": "Services",
   "nav.approach": "Approach",
@@ -18,13 +16,11 @@ const EN = {
   "nav.offer": "Offer",
   "nav.demos": "Demos",
   "nav.contact": "Contact",
-
   "home.eyebrow": "Learning technology · LMS · Linguistics",
   "home.title": "Training that <em>changes behaviour</em>.",
   "home.lead": "Anyone can create content today. I design turnkey training that lastingly changes how people work, and I measure the results.",
   "home.cta1": "View services",
   "home.cta2": "Get in touch",
-
   "services.title": "What I deliver, turnkey.",
   "services.sub": "From needs analysis to going live in your LMS, I take your project from start to finish.",
   "s1.t": "Complete learning paths",
@@ -44,7 +40,6 @@ const EN = {
   "t6c": "Tutorials",
   "t1a": "Learning technology",
   "t1c": "Behaviour change",
-
   "approach.title": "Creating content is one thing. <em>Driving behaviour adoption and measuring it</em> is another.",
   "approach.sub": "Training doesn’t end when the learner closes the module. I measure, analyze the data and aim for tangible, lasting results.",
   "a1.t": "Before",
@@ -55,7 +50,6 @@ const EN = {
   "a3.d": "Validate learning as soon as training ends.",
   "a4.t": "On the job",
   "a4.d": "Measure real-world application in the workplace, some time later.",
-
   "work.title": "Experience you can measure.",
   "work.sub": "From professional orders to SMEs, public services and large corporations.",
   "w1.t": "years of experience",
@@ -66,7 +60,6 @@ const EN = {
   "k2": "Small and medium-sized businesses",
   "k3": "Public services",
   "k4": "Large corporations",
-
   "about.title": "A linguist by training, a learning technologist by trade.",
   "about.p": "I have designed training content focused on lasting behaviour adoption for large corporations. I have also completed more than 100 LMS implementation projects. Today, I offer a turnkey product: design, writing, integration and measurement of results.",
   "about.l1": "Education",
@@ -77,18 +70,15 @@ const EN = {
   "c1": "Data analysis",
   "c2": "Video editing",
   "c3": "Generative and agentic AI",
-
   "contact.title": "A training project? <br><em>Let’s talk.</em>",
   "contact.p": "Write to me by email or on LinkedIn. Tell me about your audience, your goals and your timeline.",
   "contact.note": "No forms, no cookies, no personal data and no tracking on this site.",
-
   "legal.link": "Privacy",
   "legal.title": "Privacy & legal notice",
   "legal.p1": "This website does not collect personal information. It uses no forms, no cookies, no analytics and no third-party trackers, and it loads no external fonts or scripts.",
   "legal.p2": "The hosting provider may keep standard technical logs (such as IP address and browser type) for security and operation purposes.",
   "legal.p3": "Your language choice is kept only in the page address. Site published by Miro Lagueux.",
   "legal.close": "Close",
-
   "aria.lang": "Language",
   "aria.menu": "Menu",
   "aria.prev": "Previous section",
@@ -98,21 +88,19 @@ const EN = {
 
   /* ---------- Page Offre (offre.html) ---------- */
   "of.meta.title": "Service offer — Miro Lagueux",
-  "of.meta.desc": "Small assignments and complete e-learning projects: LMS integration, translation, job aids, interactive modules with macro and micro design, behaviour change learning paths.",
+  "of.meta.desc": "On-demand services and complete e-learning projects: LMS integration, translation, job aids, interactive modules with macro and micro design, behaviour change learning paths.",
   "mail.subject": "Quote request",
   "of.eyebrow": "Service offer",
-  "of.title": "From small tasks <em>to complete projects</em>.",
+  "of.title": "From on-demand help <em>to complete projects</em>.",
   "of.lead": "A job aid to produce, a module to integrate into your LMS or a complete learning path: I adapt to the size of your need. Every engagement starts with a free written quote.",
   "of.cta.quote": "Request a quote",
   "of.cta.pdf": "Download the offer as PDF",
-
   "of.alc.eyebrow": "À la carte",
-  "of.alc.title": "A specific need? <em>No task is too small.</em>",
-  "of.alc.sub": "For a one-off need, an update or extra help for your team. You only pay for what you need.",
+  "of.alc.title": "Need a quick hand? <em>I’ve got it covered.</em>",
+  "of.alc.sub": "For a one-off need, an update or to support your team on short notice. You only pay for what you need.",
   "of.alc.h1": "Service",
   "of.alc.h2": "Rate",
   "of.a1": "LMS integration and SCORM testing of an existing module",
-  "of.a1p": "$250 / module",
   "of.a2": "Job aid, quick reference or technical guide",
   "of.a2p": "Starting at $300",
   "of.a3": "Video or tutorial (up to 3 min)",
@@ -123,18 +111,14 @@ const EN = {
   "of.rate": "$75 / h",
   "of.a6": "Update of an existing module",
   "of.a7": "Learning technology and LMS consulting",
-
   "of.plans.eyebrow": "Complete projects",
   "of.plans.title": "Going further: three packages.",
-  "of.plans.sub": "Starting prices for a module of about 15 to 20 minutes. The final price is set in the written quote, based on complexity and volume.",
-  "of.from": "Starting at",
+  "of.plans.sub": "Every project is unique. The price is set in a free written quote, based on complexity and volume.",
+  "of.est": "Custom quote",
   "of.delay": "Indicative timeline",
   "of.badge": "Most requested",
-  "of.pr1": "$1,500",
-  "of.pr2": "$4,000",
-  "of.pr3": "$10,000",
   "of.p1.tag": "Conversion",
-  "of.p1.t": "Fast-track online",
+  "of.p1.t": "Convert existing training into interactive content",
   "of.p1.d": "Your existing content (PowerPoint, PDF, Word) turned into an interactive online module.",
   "of.p1.i1": "Tool chosen to match the style you want",
   "of.p1.i2": "Interactive layout of your content",
@@ -166,7 +150,6 @@ const EN = {
   "of.p3.i6": "Follow-up on on-the-job application",
   "of.p3.i7": "Results analysis report",
   "of.p3.delay": "6 to 10 weeks",
-
   "of.style.eyebrow": "Style and narration",
   "of.style.title": "You choose the style of your training.",
   "of.tools.t": "The right tool for the right need",
@@ -177,7 +160,6 @@ const EN = {
   "of.voice.d2": "Prefer a real voice? I also work with professional narrators, in French and English. Rates on request.",
   "of.voice.tag1": "Realistic AI voice",
   "of.voice.tag2": "Human voice",
-
   "of.proc.eyebrow": "Process",
   "of.proc.title": "How it works.",
   "of.proc.sub": "For custom modules and learning paths, nothing is produced until you have approved the macro design, then the micro design.",
@@ -193,7 +175,6 @@ const EN = {
   "of.o5.d": "Development true to the approved micro design, then revisions according to the package.",
   "of.o6.t": "Delivery and integration",
   "of.o6.d": "Go-live and testing in your LMS, then results measurement depending on the package.",
-
   "of.terms.eyebrow": "Terms",
   "of.terms.title": "Simple and transparent.",
   "of.c1.t": "Payment",
@@ -208,7 +189,6 @@ const EN = {
   "of.c5.d": "All deliverables are handed over to you and belong to you once paid. A copy is also kept on my server, which makes future updates easier.",
   "of.c6.t": "Hosting and security",
   "of.c6.d": "All project data is hosted and maintained in Canada, in the Microsoft Azure cloud, according to the highest security standards.",
-
   "of.cta.title": "A project, big or small? <br><em>Let’s talk.</em>",
   "of.cta.lead": "Tell me about your need: I’ll reply with a written quote within 2 business days.",
   "of.valid": "Rates in effect at the time of viewing. Final quote provided in writing.",
@@ -284,7 +264,6 @@ document.querySelectorAll("a[data-keep-lang]").forEach(a => baseHref.set(a, a.ge
 function setLang(lang, updateUrl = true) {
   const dict = lang === "en" ? EN : FR;
   html.lang = lang;
-
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const v = dict[el.dataset.i18n];
     if (v !== undefined) el.innerHTML = v;
@@ -303,10 +282,8 @@ function setLang(lang, updateUrl = true) {
   });
   document.title   = dict[META[0]];
   metaDesc.content = dict[META[1]];
-
   document.querySelectorAll(".lang button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
-
   if (updateUrl) {
     const url = new URL(location.href);
     if (lang === "en") url.searchParams.set("lang", "en");

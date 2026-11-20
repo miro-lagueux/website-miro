@@ -6,7 +6,6 @@
   <title>Miro Lagueux — Technopédagogie, LMS et linguistique</title>
   <meta name="description" content="Parcours de formation complets, formations et quiz interactifs SCORM (Articulate Rise et Storyline, iSpring, Adobe Captivate), rédaction, traduction et localisation FR-EN, gestion LMS et intégration de contenu, capsules vidéo, tutoriels et guides techniques, création de contenu assistée par l’IA.">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Aperçu LinkedIn / réseaux sociaux (remplacer le domaine si différent) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Miro Lagueux — Technopédagogie, LMS et linguistique">
@@ -14,13 +13,11 @@
   <meta property="og:image" content="https://mirolagueux.com/og-image.png">
   <meta property="og:url" content="https://mirolagueux.com/">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" href="miro.jpg">
-  <link rel="stylesheet" href="styles.css?v=12">
-  <script src="script.js?v=12" defer></script>
+  <link rel="stylesheet" href="styles.css?v=14">
+  <script src="script.js?v=14" defer></script>
 </head>
 <body>
-
 <!-- Drapeaux (symboles réutilisables) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -29,16 +26,13 @@
     </symbol>
   </defs>
 </svg>
-
 <div class="app">
-
   <!-- ============ EN-TÊTE ============ -->
   <header class="top">
     <a class="brand" href="#home">
       <img src="miro.jpg" alt="Miro Lagueux" width="36" height="36">
       <span>Miro Lagueux<b>.</b></span>
     </a>
-
     <nav class="nav" id="nav">
       <a href="#home"><i>01</i><span data-i18n="nav.home">Accueil</span></a>
       <a href="#services"><i>02</i><span data-i18n="nav.services">Services</span></a>
@@ -49,7 +43,6 @@
       <a href="demos.html" data-keep-lang><i>07</i><span data-i18n="nav.demos">Démos</span></a>
       <a href="#contact"><i>08</i><span data-i18n="nav.contact">Contact</span></a>
     </nav>
-
     <div class="tools">
       <div class="lang" role="group" aria-label="Langue" data-i18n-aria="aria.lang">
         <button type="button" data-lang="fr" aria-pressed="true">FR</button>
@@ -60,10 +53,8 @@
       </button>
     </div>
   </header>
-
   <!-- ============ SECTIONS ============ -->
   <main class="stage">
-
     <!-- 01 ACCUEIL -->
     <section class="panel is-active" data-panel="home" data-num="01" aria-labelledby="t-home">
       <div class="wrap">
@@ -76,7 +67,6 @@
         </div>
       </div>
     </section>
-
     <!-- 02 SERVICES -->
     <section class="panel" data-panel="services" data-num="02" aria-labelledby="t-services">
       <div class="wrap">
@@ -97,7 +87,6 @@
         </div>
       </div>
     </section>
-
     <!-- 03 APPROCHE -->
     <section class="panel" data-panel="approach" data-num="03" aria-labelledby="t-approach">
       <div class="wrap">
@@ -116,7 +105,6 @@
         </ol>
       </div>
     </section>
-
     <!-- 04 RÉALISATIONS -->
     <section class="panel" data-panel="work" data-num="04" aria-labelledby="t-work">
       <div class="wrap">
@@ -138,7 +126,6 @@
         </ul>
       </div>
     </section>
-
     <!-- 05 À PROPOS -->
     <section class="panel" data-panel="about" data-num="05" aria-labelledby="t-about">
       <div class="wrap about">
@@ -164,7 +151,6 @@
         </dl>
       </div>
     </section>
-
     <!-- 06 CONTACT -->
     <section class="panel" data-panel="contact" data-num="06" aria-labelledby="t-contact">
       <div class="wrap">
@@ -178,9 +164,7 @@
         <p class="meta" data-i18n="contact.note">Aucun formulaire, aucun témoin (cookie), aucune donnée personnelle ni outil de suivi sur ce site.</p>
       </div>
     </section>
-
   </main>
-
   <!-- ============ PIED DE PAGE ============ -->
   <footer class="bottom">
     <span class="copy">
@@ -199,18 +183,19 @@
       </span>
       <span class="copytext">© <span id="year">2026</span> Miro Lagueux</span>
     </span>
-
     <div class="pager">
       <button type="button" class="arrow" id="prev" aria-label="Section précédente" data-i18n-aria="aria.prev">←</button>
       <span class="count"><b id="cur">01</b> / <span id="tot">06</span></span>
       <span class="bar"><span id="bar"></span></span>
       <button type="button" class="arrow" id="next" aria-label="Section suivante" data-i18n-aria="aria.next">→</button>
     </div>
-
-    <button type="button" class="link" id="legalOpen" data-i18n="legal.link">Confidentialité</button>
+    <div class="foot-links">
+      <a class="link" href="offre.html" data-keep-lang data-i18n="nav.offer">Offre</a>
+      <a class="link" href="demos.html" data-keep-lang data-i18n="nav.demos">Démos</a>
+      <button type="button" class="link" id="legalOpen" data-i18n="legal.link">Confidentialité</button>
+    </div>
   </footer>
 </div>
-
 <!-- ============ CONFIDENTIALITÉ ============ -->
 <dialog id="legal" aria-labelledby="legalTitle">
   <h2 id="legalTitle" data-i18n="legal.title">Confidentialité et mentions légales</h2>
