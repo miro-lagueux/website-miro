@@ -1,0 +1,1958 @@
+{
+  "format": "scormstack-roundtrip",
+  "version": "1.0",
+  "generatedAt": "2026-11-20T21:38:54.152Z",
+  "course": {
+    "id": "b431175f-b431-4706-b9dd-eea99294dc96",
+    "title": "L’IA au travail : les bons réflexes dès le premier jour",
+    "description": "Cette formation aide les nouveaux employés à utiliser les outils d’intelligence artificielle de l’organisation de façon sécuritaire, responsable et efficace. Elle présente des situations concrètes pour protéger les données, vérifier les réponses générées, choisir l’approche adaptée à chaque tâche et collaborer avec des agents spécialisés. L’employé conserve la responsabilité de ses décisions et de la validation du travail produit.",
+    "cover_image": "media/course-b431175f-b431-4706-b9dd-eea99294dc96-card-thumbnail_0623c9c8.webp",
+    "theme_config": null,
+    "homepage": {
+      "hidden": true,
+      "showHero": true,
+      "showToc": true,
+      "showCta": true,
+      "heroLayout": "center",
+      "heroHeadingSize": "medium",
+      "tocLayout": "hierarchy",
+      "areaOrder": [
+        "hero",
+        "toc"
+      ],
+      "title": "",
+      "description": "",
+      "buttonLabel": "",
+      "buttonIcon": "arrow-right",
+      "logoImage": null,
+      "image": null,
+      "ctaSettings": {
+        "size": "medium",
+        "variant": "outline",
+        "buttonColor": ""
+      },
+      "heroFormat": {
+        "contentMaxWidth": 3,
+        "paddingTop": 32,
+        "paddingBottom": 32,
+        "paddingLinked": true,
+        "textAlign": "start",
+        "gap": 24,
+        "backgroundType": "THEME",
+        "overlayColor": "NONE",
+        "overlayOpacity": 0.4
+      },
+      "tocFormat": {
+        "contentMaxWidth": 3,
+        "paddingTop": 32,
+        "paddingBottom": 32,
+        "paddingLinked": true,
+        "textAlign": "start",
+        "gap": 24,
+        "backgroundType": "LIGHT",
+        "overlayColor": "NONE",
+        "overlayOpacity": 0.3
+      },
+      "sectionLabels": {},
+      "slideLabels": {},
+      "sectionImages": {},
+      "sectionIcons": {},
+      "slideIcons": {},
+      "blocks": []
+    },
+    "slides": [
+      {
+        "id": "19b17643-7611-45f4-bd09-075f997d36dc",
+        "title": "L’IA au travail : les bons réflexes dès le premier jour.",
+        "content": {
+          "topic": "Utilisation responsable",
+          "objectives": [
+            "Reconnaître les quatre réflexes d’une utilisation sécuritaire, responsable et efficace de l’IA.",
+            "Maintenir la responsabilité humaine dans les décisions et la validation du travail produit."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:18.756597+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:38:39.595098+00:00",
+        "order_index": 0,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "a4c2a6a0-c23a-4793-8ce1-9c0b2408e45e",
+            "title": "Bien travailler avec l’IA.",
+            "type": "text",
+            "variant": "heading_with_paragraph",
+            "content": {
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "heading": "Bien travailler avec l’IA.",
+              "options": {
+                "headingSize": "medium",
+                "headingFormat": "simple"
+              },
+              "paragraph_1": "<p>L’IA peut vous aider à accélérer certaines étapes de votre travail. Elle ne remplace toutefois ni votre jugement ni votre responsabilité. Pour l’utiliser correctement, adoptez quatre réflexes : protéger les données, vérifier les réponses, choisir l’outil adapté et garder l’humain dans la boucle.</p>",
+              "paragraph_2": ""
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b0"
+          },
+          {
+            "originalId": "87f78863-3c66-4a9f-8196-55a044521315",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Schéma : une personne et l'IA au centre, entourées des quatre réflexes : protéger les données, vérifier les réponses, choisir l'outil et garder l'humain dans la boucle.",
+                  "src": "media/01_quatre-reflexes_13c3dfc2.svg",
+                  "width": "100",
+                  "caption": "Les quatre réflexes à adopter dès le premier jour.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b1"
+          },
+          {
+            "originalId": "b1992310-31a2-4f4e-a0ec-fa903a322c85",
+            "title": "List block",
+            "type": "list",
+            "variant": "numbered",
+            "content": {
+              "items": [
+                {
+                  "id": "item-1",
+                  "content": "<p>Protégez les données : utilisez uniquement un environnement d’IA approuvé par l’organisation pour les informations de l’entreprise.</p>"
+                },
+                {
+                  "id": "item-2",
+                  "content": "<p>Vérifiez les réponses : une réponse claire et convaincante peut contenir une erreur ou une information inventée.</p>"
+                },
+                {
+                  "id": "item-3",
+                  "content": "<p>Choisissez le bon outil : adaptez le modèle ou l’outil au type de tâche à réaliser.</p>"
+                },
+                {
+                  "id": "item-4",
+                  "content": "<p>Gardez l’humain dans la boucle : validez le résultat et prenez vous-même la décision finale.</p>"
+                }
+              ],
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "columns": 1,
+                "iconSize": "md",
+                "markerSize": 32,
+                "markerColor": "",
+                "markerStyle": "disc",
+                "iconPosition": "left",
+                "showDividers": false,
+                "numberingStyle": "decimal"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b2"
+          },
+          {
+            "originalId": "e4f280a9-0102-4b3d-9eba-953ec38a0032",
+            "title": "Le réflexe à retenir",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "important",
+              "title": "Le réflexe à retenir",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>L’IA peut accélérer votre travail. Vous demeurez responsable des données utilisées, de la validation des résultats et de la décision finale.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b3"
+          },
+          {
+            "originalId": "c4d53a26-b1a0-45c9-9134-01c21b38e1a7",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "L’IA au travail : les bons réflexes dès le premier jour.",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Reconnaître les quatre réflexes d’une utilisation sécuritaire, responsable et efficace de l’IA.",
+                "Maintenir la responsabilité humaine dans les décisions et la validation du travail produit."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b4"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "1781de3f-c58e-4c63-a1fe-0589581e4bf2",
+        "title": "Protégez les données de l’entreprise.",
+        "content": {
+          "topic": "Microsoft 365/Copilot",
+          "objectives": [
+            "Distinguer un compte d’entreprise approuvé d’un compte personnel.",
+            "Identifier les renseignements à ne pas transmettre à un outil d’IA non autorisé."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:19.010073+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:37:19.010073+00:00",
+        "order_index": 1,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "d612e257-9b61-44fd-956f-cd3ac15f66a5",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Protégez les données de l’entreprise.",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Distinguer un compte d’entreprise approuvé d’un compte personnel.",
+                "Identifier les renseignements à ne pas transmettre à un outil d’IA non autorisé."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b5"
+          },
+          {
+            "originalId": "c4d7a1cc-eed5-46b6-96fb-707eea513904",
+            "title": "Le bon environnement compte.",
+            "type": "text",
+            "variant": "heading_with_paragraph",
+            "content": {
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "heading": "Le bon environnement compte.",
+              "options": {
+                "headingSize": "medium",
+                "headingFormat": "simple"
+              },
+              "paragraph_1": "<p>Pour traiter des informations de l’organisation, utilisez Microsoft 365/Copilot fourni par celle-ci, lorsque cet environnement est approuvé pour la tâche. Dans ce contexte, l’environnement d’entreprise est configuré selon les exigences internes de sécurité et de résidence des données au Canada. Votre compte personnel d’un service d’IA n’est pas un raccourci acceptable pour les données de l’organisation.</p>",
+              "paragraph_2": ""
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b6"
+          },
+          {
+            "originalId": "7c63d71d-943f-4a64-afe1-1c9558d0cedf",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Schéma : un document de l'entreprise peut aller vers l'environnement approuvé (Microsoft 365 / Copilot de l'organisation), mais pas vers un compte personnel d'IA.",
+                  "src": "media/02_environnement-approuve_226654fd.svg",
+                  "width": "100",
+                  "caption": "Données de l'entreprise = environnement approuvé par l'entreprise.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b7"
+          },
+          {
+            "originalId": "ca53c60d-244b-4c2d-8aaf-fcc67536eddf",
+            "title": "Accordion",
+            "type": "accordion",
+            "variant": "accordion",
+            "content": {
+              "items": [
+                {
+                  "title": "Compte d’entreprise approuvé",
+                  "content": "<p>C’est l’environnement fourni ou autorisé par l’organisation pour le travail. Utilisez-le selon les règles internes et les autorisations applicables, notamment lorsque vous devez traiter des informations liées à des clients, à des employés ou à des projets.</p>"
+                },
+                {
+                  "title": "Compte personnel",
+                  "content": "<p>C’est un compte que vous utilisez à titre individuel sur un service d’IA. Même si l’outil est pratique ou performant, ne copiez-y pas de renseignements confidentiels, personnels, nominatifs ou non publics de l’organisation.</p>"
+                },
+                {
+                  "title": "Informations à protéger",
+                  "content": "<p>Ne transmettez pas à un outil non autorisé un nom de client ou d’employé, une adresse courriel personnelle, un numéro de téléphone, une adresse, un dossier d’employé, des informations financières, des données contractuelles ou un document interne confidentiel.</p>"
+                }
+              ],
+              "format": {
+                "gap": 16,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "type": "single"
+              },
+              "settings": {
+                "completionMode": "tried"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b8"
+          },
+          {
+            "originalId": "38b25a68-03f0-43f2-8b2d-355307460035",
+            "title": "La règle à retenir",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "important",
+              "title": "La règle à retenir",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>Données de l’entreprise = environnement approuvé par l’entreprise. Si vous hésitez, ne copiez pas l’information dans un compte personnel et vérifiez quel outil est autorisé.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b9"
+          },
+          {
+            "originalId": "346d4f93-211b-4dfe-b057-fe59aa416bfe",
+            "title": "Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145842375-7cbf9584ad6b1",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145842375-7cbf9584ad6b1-3",
+                      "hint": "Cette solution ne suffit pas : les noms de clients et les informations contractuelles peuvent aussi être sensibles ou non publics.",
+                      "text": "Remplacer uniquement les numéros de téléphone par des astérisques et utiliser ensuite le compte personnel.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145842375-7cbf9584ad6b1-1",
+                      "hint": "Cette action reste risquée : supprimer la conversation ne transforme pas un compte personnel en environnement approuvé et ne change pas la nature sensible des données.",
+                      "text": "Copier le document dans votre compte personnel, puis supprimer la conversation après le résumé.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145842375-7cbf9584ad6b1-2",
+                      "hint": "Bonne décision : les données de l’entreprise doivent être traitées dans un environnement approuvé par l’organisation.",
+                      "text": "Utiliser Microsoft 365/Copilot approuvé par l’organisation, selon les règles internes applicables.",
+                      "correct": true
+                    }
+                  ],
+                  "solution": "<p>Le critère principal est l’environnement autorisé, et non la commodité du service ni la suppression ultérieure de la conversation. Les renseignements nominatifs et contractuels doivent rester dans un outil approuvé par l’organisation.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 5,
+            "id": "b10",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "5df58e76-b447-4ac6-ab1f-1e87dbe7c456",
+        "title": "Peut-on envoyer cette information à l’IA?",
+        "content": {
+          "topic": "Décisions professionnelles",
+          "objectives": [
+            "Appliquer la règle « Données de l’entreprise = environnement approuvé par l’entreprise ».",
+            "Expliquer pourquoi un compte personnel ne convient pas aux renseignements organisationnels."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:19.249741+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:37:19.249741+00:00",
+        "order_index": 2,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "9a118ddf-5107-4bb6-8cb1-9cf1010261d0",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Peut-on envoyer cette information à l’IA?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Appliquer la règle « Données de l’entreprise = environnement approuvé par l’entreprise ».",
+                "Expliquer pourquoi un compte personnel ne convient pas aux renseignements organisationnels."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b11"
+          },
+          {
+            "originalId": "e44a6acf-7936-4233-ba0c-33b8e7f019a9",
+            "title": "Deux questions avant d’envoyer.",
+            "type": "text",
+            "variant": "heading_with_paragraph",
+            "content": {
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "heading": "Deux questions avant d’envoyer.",
+              "options": {
+                "headingSize": "medium",
+                "headingFormat": "simple"
+              },
+              "paragraph_1": "<p>Pour décider rapidement, posez-vous deux questions : « Cette information appartient-elle à l’organisation? » et « L’outil que j’utilise est-il approuvé par l’organisation? » Si la réponse est oui à la première et non à la seconde, arrêtez-vous. Reformuler, anonymiser partiellement ou supprimer la conversation plus tard ne transforme pas un compte personnel en environnement approuvé.</p>",
+              "paragraph_2": ""
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b12"
+          },
+          {
+            "originalId": "aa5876ee-5490-4331-8d54-40114687f1e6",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Organigramme de décision : si l'information appartient à l'organisation et que l'outil est approuvé, on peut poursuivre; si l'outil n'est pas approuvé, on s'arrête.",
+                  "src": "media/03_deux-questions_6771a951.svg",
+                  "width": "100",
+                  "caption": "Deux questions à se poser avant de cliquer sur Envoyer.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b13"
+          },
+          {
+            "originalId": "ef466679-28b7-42bc-9f94-8bfea43ae938",
+            "title": "Vous devez préparer une synthèse à partir d’un document interne qui décrit un projet non public. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle décision applique correctement la règle?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous devez préparer une synthèse à partir d’un document interne qui décrit un projet non public. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle décision applique correctement la règle?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145843082-6119e36cd2f77",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous devez préparer une synthèse à partir d’un document interne qui décrit un projet non public. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle décision applique correctement la règle?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145843082-6119e36cd2f77-2",
+                      "hint": "Retirer un nom ne suffit pas nécessairement à rendre le contenu acceptable. Un projet non public peut rester identifiable ou confidentiel; le compte personnel demeure le mauvais environnement.",
+                      "text": "Utiliser le compte personnel si vous retirez le nom du projet avant l’envoi.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145843082-6119e36cd2f77-1",
+                      "hint": "Bonne décision : le document contient une information organisationnelle non publique. Il doit être traité dans l’environnement approuvé par l’organisation.",
+                      "text": "Utiliser Microsoft 365/Copilot approuvé par l’organisation pour préparer la synthèse.",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-question-1795145843082-6119e36cd2f77-3",
+                      "hint": "Le traitement initial a tout de même exposé le document à un outil non autorisé. Le résultat final ne change pas l’environnement utilisé pour les données de l’organisation.",
+                      "text": "Utiliser le compte personnel, puis copier seulement la synthèse finale dans l’espace de travail.",
+                      "correct": false
+                    }
+                  ],
+                  "solution": "<p>La décision repose sur deux critères : la nature de l’information et l’environnement utilisé. Les renseignements organisationnels non publics doivent rester dans un outil approuvé par l’organisation.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b14",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          },
+          {
+            "originalId": "cedc1035-e769-414b-ac8d-6afda19bc5ef",
+            "title": "Le réflexe avant de cliquer sur Envoyer",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "important",
+              "title": "Le réflexe avant de cliquer sur Envoyer",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>Donnée de l’organisation? Environnement approuvé. Si l’environnement n’est pas approuvé, n’envoyez pas l’information et vérifiez quel outil est autorisé.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b15"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "60e41c98-4245-49ad-8177-c421d93b823d",
+        "title": "Une réponse convaincante peut être fausse.",
+        "content": {
+          "topic": "Hallucination",
+          "objectives": [
+            "Définir une hallucination et repérer les éléments suspects d’une réponse générée.",
+            "Appliquer une démarche de validation avant d’utiliser une information produite par l’IA."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:19.46654+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:37:19.46654+00:00",
+        "order_index": 3,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "7ddfb610-05e5-4e88-b1b8-560b68c80267",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Une réponse convaincante peut être fausse.",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Définir une hallucination et repérer les éléments suspects d’une réponse générée.",
+                "Appliquer une démarche de validation avant d’utiliser une information produite par l’IA."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b16"
+          },
+          {
+            "originalId": "aff81077-86c0-42a1-b593-c8f24ae8313e",
+            "title": "Une réponse plausible n’est pas une preuve.",
+            "type": "text",
+            "variant": "heading_with_paragraph",
+            "content": {
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "heading": "Une réponse plausible n’est pas une preuve.",
+              "options": {
+                "headingSize": "medium",
+                "headingFormat": "simple"
+              },
+              "paragraph_1": "<p>Une hallucination est une information générée par l’IA qui semble crédible, mais qui est fausse, inventée ou mal interprétée. Une réponse professionnelle peut donc contenir une règle inexistante, une date incorrecte ou une référence qui ne correspond pas au document original.</p>",
+              "paragraph_2": ""
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b17"
+          },
+          {
+            "originalId": "8d9540e9-f3cb-4041-9b20-727a7f853926",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Schéma : une réponse d'IA qui cite une règle précise est comparée à la source originale, où cette règle n'apparaît pas.",
+                  "src": "media/04_reponse-convaincante_11a9cdb6.svg",
+                  "width": "100",
+                  "caption": "Une réponse précise en apparence doit toujours être comparée à la source originale.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b18"
+          },
+          {
+            "originalId": "e140fdc5-dab7-4ba8-a56c-0312ce13f15a",
+            "title": "Tabs",
+            "type": "tabs",
+            "variant": "tabs",
+            "content": {
+              "items": [
+                {
+                  "title": "Source originale",
+                  "content": "<p>Retournez au document, à la politique ou à la page officielle à l’origine de l’information. Vérifiez que la règle citée existe réellement et qu’elle s’applique bien à votre situation.</p>"
+                },
+                {
+                  "title": "Chiffres et dates",
+                  "content": "<p>Comparez les montants, pourcentages, dates et échéances avec une source fiable. Une seule valeur erronée peut modifier la conclusion d’un résumé ou d’une recommandation.</p>"
+                },
+                {
+                  "title": "Noms et références",
+                  "content": "<p>Vérifiez les noms de personnes, de politiques, de lois, de clients et de documents. Une référence précise en apparence peut avoir été inventée ou associée au mauvais sujet.</p>"
+                },
+                {
+                  "title": "Sources fiables",
+                  "content": "<p>Lorsque la fonction est disponible, demandez à l’IA d’indiquer ses sources. Utilisez ensuite ces références pour effectuer votre propre vérification; une citation fournie par l’IA n’est pas automatiquement exacte.</p>"
+                }
+              ],
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "tabHeight": null,
+                "defaultTab": 0,
+                "tabsDisplay": "compact",
+                "completionMode": "tried"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b19"
+          },
+          {
+            "originalId": "26f95b9b-5936-4be6-8661-5c806811126b",
+            "title": "Vous demandez à une IA de résumer une politique interne. Sa réponse cite une règle précise, avec une date et un numéro de section, mais vous ne retrouvez pas cette règle dans le document original. Que devez-vous faire avant d’utiliser le résumé?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous demandez à une IA de résumer une politique interne. Sa réponse cite une règle précise, avec une date et un numéro de section, mais vous ne retrouvez pas cette règle dans le document original. Que devez-vous faire avant d’utiliser le résumé?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145844371-c2c03a541ff9",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous demandez à une IA de résumer une politique interne. Sa réponse cite une règle précise, avec une date et un numéro de section, mais vous ne retrouvez pas cette règle dans le document original. Que devez-vous faire avant d’utiliser le résumé?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145844371-c2c03a541ff9-3",
+                      "hint": "Une reformulation peut améliorer le style, mais elle ne confirme pas l’exactitude de l’information. La vérification doit se faire dans une source fiable.",
+                      "text": "Demander à l’IA de reformuler la même réponse avant de l’ajouter au document.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145844371-c2c03a541ff9-1",
+                      "hint": "Cette décision confond la précision apparente avec l’exactitude. Une date et un numéro de section peuvent eux aussi être erronés ou inventés.",
+                      "text": "Utiliser la règle, puisque la réponse contient une date et un numéro de section.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145844371-c2c03a541ff9-2",
+                      "hint": "Bonne décision : consultez la source originale, puis vérifiez les éléments critiques comme la règle, la date et la référence avant de les utiliser.",
+                      "text": "Vérifier la règle dans la source originale et confirmer les détails avec une source fiable.",
+                      "correct": true
+                    }
+                  ],
+                  "solution": "<p>Une réponse générée doit être validée avant son utilisation. Commencez par la source originale, puis vérifiez les chiffres, dates, noms et références qui peuvent modifier le sens ou la décision.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b20",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          },
+          {
+            "originalId": "ecac9f12-2154-4ad4-855a-bec788a52584",
+            "title": "Le bon réflexe",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "important",
+              "title": "Le bon réflexe",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>L’IA peut accélérer votre travail. La validation demeure votre responsabilité : consultez la source originale et vérifiez les éléments critiques avant d’utiliser la réponse.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 5,
+            "id": "b21"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "552c1ca6-c56d-403f-a823-169a7d160158",
+        "title": "Choisissez le bon modèle pour la tâche.",
+        "content": {
+          "topic": "Modèle rapide",
+          "objectives": [
+            "Associer une tâche professionnelle à un modèle rapide, de raisonnement ou multimodal.",
+            "Reconnaître les situations adaptées à un outil spécialisé."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:19.70781+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:37:19.70781+00:00",
+        "order_index": 4,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "b5a4c732-d549-4ba7-bc89-f88732ea98ee",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Choisissez le bon modèle pour la tâche.",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Associer une tâche professionnelle à un modèle rapide, de raisonnement ou multimodal.",
+                "Reconnaître les situations adaptées à un outil spécialisé."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b22"
+          },
+          {
+            "originalId": "fa3edebb-fc5b-4577-8b69-a8dd0bc46b79",
+            "title": "Le bon outil dépend du travail à accomplir.",
+            "type": "text",
+            "variant": "heading_with_paragraph",
+            "content": {
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "heading": "Le bon outil dépend du travail à accomplir.",
+              "options": {
+                "headingSize": "medium",
+                "headingFormat": "simple"
+              },
+              "paragraph_1": "<p>Tous les modèles ne sont pas conçus pour les mêmes tâches. Pour une demande simple et répétitive, privilégiez la rapidité. Pour un problème en plusieurs étapes, choisissez une approche de raisonnement. Si la tâche comprend des images, des documents ou des graphiques, utilisez un modèle multimodal. Certains outils sont aussi spécialisés pour la programmation, la recherche documentaire, l’analyse de données ou l’automatisation.</p>",
+              "paragraph_2": ""
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b23"
+          },
+          {
+            "originalId": "d9c429ba-87fb-4632-b678-5c2512f187ad",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Quatre cartes : modèle rapide pour les tâches simples, modèle de raisonnement pour les problèmes complexes, modèle multimodal pour le contenu visuel, outil spécialisé pour une fonction précise.",
+                  "src": "media/05_choisir-le-modele_b6a58e44.svg",
+                  "width": "100",
+                  "caption": "Choisissez l'approche qui correspond au travail à réaliser.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b24"
+          },
+          {
+            "originalId": "ac7e5b19-1bc0-4572-b42d-a7ab18b209db",
+            "title": "Tabs",
+            "type": "tabs",
+            "variant": "tabs",
+            "content": {
+              "items": [
+                {
+                  "title": "Modèle rapide",
+                  "content": "<p>Choisissez-le pour reformuler un message, résumer un texte simple, classer des éléments ou extraire une information. Exemple : transformer trois paragraphes en une liste de points clés.</p>"
+                },
+                {
+                  "title": "Modèle de raisonnement",
+                  "content": "<p>Choisissez-le pour analyser un problème complexe, comparer plusieurs options ou structurer une démarche en plusieurs étapes. Exemple : comparer deux approches de projet selon plusieurs critères.</p>"
+                },
+                {
+                  "title": "Modèle multimodal",
+                  "content": "<p>Choisissez-le lorsque la tâche comprend du texte et du contenu visuel, comme une image, une capture d’écran, un document ou un graphique. Exemple : repérer les tendances présentées dans un graphique fourni.</p>"
+                },
+                {
+                  "title": "Outil spécialisé",
+                  "content": "<p>Choisissez une solution spécialisée lorsque la tâche demande une fonction précise, comme programmer, effectuer une recherche documentaire, analyser des données ou automatiser une séquence de travail.</p>"
+                }
+              ],
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "tabHeight": null,
+                "defaultTab": 0,
+                "tabsDisplay": "compact",
+                "completionMode": "tried"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b25"
+          },
+          {
+            "originalId": "9128cf38-ca4c-4357-b36b-02e3b68b6cfb",
+            "title": "Vous devez comparer deux options de projet à partir de plusieurs critères, puis structurer une recommandation en différentes étapes. Quel choix correspond le mieux à cette tâche?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous devez comparer deux options de projet à partir de plusieurs critères, puis structurer une recommandation en différentes étapes. Quel choix correspond le mieux à cette tâche?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145845679-b7c3facd7dedc8",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous devez comparer deux options de projet à partir de plusieurs critères, puis structurer une recommandation en différentes étapes. Quel choix correspond le mieux à cette tâche?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145845679-b7c3facd7dedc8-3",
+                      "hint": "Un modèle multimodal serait pertinent si des éléments visuels étaient au cœur de la tâche. Ici, le besoin principal est de raisonner sur plusieurs critères et étapes.",
+                      "text": "Un modèle multimodal, conçu pour interpréter des images et des graphiques.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145845679-b7c3facd7dedc8-1",
+                      "hint": "Cette option convient mieux à une tâche courte et répétitive. La comparaison de plusieurs critères et la structuration d’une démarche demandent une analyse plus approfondie.",
+                      "text": "Un modèle rapide, conçu pour reformuler et résumer des informations simples.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145845679-b7c3facd7dedc8-2",
+                      "hint": "Bonne réponse. La tâche demande de comparer des options, de tenir compte de plusieurs critères et de structurer une démarche : c’est le rôle d’un modèle de raisonnement.",
+                      "text": "Un modèle de raisonnement, conçu pour analyser un problème en plusieurs étapes.",
+                      "correct": true
+                    }
+                  ],
+                  "solution": "<p>Le choix du modèle dépend de la nature du travail, et non du modèle le plus puissant en général. Analysez d’abord la complexité, le type de contenu et le résultat attendu.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b26",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          },
+          {
+            "originalId": "1eb143a0-187a-4191-b2f3-3e47eb9c567b",
+            "title": "Le réflexe à retenir",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "tip",
+              "title": "Le réflexe à retenir",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>Tâche simple : modèle rapide. Problème en plusieurs étapes : modèle de raisonnement. Contenu visuel : modèle multimodal. Fonction précise : outil spécialisé. Choisissez l’approche qui correspond au travail à réaliser.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 5,
+            "id": "b27"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "fc8d6b00-6306-4aa0-bcb1-3d4e9fe257cc",
+        "title": "Décomposez la tâche. Gardez l’humain dans la boucle.",
+        "content": {
+          "topic": "Rapport mensuel",
+          "objectives": [
+            "Décomposer la préparation d’un rapport mensuel en étapes distinctes.",
+            "Décrire le rôle d’un agent spécialisé et conserver la responsabilité de la validation finale."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:19.935051+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:37:19.935051+00:00",
+        "order_index": 5,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "4dd3c7c0-96e0-4862-99ea-0d42e49c705a",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Décomposez la tâche. Gardez l’humain dans la boucle.",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Décomposer la préparation d’un rapport mensuel en étapes distinctes.",
+                "Décrire le rôle d’un agent spécialisé et conserver la responsabilité de la validation finale."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b28"
+          },
+          {
+            "originalId": "8c5ab45d-6511-4c4d-9fe9-9d88ccd97b51",
+            "title": "Une demande claire commence par une tâche découpée.",
+            "type": "text",
+            "variant": "heading_with_paragraph",
+            "content": {
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "heading": "Une demande claire commence par une tâche découpée.",
+              "options": {
+                "headingSize": "medium",
+                "headingFormat": "simple"
+              },
+              "paragraph_1": "<p>« Préparez mon rapport mensuel » ne précise ni les informations à utiliser, ni les vérifications à effectuer, ni le format attendu. Pour obtenir un résultat utile, transformez cette demande en une série d’étapes observables. L’IA peut vous assister à plusieurs moments, mais vous vérifiez les données et approuvez la version finale.</p>",
+              "paragraph_2": ""
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b29"
+          },
+          {
+            "originalId": "8a22a978-2a29-41f2-9fe9-a8aa26434c4f",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Frise en six étapes pour préparer un rapport mensuel : récupérer les sources, repérer les événements, classer, relever les suivis, générer une première synthèse, puis vérifier et valider, cette dernière étape étant réalisée par l'humain.",
+                  "src": "media/06_decomposer-la-tache_159cf237.svg",
+                  "width": "100",
+                  "caption": "L'agent prépare le travail; vous vérifiez et validez la version finale.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b30"
+          },
+          {
+            "originalId": "fcf187a7-fe72-481c-9006-0efb1fe792a3",
+            "title": "List block",
+            "type": "list",
+            "variant": "numbered",
+            "content": {
+              "items": [
+                {
+                  "id": "item-1",
+                  "icon": "check",
+                  "content": "<p>Récupérer les informations pertinentes dans les sources autorisées.</p>"
+                },
+                {
+                  "id": "item-2",
+                  "icon": "check",
+                  "content": "<p>Identifier les événements importants du mois.</p>"
+                },
+                {
+                  "id": "item-3",
+                  "icon": "check",
+                  "content": "<p>Classer les informations par thème ou par priorité.</p>"
+                },
+                {
+                  "id": "item-4",
+                  "icon": "check",
+                  "content": "<p>Repérer les éléments qui nécessitent un suivi.</p>"
+                },
+                {
+                  "id": "item-5",
+                  "icon": "check",
+                  "content": "<p>Générer une première synthèse dans le format demandé.</p>"
+                },
+                {
+                  "id": "item-6",
+                  "icon": "check",
+                  "content": "<p>Vérifier les données, puis valider le rapport final.</p>"
+                }
+              ],
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "columns": 1,
+                "markerSize": 32,
+                "markerColor": "",
+                "markerStyle": "disc",
+                "startNumber": 1,
+                "showDividers": false,
+                "numberingStyle": "decimal"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b31"
+          },
+          {
+            "originalId": "e05ae2b1-beaf-40f4-bc87-e615dcc1ab0d",
+            "title": "Accordion",
+            "type": "accordion",
+            "variant": "accordion",
+            "content": {
+              "items": [
+                {
+                  "title": "Le rôle de l’agent spécialisé",
+                  "content": "<p>Un agent spécialisé travaille selon une mission, des instructions, des sources autorisées, des règles métier, une méthode et un format de sortie définis. Il aide à organiser et à préparer le travail; il ne remplace pas votre jugement.</p>"
+                },
+                {
+                  "title": "Ce que vous pouvez lui confier",
+                  "content": "<p>Vous pouvez lui demander de regrouper les informations, de repérer les thèmes récurrents, de signaler les éléments à vérifier, de demander les renseignements manquants et de produire une première version du rapport.</p>"
+                },
+                {
+                  "title": "Ce qui reste sous votre responsabilité",
+                  "content": "<p>Vous devez contrôler les données utilisées, examiner les éléments signalés, confirmer que les sources sont appropriées et valider la version finale avant de la transmettre ou de l’utiliser.</p>"
+                },
+                {
+                  "title": "Exemple d’instruction structurée",
+                  "content": "<p>Mission : préparer une première synthèse mensuelle. Sources : documents autorisés du mois. Méthode : classer les événements, repérer les suivis et signaler les données manquantes. Sortie : rapport préliminaire organisé selon le format attendu.</p>"
+                }
+              ],
+              "format": {
+                "gap": 16,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "type": "single"
+              },
+              "settings": {
+                "completionMode": "tried"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b32"
+          },
+          {
+            "originalId": "1604697b-a3b3-4035-acee-28dfa3f7f643",
+            "title": "Vous devez préparer un rapport mensuel à partir de plusieurs sources autorisées. Un agent peut organiser les informations et produire une première synthèse. Quelle façon de travailler respecte le mieux les responsabilités de chacun?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous devez préparer un rapport mensuel à partir de plusieurs sources autorisées. Un agent peut organiser les informations et produire une première synthèse. Quelle façon de travailler respecte le mieux les responsabilités de chacun?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145847117-dd637a3863dec",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous devez préparer un rapport mensuel à partir de plusieurs sources autorisées. Un agent peut organiser les informations et produire une première synthèse. Quelle façon de travailler respecte le mieux les responsabilités de chacun?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145847117-dd637a3863dec-3",
+                      "hint": "Cette option néglige le contrôle des sources et du contenu. La mise en page ne suffit pas à confirmer que les informations utilisées sont pertinentes et exactes.",
+                      "text": "Laisser l’agent choisir librement les sources et corriger seulement la mise en page du rapport.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145847117-dd637a3863dec-2",
+                      "hint": "Bonne décision. L’agent suit un cadre précis pour assister le travail; vous contrôlez les informations et demeurez responsable du résultat final.",
+                      "text": "Définir les sources, les étapes et le format, puis vérifier la synthèse avant de finaliser le rapport.",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-question-1795145847117-dd637a3863dec-1",
+                      "hint": "Cette option confond préparation et validation. Même si l’agent organise bien les informations, vous devez vérifier les données et approuver la version finale.",
+                      "text": "Demander à l’agent de produire le rapport final et le transmettre dès qu’il est généré.",
+                      "correct": false
+                    }
+                  ],
+                  "solution": "<p>Un agent spécialisé peut exécuter plusieurs étapes préparatoires dans un cadre défini. La responsabilité humaine demeure nécessaire pour vérifier les données, traiter les éléments manquants et valider la version finale.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 5,
+            "id": "b33",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "552a98d6-7b20-4d41-bcf4-d18098473f09",
+        "title": "Évaluation finale : les bons réflexes en situation.",
+        "content": {
+          "topic": "Compte professionnel ou personnel",
+          "objectives": [
+            "Prendre des décisions sécuritaires et efficaces dans des situations d’utilisation de l’IA au travail.",
+            "Démontrer la maîtrise des données, de la validation, du choix du modèle et des agents spécialisés."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:20.179199+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-20T03:37:20.179199+00:00",
+        "order_index": 6,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "6558e31f-2948-43de-9ec3-a6606a5fcee4",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Évaluation finale : les bons réflexes en situation.",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "showTableOfContent": false
+              },
+              "duration": 300,
+              "objectives": [
+                "Prendre des décisions sécuritaires et efficaces dans des situations d’utilisation de l’IA au travail.",
+                "Démontrer la maîtrise des données, de la validation, du choix du modèle et des agents spécialisés."
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b34"
+          },
+          {
+            "originalId": "37e1c9f7-649c-4b12-8189-ccc4cd850e8f",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "",
+                  "src": "media/07_evaluation-finale_d655b94e.svg",
+                  "width": 100,
+                  "caption": "Les quatre réflexes à appliquer avant d'agir.",
+                  "mediaId": "d655b94e-4676-42df-aff8-56c301bc6ea5",
+                  "metadata": {
+                    "mediaId": "d655b94e-4676-42df-aff8-56c301bc6ea5",
+                    "fileName": "07_evaluation-finale.svg",
+                    "fileSize": 10085,
+                    "fileType": "image/svg+xml"
+                  },
+                  "position": "center",
+                  "decorative": false,
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b35"
+          },
+          {
+            "originalId": "c0851c4f-c96b-4507-afb5-40ed9eb0a155",
+            "title": "Vous devez préparer un rapport mensuel à partir de documents internes, de données contractuelles et d’un graphique. Vous envisagez d’utiliser votre compte personnel, puis de demander à l’IA de produire directement la version finale. Quelle démarche applique le mieux les bons réflexes?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous devez préparer un rapport mensuel à partir de documents internes, de données contractuelles et d’un graphique. Vous envisagez d’utiliser votre compte personnel, puis de demander à l’IA de produire directement la version finale. Quelle démarche applique le mieux les bons réflexes?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145847623-bbbc6ed31abea",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous devez préparer un rapport mensuel à partir de documents internes, de données contractuelles et d’un graphique. Vous envisagez d’utiliser votre compte personnel, puis de demander à l’IA de produire directement la version finale. Quelle démarche applique le mieux les bons réflexes?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145847623-bbbc6ed31abea-3",
+                      "hint": "Retirer certains noms ne suffit pas à rendre toutes les données acceptables dans un compte personnel. De plus, un agent doit utiliser des sources autorisées et la vérification doit porter sur le contenu, pas seulement sur la présentation.",
+                      "text": "Retirer les noms des documents, demander à un agent de choisir ses propres sources et vérifier seulement la mise en page finale.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145847623-bbbc6ed31abea-2",
+                      "hint": "Bonne décision. Les données restent dans un environnement approuvé, la tâche est divisée en étapes, le contenu visuel est traité avec une approche adaptée et vous validez le résultat avant de l’utiliser.",
+                      "text": "Utiliser l’environnement approuvé, décomposer la tâche, choisir un modèle adapté au graphique et vérifier la version proposée.",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-question-1795145847623-bbbc6ed31abea-1",
+                      "hint": "Cette démarche utilise un environnement inapproprié pour des données de l’organisation, choisit un modèle qui peut être insuffisant pour une tâche complexe et confond qualité rédactionnelle et validation.",
+                      "text": "Utiliser le compte personnel, choisir un modèle rapide et transmettre le rapport dès que le texte est bien rédigé.",
+                      "correct": false
+                    }
+                  ],
+                  "solution": "<p>Une utilisation responsable combine plusieurs réflexes : protéger les données, choisir un environnement approuvé, adapter l’outil au type de tâche, décomposer le travail et vérifier les résultats. Un agent peut préparer une synthèse, mais la validation et la décision finale demeurent humaines.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b36",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          }
+        ],
+        "variantIndices": null
+      }
+    ],
+    "sections": [],
+    "variants": [],
+    "checkpoints": [],
+    "linearOrder": [
+      {
+        "type": "slide",
+        "linearIndex": 0,
+        "id": "19b17643-7611-45f4-bd09-075f997d36dc",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 1,
+        "id": "1781de3f-c58e-4c63-a1fe-0589581e4bf2",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 2,
+        "id": "5df58e76-b447-4ac6-ab1f-1e87dbe7c456",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 3,
+        "id": "60e41c98-4245-49ad-8177-c421d93b823d",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 4,
+        "id": "552c1ca6-c56d-403f-a823-169a7d160158",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 5,
+        "id": "fc8d6b00-6306-4aa0-bcb1-3d4e9fe257cc",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 6,
+        "id": "552a98d6-7b20-4d41-bcf4-d18098473f09",
+        "sectionId": null,
+        "variantIndices": null
+      }
+    ],
+    "totalAssessments": 6,
+    "assessmentIds": [
+      "b10",
+      "b14",
+      "b20",
+      "b26",
+      "b33",
+      "b36"
+    ],
+    "settings": {
+      "navigation": {
+        "showScore": true,
+        "sidebarColor": "var(--background)",
+        "navigationType": "SIDEBAR",
+        "showCoverImage": false,
+        "navigationEnabled": true,
+        "restrictNavigation": true,
+        "slideNavigationBar": "DISABLED",
+        "showScrollTopButton": false,
+        "showFullscreenButton": false,
+        "navigationButtonStyle": "FULL",
+        "showNavigationButtons": true,
+        "sidebarExpandedByDefault": true
+      },
+      "grading_policy": {
+        "GRADER": [],
+        "enabled": false,
+        "GRADE_CUTOFFS": {
+          "Pass": 0.8
+        },
+        "completionMode": "both",
+        "completionThreshold": 100,
+        "completion_requirements": {
+          "require_all_graders": true,
+          "require_minimum_counts": true
+        }
+      },
+      "navigationGuidance": {
+        "enabled": true
+      },
+      "scorm": {
+        "enableDebugging": false
+      }
+    },
+    "gradingData": {
+      "policy": {
+        "GRADER": [],
+        "enabled": false,
+        "GRADE_CUTOFFS": {
+          "Pass": 0.8
+        },
+        "completionMode": "both",
+        "completionThreshold": 100,
+        "completion_requirements": {
+          "require_all_graders": true,
+          "require_minimum_counts": true
+        }
+      },
+      "enabled": false,
+      "graders": [],
+      "gradeCutoffs": {
+        "Pass": 0.8
+      },
+      "metadata": {
+        "hasGradingPolicy": false,
+        "totalGraders": 0,
+        "graderTypes": [],
+        "exportedAt": "2026-11-20T21:38:53.195Z"
+      }
+    },
+    "assessmentMapping": {
+      "b10": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      },
+      "b14": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous devez préparer une synthèse à partir d’un document interne qui décrit un projet non public. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle décision applique correctement la règle?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      },
+      "b20": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous demandez à une IA de résumer une politique interne. Sa réponse cite une règle précise, avec une date et un numéro de section, mais vous ne retrouvez pas cette règle dans le document original. Que devez-vous faire avant d’utiliser le résumé?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      },
+      "b26": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous devez comparer deux options de projet à partir de plusieurs critères, puis structurer une recommandation en différentes étapes. Quel choix correspond le mieux à cette tâche?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      },
+      "b33": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous devez préparer un rapport mensuel à partir de plusieurs sources autorisées. Un agent peut organiser les informations et produire une première synthèse. Quelle façon de travailler respecte le mieux les responsabilités de chacun?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      },
+      "b36": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous devez préparer un rapport mensuel à partir de documents internes, de données contractuelles et d’un graphique. Vous envisagez d’utiliser votre compte personnel, puis de demander à l’IA de produire directement la version finale. Quelle démarche applique le mieux les bons réflexes?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      }
+    }
+  },
+  "settings": {
+    "themeCSS": "@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n\n:root {\n  --dark-color: oklch(0.176746 0.011438 260.635176);\n  --dark: oklch(0.176746 0.011438 260.635176);\n  --gray-color: oklch(0.973048 0.006996 268.548104);\n  --gray: oklch(0.973048 0.006996 268.548104);\n  --accent-color: oklch(0.713740 0.143381 254.624021);\n  --accent: oklch(0.713740 0.143381 254.624021);\n  --danger-color: oklch(0.538572 0.193727 26.724902);\n  --danger: oklch(0.538572 0.193727 26.724902);\n  --heading-color: oklch(0.12 0.02 200);\n  --primary-color: oklch(0.488198 0.217165 264.376304);\n  --primary: oklch(0.488198 0.217165 264.376304);\n  --success-color: oklch(0.527299 0.137103 150.069279);\n  --success: oklch(0.527299 0.137103 150.069279);\n  --warning-color: oklch(0.768590 0.164659 70.080390);\n  --warning: oklch(0.768590 0.164659 70.080390);\n  --background-color: oklch(1 0 0);\n  --background: oklch(1 0 0);\n  --foreground-color: oklch(0.176746 0.011438 260.635176);\n  --foreground: oklch(0.176746 0.011438 260.635176);\n  --primary-foreground: white;\n  --gray-foreground: oklch(0.176746 0.011438 260.635176);\n  --font-body: \"Montserrat\", system-ui, sans-serif;\n  --font-heading: \"Montserrat Alternates\", system-ui, sans-serif;\n  --radius: 0.625rem;\n  --card-border-width: 1px;\n  --card-border-color: oklch(0.95 0 0);\n  --heading-weight: 700;\n}\n\n.font-heading { font-family: var(--font-heading); }\n.font-body { font-family: var(--font-body); }\n\n/* Override heading weight */\nh1, h2, h3, h4, h5, h6 { font-weight: var(--heading-weight) !important; }\n",
+    "locale": "fr",
+    "direction": "ltr",
+    "customLayouts": {}
+  }
+}
