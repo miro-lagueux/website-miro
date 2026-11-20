@@ -12,8 +12,8 @@
   <meta property="og:image" content="https://mirolagueux.com/og-image.png">
   <meta property="og:url" content="https://mirolagueux.com/demos">
   <link rel="icon" href="miro.jpg">
-  <link rel="stylesheet" href="styles.css?v=14">
-  <script src="script.js?v=14" defer></script>
+  <link rel="stylesheet" href="styles.css?v=15">
+  <script src="script.js?v=15" defer></script>
 </head>
 <body class="page-sub page-demos">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -159,6 +159,12 @@
     </span>
     <span>© <span id="year">2026</span> Miro Lagueux · info@mirolagueux.com · mirolagueux.com</span>
   </span>
+  <div class="pager">
+      <button type="button" class="arrow" id="prev" aria-label="Section précédente" data-i18n-aria="aria.prev">←</button>
+      <span class="count"><b id="cur">01</b> / <span id="tot">08</span></span>
+      <span class="bar"><span id="bar"></span></span>
+      <button type="button" class="arrow" id="next" aria-label="Section suivante" data-i18n-aria="aria.next">→</button>
+    </div>
 </footer>
 </body>
 </html>

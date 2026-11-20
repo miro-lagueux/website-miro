@@ -309,6 +309,25 @@ document.querySelectorAll(".nav a").forEach(a => a.addEventListener("click", clo
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+/* =========================================================
+   Parcours de navigation : les 8 sections du menu, dans l'ordre
+   (sections de l'accueil = #ancre, autres pages = fichier)
+   ========================================================= */
+const STEPS = ["#home", "#services", "#approach", "#work", "#about", "offre.html", "demos.html", "#contact"];
+const pad2 = n => String(n).padStart(2, "0");
+function stepHref(target) {
+  const q = html.lang === "en" ? "?lang=en" : "";
+  if (target.startsWith("#")) return "index.html" + q + target;
+  return target + q;
+}
+function paintPager(idx) {
+  document.getElementById("tot").textContent = pad2(STEPS.length);
+  document.getElementById("cur").textContent = pad2(idx + 1);
+  document.getElementById("bar").style.width = ((idx + 1) / STEPS.length * 100) + "%";
+  document.getElementById("prev").disabled = idx === 0;
+  document.getElementById("next").disabled = idx === STEPS.length - 1;
+}
+
 if (isSub) initSub(); else initHome();
 
 /* =========================================================
@@ -318,6 +337,11 @@ function initSub() {
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
   /* PDF de l'offre : impression du navigateur (mise en page dédiée dans styles.css) */
   document.getElementById("printBtn")?.addEventListener("click", () => window.print());
+  /* Flèches du bas : section précédente / suivante du parcours */
+  const idx = STEPS.indexOf(pageKey === "of" ? "offre.html" : "demos.html");
+  paintPager(idx);
+  document.getElementById("prev").addEventListener("click", () => { if (idx > 0) location.href = stepHref(STEPS[idx - 1]); });
+  document.getElementById("next").addEventListener("click", () => { if (idx < STEPS.length - 1) location.href = stepHref(STEPS[idx + 1]); });
 }
 
 /* =========================================================
@@ -334,11 +358,12 @@ function initHome() {
   const legal    = document.getElementById("legal");
   let current = 0;
 
-  document.getElementById("tot").textContent = String(ids.length).padStart(2, "0");
+  let step = 0;
 
   function show(id, focus = false) {
     const i = Math.max(0, ids.indexOf(id));
     current = i;
+    step = STEPS.indexOf("#" + ids[i]);
     panels.forEach((p, n) => {
       const active = n === i;
       p.classList.toggle("is-active", active);
@@ -350,18 +375,19 @@ function initHome() {
       if (a.getAttribute("href") === "#" + ids[i]) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
-    stage.dataset.num = panels[i].dataset.num;
-    document.getElementById("cur").textContent = String(i + 1).padStart(2, "0");
-    document.getElementById("bar").style.width = ((i + 1) / ids.length * 100) + "%";
-    prevBtn.disabled = i === 0;
-    nextBtn.disabled = i === ids.length - 1;
+    stage.dataset.num = pad2(step + 1);
+    paintPager(step);
     closeMenu();
     if (focus) panels[i].querySelector("[tabindex='-1']")?.focus({ preventScroll: true });
   }
 
-  function go(step) {
-    const i = Math.min(ids.length - 1, Math.max(0, current + step));
-    if (i !== current) location.hash = ids[i];
+  /* Avance ou recule dans les 8 sections : ancre sur l'accueil, ou autre page */
+  function go(dir) {
+    const k = step + dir;
+    if (k < 0 || k >= STEPS.length) return;
+    const t = STEPS[k];
+    if (t.startsWith("#")) location.hash = t.slice(1);
+    else location.href = stepHref(t);
   }
 
   window.addEventListener("hashchange", () => show(location.hash.slice(1), true));

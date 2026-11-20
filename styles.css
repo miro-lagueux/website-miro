@@ -519,3 +519,6 @@ body.page-sub {
   .menu-btn span:first-child { top: 14px; }
   .menu-btn span:last-child { top: 20px; }
 }
+
+/* v15 : note des tarifs sous le pied de page */
+.page-sub .valid { flex-basis: 100%; }
