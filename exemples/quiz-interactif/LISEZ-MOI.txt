@@ -1,3 +1,0 @@
-Deposez ici le CONTENU de "Demo-iSpring (Published)" : index.html + dossier data.
-Resultat : exemples/quiz-interactif/index.html et exemples/quiz-interactif/data/
-Supprimez ensuite ce fichier.
