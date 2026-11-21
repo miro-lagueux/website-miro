@@ -1,13 +1,14 @@
 /* =========================================================
-   Miro Lagueux — Script unique du site (index.html, offre.html, demos.html)
-   - Le texte FRANÇAIS (par défaut) est dans les fichiers HTML
-   - Le texte ANGLAIS est dans EN ci-dessous (mêmes clés que data-i18n)
-   - Aucun témoin, aucun stockage : la langue est gardée dans l'URL (?lang=en)
+   Miro Lagueux — Script unique du site
+   Pages : index.html (accueil), offre.html, demos.html
+   - Toutes les pages partagent le même en-tête, le même menu de
+     8 sections, le même pied de page et la même fenêtre Confidentialité.
+   - Le texte FRANÇAIS (par défaut) est dans les fichiers HTML.
+   - Le texte ANGLAIS est dans EN ci-dessous (mêmes clés que data-i18n).
+   - Aucun témoin, aucun stockage : la langue est gardée dans l'URL (?lang=en).
    ========================================================= */
 const EN = {
-  /* ---------- Accueil (index.html) ---------- */
-  "meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
-  "meta.desc": "Complete learning paths, interactive SCORM training and quizzes (Articulate Rise and Storyline, iSpring, Adobe Captivate), FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation.",
+  /* ---------- Commun ---------- */
   "nav.home": "Home",
   "nav.services": "Services",
   "nav.approach": "Approach",
@@ -16,6 +17,23 @@ const EN = {
   "nav.offer": "Offer",
   "nav.demos": "Demos",
   "nav.contact": "Contact",
+  "legal.link": "Privacy",
+  "legal.title": "Privacy & legal notice",
+  "legal.p1": "This website does not collect personal information. It uses no forms, no cookies, no analytics and no third-party trackers, and it loads no external fonts or scripts.",
+  "legal.p2": "The hosting provider may keep standard technical logs (such as IP address and browser type) for security and operation purposes.",
+  "legal.p3": "Your language choice is kept only in the page address. Site published by Miro Lagueux.",
+  "legal.close": "Close",
+  "mail.subject": "Quote request",
+  "aria.lang": "Language",
+  "aria.menu": "Menu",
+  "aria.prev": "Previous section",
+  "aria.next": "Next section",
+  "aria.qc": "Flag of Quebec",
+  "aria.ca": "Flag of Canada",
+
+  /* ---------- Accueil (index.html) ---------- */
+  "home.meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
+  "home.meta.desc": "Complete learning paths, interactive SCORM training and quizzes, FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation.",
   "home.eyebrow": "Learning technology · LMS · Linguistics",
   "home.title": "Training that <em>changes behaviour</em>.",
   "home.lead": "Anyone can create content today. I design turnkey training that lastingly changes how people work, and I measure the results.",
@@ -25,6 +43,8 @@ const EN = {
   "services.sub": "From needs analysis to going live in your LMS, I take your project from start to finish.",
   "s1.t": "Complete learning paths",
   "s1.d": "I design your learning paths end to end: needs analysis, storyboarding, content, assessments and results measurement.",
+  "t1a": "Learning technology",
+  "t1c": "Behaviour change",
   "s2.t": "Interactive SCORM training & quizzes",
   "s2.d": "I build interactive modules and quizzes, delivered as SCORM and ready to deploy in your LMS.",
   "s3.t": "Writing, translation & localization",
@@ -38,8 +58,6 @@ const EN = {
   "t6a": "Video editing",
   "t6b": "Microlearning",
   "t6c": "Tutorials",
-  "t1a": "Learning technology",
-  "t1c": "Behaviour change",
   "approach.title": "Creating content is one thing. <em>Driving behaviour adoption and measuring it</em> is another.",
   "approach.sub": "Training doesn’t end when the learner closes the module. I measure, analyze the data and aim for tangible, lasting results.",
   "a1.t": "Before",
@@ -51,7 +69,6 @@ const EN = {
   "a4.t": "On the job",
   "a4.d": "Measure real-world application in the workplace, some time later.",
   "work.title": "Experience you can measure.",
-  "work.sub": "From professional orders to SMEs, public services and large corporations.",
   "w1.t": "years of experience",
   "w1.d": "in training and learning technology.",
   "w2.t": "LMS implementation and behaviour change projects",
@@ -73,23 +90,10 @@ const EN = {
   "contact.title": "A training project? <br><em>Let’s talk.</em>",
   "contact.p": "Write to me by email or on LinkedIn. Tell me about your audience, your goals and your timeline.",
   "contact.note": "No forms, no cookies, no personal data and no tracking on this site.",
-  "legal.link": "Privacy",
-  "legal.title": "Privacy & legal notice",
-  "legal.p1": "This website does not collect personal information. It uses no forms, no cookies, no analytics and no third-party trackers, and it loads no external fonts or scripts.",
-  "legal.p2": "The hosting provider may keep standard technical logs (such as IP address and browser type) for security and operation purposes.",
-  "legal.p3": "Your language choice is kept only in the page address. Site published by Miro Lagueux.",
-  "legal.close": "Close",
-  "aria.lang": "Language",
-  "aria.menu": "Menu",
-  "aria.prev": "Previous section",
-  "aria.next": "Next section",
-  "aria.qc": "Flag of Quebec",
-  "aria.ca": "Flag of Canada",
 
-  /* ---------- Page Offre (offre.html) ---------- */
-  "of.meta.title": "Service offer — Miro Lagueux",
-  "of.meta.desc": "On-demand services and complete e-learning projects: LMS integration, translation, job aids, interactive modules with macro and micro design, behaviour change learning paths.",
-  "mail.subject": "Quote request",
+  /* ---------- Offre (offre.html) ---------- */
+  "offre.meta.title": "Service offer — Miro Lagueux",
+  "offre.meta.desc": "On-demand services and complete e-learning projects: LMS integration, translation, job aids, interactive modules with macro and micro design, behaviour change learning paths.",
   "of.eyebrow": "Service offer",
   "of.title": "From on-demand help <em>to complete projects</em>.",
   "of.lead": "A job aid to produce, a module to integrate into your LMS or a complete learning path: I adapt to the size of your need. Every engagement starts with a free written quote.",
@@ -150,6 +154,7 @@ const EN = {
   "of.p3.i6": "Follow-up on on-the-job application",
   "of.p3.i7": "Results analysis report",
   "of.p3.delay": "6 to 10 weeks",
+  "of.valid": "Rates in effect at the time of viewing. Final quote provided in writing.",
   "of.style.eyebrow": "Style and narration",
   "of.style.title": "You choose the style of your training.",
   "of.tools.t": "The right tool for the right need",
@@ -191,11 +196,10 @@ const EN = {
   "of.c6.d": "All project data is hosted and maintained in Canada, in the Microsoft Azure cloud, according to the highest security standards.",
   "of.cta.title": "A project, big or small? <br><em>Let’s talk.</em>",
   "of.cta.lead": "Tell me about your need: I’ll reply with a written quote within 2 business days.",
-  "of.valid": "Rates in effect at the time of viewing. Final quote provided in writing.",
 
-  /* ---------- Page Démos (demos.html) ---------- */
-  "dm.meta.title": "Demos — Miro Lagueux",
-  "dm.meta.desc": "E-learning style demos: quiz, microlearning, interactive job aid, narration, scenario and simulation.",
+  /* ---------- Démos (demos.html) ---------- */
+  "demos.meta.title": "Demos — Miro Lagueux",
+  "demos.meta.desc": "E-learning style demos: quiz, microlearning, interactive job aid, narration, scenario and simulation.",
   "dm.eyebrow": "Demos",
   "dm.title": "Choose <em>your style</em>.",
   "dm.lead": "Each style meets a different need. Try the demos, compare them, then tell me which one suits your audience: I’ll take care of the rest.",
@@ -239,25 +243,49 @@ const EN = {
 };
 
 /* =========================================================
-   Commun à toutes les pages : langue et menu mobile
+   1. Parcours de navigation : les 8 sections du menu
+   Identique sur toutes les pages. Ordre = menu = flèches du bas.
    ========================================================= */
+const STEPS = ["home", "services", "approach", "work", "about", "offre", "demos", "contact"];
+const PAGE_STEPS = ["offre", "demos"];              // sections qui sont des pages séparées
+const page     = document.body.dataset.page;        // "home", "offre" ou "demos"
+const isHome   = page === "home";
 const html     = document.documentElement;
-const isSub    = document.body.classList.contains("page-sub");
-const pageKey  = document.body.classList.contains("page-offre") ? "of" : document.body.classList.contains("page-demos") ? "dm" : "";
-const menuRoot = isSub ? document.body : document.querySelector(".app");
-const menuBtn  = document.querySelector(".menu-btn");
 const metaDesc = document.querySelector('meta[name="description"]');
-const META     = pageKey ? [pageKey + ".meta.title", pageKey + ".meta.desc"] : ["meta.title", "meta.desc"];
+const pad2     = n => String(n).padStart(2, "0");
 
-/* Textes français d'origine, lus dans le HTML */
+/* Adresse d'une section, en conservant la langue */
+function stepUrl(step) {
+  const q = html.lang === "en" ? "?lang=en" : "";
+  return PAGE_STEPS.includes(step) ? step + ".html" + q : "index.html" + q + "#" + step;
+}
+
+/* Met à jour le menu (lien actif) et le compteur du bas */
+function markStep(step) {
+  const i = STEPS.indexOf(step);
+  document.querySelectorAll(".nav a").forEach(a => {
+    if (a.dataset.step === step) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  });
+  document.getElementById("tot").textContent = pad2(STEPS.length);
+  document.getElementById("cur").textContent = pad2(i + 1);
+  document.getElementById("bar").style.width = ((i + 1) / STEPS.length * 100) + "%";
+  document.getElementById("prev").disabled = i === 0;
+  document.getElementById("next").disabled = i === STEPS.length - 1;
+  const stage = document.querySelector(".stage");
+  if (stage) stage.dataset.num = pad2(i + 1);
+}
+
+/* =========================================================
+   2. Langue (français par défaut, ?lang=en pour l'anglais)
+   ========================================================= */
 const FR = {};
 document.querySelectorAll("[data-i18n]").forEach(el => { FR[el.dataset.i18n] = el.innerHTML; });
 document.querySelectorAll("[data-i18n-aria]").forEach(el => { FR[el.dataset.i18nAria] = el.getAttribute("aria-label"); });
-FR[META[0]] = document.title;
-FR[META[1]] = metaDesc.content;
+FR[page + ".meta.title"] = document.title;
+FR[page + ".meta.desc"]  = metaDesc.content;
 FR["mail.subject"] = "Demande d’estimation";
 
-/* Liens entre les pages : on conserve ?lang=en */
 const baseHref = new Map();
 document.querySelectorAll("a[data-keep-lang]").forEach(a => baseHref.set(a, a.getAttribute("href")));
 
@@ -280,8 +308,8 @@ function setLang(lang, updateUrl = true) {
     const [path, hash] = href.split("#");
     a.setAttribute("href", path + "?lang=en" + (hash ? "#" + hash : ""));
   });
-  document.title   = dict[META[0]];
-  metaDesc.content = dict[META[1]];
+  document.title   = dict[page + ".meta.title"];
+  metaDesc.content = dict[page + ".meta.desc"];
   document.querySelectorAll(".lang button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
   if (updateUrl) {
@@ -291,79 +319,64 @@ function setLang(lang, updateUrl = true) {
     history.replaceState(null, "", url);
   }
 }
-
 document.querySelectorAll(".lang button").forEach(b =>
   b.addEventListener("click", () => setLang(b.dataset.lang)));
 setLang(new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr", false);
 
+/* =========================================================
+   3. Menu mobile, confidentialité, année
+   ========================================================= */
+const app     = document.querySelector(".app");
+const menuBtn = document.querySelector(".menu-btn");
+const legal   = document.getElementById("legal");
+
 function closeMenu() {
-  menuRoot.classList.remove("menu-open");
+  app.classList.remove("menu-open");
   menuBtn.setAttribute("aria-expanded", "false");
 }
 menuBtn.addEventListener("click", () => {
-  const open = !menuRoot.classList.contains("menu-open");
-  menuRoot.classList.toggle("menu-open", open);
+  const open = !app.classList.contains("menu-open");
+  app.classList.toggle("menu-open", open);
   menuBtn.setAttribute("aria-expanded", String(open));
 });
 document.querySelectorAll(".nav a").forEach(a => a.addEventListener("click", closeMenu));
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+
+document.getElementById("legalOpen").addEventListener("click", () => legal.showModal());
+document.getElementById("legalClose").addEventListener("click", () => legal.close());
+legal.addEventListener("click", e => {
+  const r = legal.getBoundingClientRect();
+  if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) legal.close();
+});
 
 document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("printBtn")?.addEventListener("click", () => window.print());
 
 /* =========================================================
-   Parcours de navigation : les 8 sections du menu, dans l'ordre
-   (sections de l'accueil = #ancre, autres pages = fichier)
+   4. Navigation précédente / suivante (identique partout)
    ========================================================= */
-const STEPS = ["#home", "#services", "#approach", "#work", "#about", "offre.html", "demos.html", "#contact"];
-const pad2 = n => String(n).padStart(2, "0");
-function stepHref(target) {
-  const q = html.lang === "en" ? "?lang=en" : "";
-  if (target.startsWith("#")) return "index.html" + q + target;
-  return target + q;
-}
-function paintPager(idx) {
-  document.getElementById("tot").textContent = pad2(STEPS.length);
-  document.getElementById("cur").textContent = pad2(idx + 1);
-  document.getElementById("bar").style.width = ((idx + 1) / STEPS.length * 100) + "%";
-  document.getElementById("prev").disabled = idx === 0;
-  document.getElementById("next").disabled = idx === STEPS.length - 1;
-}
+let currentStep = isHome ? "home" : page;
 
-if (isSub) initSub(); else initHome();
+function goStep(dir) {
+  const k = STEPS.indexOf(currentStep) + dir;
+  if (k < 0 || k >= STEPS.length) return;
+  const target = STEPS[k];
+  if (isHome && !PAGE_STEPS.includes(target)) location.hash = target;   // même page : simple ancre
+  else location.href = stepUrl(target);                                 // autre page
+}
+document.getElementById("prev").addEventListener("click", () => goStep(-1));
+document.getElementById("next").addEventListener("click", () => goStep(1));
 
 /* =========================================================
-   Pages Offre et Démos
+   5. Accueil : sections plein écran, sans défilement
    ========================================================= */
-function initSub() {
-  document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
-  /* PDF de l'offre : impression du navigateur (mise en page dédiée dans styles.css) */
-  document.getElementById("printBtn")?.addEventListener("click", () => window.print());
-  /* Flèches du bas : section précédente / suivante du parcours */
-  const idx = STEPS.indexOf(pageKey === "of" ? "offre.html" : "demos.html");
-  paintPager(idx);
-  document.getElementById("prev").addEventListener("click", () => { if (idx > 0) location.href = stepHref(STEPS[idx - 1]); });
-  document.getElementById("next").addEventListener("click", () => { if (idx < STEPS.length - 1) location.href = stepHref(STEPS[idx + 1]); });
-}
-
-/* =========================================================
-   Accueil : sections plein écran, sans défilement
-   ========================================================= */
-function initHome() {
-  const app      = menuRoot;
-  const stage    = document.querySelector(".stage");
-  const panels   = [...document.querySelectorAll(".panel")];
-  const ids      = panels.map(p => p.dataset.panel);
-  const navLinks = [...document.querySelectorAll(".nav a")];
-  const prevBtn  = document.getElementById("prev");
-  const nextBtn  = document.getElementById("next");
-  const legal    = document.getElementById("legal");
-  let current = 0;
-
-  let step = 0;
+if (isHome) {
+  const panels = [...document.querySelectorAll(".panel")];
+  const ids    = panels.map(p => p.dataset.panel);
 
   function show(id, focus = false) {
     const i = Math.max(0, ids.indexOf(id));
-    current = i;
-    step = STEPS.indexOf("#" + ids[i]);
+    currentStep = ids[i];
     panels.forEach((p, n) => {
       const active = n === i;
       p.classList.toggle("is-active", active);
@@ -371,64 +384,38 @@ function initHome() {
       p.inert = !active;
       if (active) p.scrollTop = 0;
     });
-    navLinks.forEach(a => {
-      if (a.getAttribute("href") === "#" + ids[i]) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
-    });
-    stage.dataset.num = pad2(step + 1);
-    paintPager(step);
+    markStep(currentStep);
     closeMenu();
     if (focus) panels[i].querySelector("[tabindex='-1']")?.focus({ preventScroll: true });
   }
-
-  /* Avance ou recule dans les 8 sections : ancre sur l'accueil, ou autre page */
-  function go(dir) {
-    const k = step + dir;
-    if (k < 0 || k >= STEPS.length) return;
-    const t = STEPS[k];
-    if (t.startsWith("#")) location.hash = t.slice(1);
-    else location.href = stepHref(t);
-  }
-
   window.addEventListener("hashchange", () => show(location.hash.slice(1), true));
-  prevBtn.addEventListener("click", () => go(-1));
-  nextBtn.addEventListener("click", () => go(1));
   show(location.hash.slice(1) || "home");
 
   const busy = () => legal.open || app.classList.contains("menu-open");
   const panelScrolls = () => {
-    const p = panels[current];
+    const p = panels[ids.indexOf(currentStep)];
     return p.scrollHeight > p.clientHeight + 2;
   };
-
   document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeMenu();
     if (busy()) return;
-    if (["ArrowRight", "PageDown"].includes(e.key) || (e.key === "ArrowDown" && !panelScrolls())) { e.preventDefault(); go(1); }
-    if (["ArrowLeft", "PageUp"].includes(e.key)   || (e.key === "ArrowUp"   && !panelScrolls())) { e.preventDefault(); go(-1); }
+    if (["ArrowRight", "PageDown"].includes(e.key) || (e.key === "ArrowDown" && !panelScrolls())) { e.preventDefault(); goStep(1); }
+    if (["ArrowLeft", "PageUp"].includes(e.key)   || (e.key === "ArrowUp"   && !panelScrolls())) { e.preventDefault(); goStep(-1); }
   });
-
   let wheelLock = false;
   window.addEventListener("wheel", e => {
     if (busy() || wheelLock || panelScrolls() || Math.abs(e.deltaY) < 25) return;
     wheelLock = true;
-    go(e.deltaY > 0 ? 1 : -1);
+    goStep(e.deltaY > 0 ? 1 : -1);
     setTimeout(() => (wheelLock = false), 900);
   }, { passive: true });
-
   let tx = 0, ty = 0;
   window.addEventListener("touchstart", e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
   window.addEventListener("touchend", e => {
     if (busy()) return;
-    const dx = e.changedTouches[0].clientX - tx;
-    const dy = e.changedTouches[0].clientY - ty;
-    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) goStep(dx < 0 ? 1 : -1);
   }, { passive: true });
-
-  document.getElementById("legalOpen").addEventListener("click", () => legal.showModal());
-  document.getElementById("legalClose").addEventListener("click", () => legal.close());
-  legal.addEventListener("click", e => {
-    const r = legal.getBoundingClientRect();
-    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) legal.close();
-  });
+} else {
+  /* Pages Offre et Démos : la page défile, le menu et le pied restent fixes */
+  markStep(page);
 }

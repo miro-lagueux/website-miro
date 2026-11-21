@@ -11,11 +11,12 @@
   <meta property="og:description" content="Des services ponctuels aux projets complets : formations en ligne, intégration LMS et changement de comportement.">
   <meta property="og:image" content="https://mirolagueux.com/og-image.png">
   <meta property="og:url" content="https://mirolagueux.com/offre">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="miro.jpg">
-  <link rel="stylesheet" href="styles.css?v=15">
-  <script src="script.js?v=15" defer></script>
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="script.js?v=16" defer></script>
 </head>
-<body class="page-sub page-offre">
+<body class="page-sub page-offre" data-page="offre">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="fleur" viewBox="0 0 20 20">
@@ -23,221 +24,237 @@
     </symbol>
   </defs>
 </svg>
-<!-- ============ EN-TÊTE ============ -->
-<header class="top">
-  <a class="brand" href="index.html" data-keep-lang>
-    <img src="miro.jpg" alt="Miro Lagueux" width="36" height="36">
-    <span>Miro Lagueux<b>.</b></span>
-  </a>
-  <nav class="nav" id="nav">
-    <a href="index.html" data-keep-lang data-i18n="nav.home">Accueil</a>
-    <a href="index.html#services" data-keep-lang data-i18n="nav.services">Services</a>
-    <a href="index.html#approach" data-keep-lang data-i18n="nav.approach">Approche</a>
-    <a href="offre.html" aria-current="page" data-keep-lang data-i18n="nav.offer">Offre</a>
-    <a href="demos.html" data-keep-lang data-i18n="nav.demos">Démos</a>
-    <a href="index.html#contact" data-keep-lang data-i18n="nav.contact">Contact</a>
-  </nav>
-  <div class="tools">
-    <div class="lang" role="group" aria-label="Langue" data-i18n-aria="aria.lang">
-      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-    </div>
-    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu" data-i18n-aria="aria.menu"><span></span><span></span></button>
-  </div>
-</header>
-<main>
-  <!-- ============ INTRO ============ -->
-  <section class="hero wrap">
-    <p class="eyebrow" data-i18n="of.eyebrow">Offre de services</p>
-    <h1 data-i18n="of.title">Du service ponctuel <em>au projet complet</em>.</h1>
-    <p class="lead" data-i18n="of.lead">Un job aid à produire, un module à intégrer dans votre LMS ou un parcours de formation complet : je m’adapte à la taille de votre besoin. Chaque mandat commence par une estimation écrite, sans frais.</p>
-    <div class="btns">
-      <a class="btn btn-primary" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
-      <button type="button" class="btn btn-ghost" id="printBtn"><span data-i18n="of.cta.pdf">Télécharger l’offre en PDF</span> <span aria-hidden="true">↓</span></button>
-    </div>
-  </section>
-  <!-- ============ À LA CARTE (en premier) ============ -->
-  <section class="wrap block" aria-labelledby="t-alc">
-    <div class="alc-tile">
-      <div class="alc-intro">
-        <p class="eyebrow" data-i18n="of.alc.eyebrow">À la carte</p>
-        <h2 id="t-alc" data-i18n="of.alc.title">Besoin d’un coup de main rapide? <em>Je m’en occupe.</em></h2>
-        <p class="sub-left" data-i18n="of.alc.sub">Pour un besoin ponctuel, une mise à jour ou pour compléter votre équipe au pied levé. Vous payez seulement ce dont vous avez besoin.</p>
+<div class="app">
+  <!-- ============ EN-TÊTE (identique sur toutes les pages) ============ -->
+  <header class="top">
+    <a class="brand" href="index.html" data-keep-lang>
+      <img src="miro.jpg" alt="Miro Lagueux" width="36" height="36">
+      <span>Miro Lagueux<b>.</b></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html#home" data-step="home" data-keep-lang><i>01</i><span data-i18n="nav.home">Accueil</span></a>
+      <a href="index.html#services" data-step="services" data-keep-lang><i>02</i><span data-i18n="nav.services">Services</span></a>
+      <a href="index.html#approach" data-step="approach" data-keep-lang><i>03</i><span data-i18n="nav.approach">Approche</span></a>
+      <a href="index.html#work" data-step="work" data-keep-lang><i>04</i><span data-i18n="nav.work">Réalisations</span></a>
+      <a href="index.html#about" data-step="about" data-keep-lang><i>05</i><span data-i18n="nav.about">À propos</span></a>
+      <a href="offre.html" data-step="offre" data-keep-lang aria-current="page"><i>06</i><span data-i18n="nav.offer">Offre</span></a>
+      <a href="demos.html" data-step="demos" data-keep-lang><i>07</i><span data-i18n="nav.demos">Démos</span></a>
+      <a href="index.html#contact" data-step="contact" data-keep-lang><i>08</i><span data-i18n="nav.contact">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Langue" data-i18n-aria="aria.lang">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
-      <div class="table-wrap">
-        <table class="alc">
-          <thead>
-            <tr><th scope="col" data-i18n="of.alc.h1">Service</th><th scope="col" data-i18n="of.alc.h2">Tarif</th></tr>
-          </thead>
-          <tbody>
-            <tr><td data-i18n="of.a1">Intégration LMS et tests SCORM d’un module existant</td><td data-i18n="of.rate">75 $ / h</td></tr>
-            <tr><td data-i18n="of.a2">Job aid, aide-mémoire ou guide technique</td><td data-i18n="of.a2p">À partir de 300 $</td></tr>
-            <tr><td data-i18n="of.a3">Capsule vidéo ou tutoriel (jusqu’à 3 min)</td><td data-i18n="of.a3p">À partir de 600 $</td></tr>
-            <tr><td data-i18n="of.a4">Traduction et localisation FR ↔ EN</td><td data-i18n="of.a4p">0,20 $ / mot</td></tr>
-            <tr><td data-i18n="of.a5">Rédaction et révision linguistique</td><td data-i18n="of.rate">75 $ / h</td></tr>
-            <tr><td data-i18n="of.a6">Mise à jour d’un module existant</td><td data-i18n="of.rate">75 $ / h</td></tr>
-            <tr><td data-i18n="of.a7">Services-conseil en technopédagogie et LMS</td><td data-i18n="of.rate">75 $ / h</td></tr>
-          </tbody>
-        </table>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu" data-i18n-aria="aria.menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="scroll">
+    <!-- ============ INTRO ============ -->
+    <section class="hero wrap">
+      <p class="eyebrow" data-i18n="of.eyebrow">Offre de services</p>
+      <h1 data-i18n="of.title">Du service ponctuel <em>au projet complet</em>.</h1>
+      <p class="lead" data-i18n="of.lead">Un job aid à produire, un module à intégrer dans votre LMS ou un parcours de formation complet : je m’adapte à la taille de votre besoin. Chaque mandat commence par une estimation écrite, sans frais.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
+        <button type="button" class="btn btn-ghost" id="printBtn"><span data-i18n="of.cta.pdf">Télécharger l’offre en PDF</span> <span aria-hidden="true">↓</span></button>
       </div>
-    </div>
-  </section>
-  <!-- ============ FORFAITS ============ -->
-  <section class="wrap block" aria-labelledby="t-plans">
-    <div class="head">
-      <div>
-        <p class="eyebrow" data-i18n="of.plans.eyebrow">Projets complets</p>
-        <h2 id="t-plans" data-i18n="of.plans.title">Pour aller plus loin : trois forfaits.</h2>
+    </section>
+    <!-- ============ À LA CARTE ============ -->
+    <section class="wrap block" aria-labelledby="t-alc">
+      <div class="alc-tile">
+        <div class="alc-intro">
+          <p class="eyebrow" data-i18n="of.alc.eyebrow">À la carte</p>
+          <h2 id="t-alc" data-i18n="of.alc.title">Besoin d’un coup de main rapide? <em>Je m’en occupe.</em></h2>
+          <p class="sub-left" data-i18n="of.alc.sub">Pour un besoin ponctuel, une mise à jour ou pour compléter votre équipe au pied levé. Vous payez seulement ce dont vous avez besoin.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="alc">
+            <thead>
+              <tr><th scope="col" data-i18n="of.alc.h1">Service</th><th scope="col" data-i18n="of.alc.h2">Tarif</th></tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="of.a1">Intégration LMS et tests SCORM d’un module existant</td><td data-i18n="of.rate">75 $ / h</td></tr>
+              <tr><td data-i18n="of.a2">Job aid, aide-mémoire ou guide technique</td><td data-i18n="of.a2p">À partir de 300 $</td></tr>
+              <tr><td data-i18n="of.a3">Capsule vidéo ou tutoriel (jusqu’à 3 min)</td><td data-i18n="of.a3p">À partir de 600 $</td></tr>
+              <tr><td data-i18n="of.a4">Traduction et localisation FR ↔ EN</td><td data-i18n="of.a4p">0,20 $ / mot</td></tr>
+              <tr><td data-i18n="of.a5">Rédaction et révision linguistique</td><td data-i18n="of.rate">75 $ / h</td></tr>
+              <tr><td data-i18n="of.a6">Mise à jour d’un module existant</td><td data-i18n="of.rate">75 $ / h</td></tr>
+              <tr><td data-i18n="of.a7">Services-conseil en technopédagogie et LMS</td><td data-i18n="of.rate">75 $ / h</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <p class="sub" data-i18n="of.plans.sub">Chaque projet est unique. Le prix est fixé dans une estimation écrite et gratuite, selon la complexité et le volume.</p>
-    </div>
-    <div class="plans">
-      <article class="plan">
-        <p class="plan-tag" data-i18n="of.p1.tag">Conversion</p>
-        <h3 data-i18n="of.p1.t">Convertir une formation existante en contenu interactif</h3>
-        <p class="plan-desc" data-i18n="of.p1.d">Votre contenu existant (PowerPoint, PDF, Word) transformé en module en ligne interactif.</p>
-        <p class="price"><strong data-i18n="of.est">Sur estimation</strong></p>
-        <ul class="incl">
-          <li data-i18n="of.p1.i1">Outil choisi selon le style souhaité</li>
-          <li data-i18n="of.p1.i2">Mise en page interactive de votre contenu</li>
-          <li data-i18n="of.p1.i3">Quiz de validation des acquis</li>
-          <li data-i18n="of.p1.i4">1 ronde de révision</li>
-          <li data-i18n="of.p1.i5">Paquet SCORM testé, prêt pour votre LMS</li>
-        </ul>
-        <p class="delay"><span data-i18n="of.delay">Délai indicatif</span> : <strong data-i18n="of.p1.delay">1 à 2 semaines</strong></p>
-        <a class="btn btn-ghost plan-btn" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="plan featured">
-        <p class="badge" data-i18n="of.badge">Le plus demandé</p>
-        <p class="plan-tag" data-i18n="of.p2.tag">Sur mesure</p>
-        <h3 data-i18n="of.p2.t">Module interactif sur mesure</h3>
-        <p class="plan-desc" data-i18n="of.p2.d">Une formation conçue de A à Z pour faire agir vos apprenants, pas seulement les informer.</p>
-        <p class="price"><strong data-i18n="of.est">Sur estimation</strong></p>
-        <ul class="incl">
-          <li data-i18n="of.p2.i1">Analyse des besoins et objectifs d’apprentissage</li>
-          <li data-i18n="of.p2.i2"><b>Macrodesign</b> : plan global de la formation, validé par vous</li>
-          <li data-i18n="of.p2.i3"><b>Microdesign</b> : plan détaillé écran par écran, validé par vous</li>
-          <li data-i18n="of.p2.i4">Mises en situation et interactions</li>
-          <li data-i18n="of.p2.i5">Quiz et évaluation finale</li>
-          <li data-i18n="of.p2.i6">Narration IA réaliste, nouvelle génération (FR ou EN)</li>
-          <li data-i18n="of.p2.i7">2 rondes de révision</li>
-          <li data-i18n="of.p2.i8">Intégration et tests dans votre LMS</li>
-          <li data-i18n="of.p2.i9">Fichiers sources inclus</li>
-        </ul>
-        <p class="delay"><span data-i18n="of.delay">Délai indicatif</span> : <strong data-i18n="of.p2.delay">3 à 5 semaines</strong></p>
-        <a class="btn btn-primary plan-btn" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="plan">
-        <p class="plan-tag" data-i18n="of.p3.tag">Parcours complet</p>
-        <h3 data-i18n="of.p3.t">Changement de comportement</h3>
-        <p class="plan-desc" data-i18n="of.p3.d">Un parcours qui se mesure jusque sur le terrain, pour des résultats tangibles et durables.</p>
-        <p class="price"><strong data-i18n="of.est">Sur estimation</strong></p>
-        <ul class="incl">
-          <li data-i18n="of.p3.i1">Tout le forfait sur mesure</li>
-          <li data-i18n="of.p3.i2">Macrodesign et microdesign de l’ensemble du parcours, validés par vous</li>
-          <li data-i18n="of.p3.i3">Parcours de 3 modules ou plus</li>
-          <li data-i18n="of.p3.i4">Job aids et aide-mémoire</li>
-          <li data-i18n="of.p3.i5">Mesure avant, pendant et après la formation</li>
-          <li data-i18n="of.p3.i6">Suivi de l’application en milieu de travail</li>
-          <li data-i18n="of.p3.i7">Rapport d’analyse des résultats</li>
-        </ul>
-        <p class="delay"><span data-i18n="of.delay">Délai indicatif</span> : <strong data-i18n="of.p3.delay">6 à 10 semaines</strong></p>
-        <a class="btn btn-ghost plan-btn" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
-      </article>
-    </div>
-  </section>
-  <!-- ============ STYLE ET NARRATION ============ -->
-  <section class="wrap block" aria-labelledby="t-style">
-    <div class="head">
-      <div>
-        <p class="eyebrow" data-i18n="of.style.eyebrow">Style et narration</p>
-        <h2 id="t-style" data-i18n="of.style.title">Vous choisissez le style de votre formation.</h2>
+    </section>
+    <!-- ============ FORFAITS ============ -->
+    <section class="wrap block" aria-labelledby="t-plans">
+      <div class="head">
+        <div>
+          <p class="eyebrow" data-i18n="of.plans.eyebrow">Projets complets</p>
+          <h2 id="t-plans" data-i18n="of.plans.title">Pour aller plus loin : trois forfaits.</h2>
+        </div>
+        <p class="sub" data-i18n="of.plans.sub">Chaque projet est unique. Le prix est fixé dans une estimation écrite et gratuite, selon la complexité et le volume.</p>
       </div>
-    </div>
-    <div class="duo">
-      <article class="info">
-        <h3 data-i18n="of.tools.t">Le bon outil pour le bon besoin</h3>
-        <p data-i18n="of.tools.d">Chaque outil a son style : microapprentissage épuré, scénarios interactifs, simulations ou quiz. Je travaille avec plusieurs outils et je vous propose celui qui convient à votre public et à votre LMS.</p>
-        <ul class="tags"><li>Articulate Rise</li><li>Articulate Storyline</li><li>iSpring</li><li>Adobe Captivate</li></ul>
-        <a class="more" href="demos.html" data-keep-lang><span data-i18n="of.tools.link">Comparer les styles sur la page Démos</span> <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="info">
-        <h3 data-i18n="of.voice.t">Narration IA ou voix humaine</h3>
-        <p data-i18n="of.voice.d">La narration est produite avec les plus récents modèles de synthèse vocale : naturelle, expressive et très réaliste, en français et en anglais.</p>
-        <p data-i18n="of.voice.d2">Vous préférez une vraie voix? Je collabore aussi avec des narratrices et des narrateurs professionnels, en français et en anglais. Tarif sur demande.</p>
-        <ul class="tags"><li data-i18n="of.voice.tag1">Voix IA réaliste</li><li data-i18n="of.voice.tag2">Voix humaine</li><li>FR · EN</li></ul>
-      </article>
-    </div>
-  </section>
-  <!-- ============ DÉMARCHE ============ -->
-  <section class="wrap block" aria-labelledby="t-process">
-    <div class="head">
-      <div>
-        <p class="eyebrow" data-i18n="of.proc.eyebrow">Démarche</p>
-        <h2 id="t-process" data-i18n="of.proc.title">Comment ça fonctionne.</h2>
+      <div class="plans">
+        <article class="plan">
+          <p class="plan-tag" data-i18n="of.p1.tag">Conversion</p>
+          <h3 data-i18n="of.p1.t">Convertir une formation existante en contenu interactif</h3>
+          <p class="plan-desc" data-i18n="of.p1.d">Votre contenu existant (PowerPoint, PDF, Word) transformé en module en ligne interactif.</p>
+          <p class="price"><strong data-i18n="of.est">Sur estimation</strong></p>
+          <ul class="incl">
+            <li data-i18n="of.p1.i1">Outil choisi selon le style souhaité</li>
+            <li data-i18n="of.p1.i2">Mise en page interactive de votre contenu</li>
+            <li data-i18n="of.p1.i3">Quiz de validation des acquis</li>
+            <li data-i18n="of.p1.i4">1 ronde de révision</li>
+            <li data-i18n="of.p1.i5">Paquet SCORM testé, prêt pour votre LMS</li>
+          </ul>
+          <p class="delay"><span data-i18n="of.delay">Délai indicatif</span> : <strong data-i18n="of.p1.delay">1 à 2 semaines</strong></p>
+          <a class="btn btn-ghost plan-btn" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="plan featured">
+          <p class="badge" data-i18n="of.badge">Le plus demandé</p>
+          <p class="plan-tag" data-i18n="of.p2.tag">Sur mesure</p>
+          <h3 data-i18n="of.p2.t">Module interactif sur mesure</h3>
+          <p class="plan-desc" data-i18n="of.p2.d">Une formation conçue de A à Z pour faire agir vos apprenants, pas seulement les informer.</p>
+          <p class="price"><strong data-i18n="of.est">Sur estimation</strong></p>
+          <ul class="incl">
+            <li data-i18n="of.p2.i1">Analyse des besoins et objectifs d’apprentissage</li>
+            <li data-i18n="of.p2.i2"><b>Macrodesign</b> : plan global de la formation, validé par vous</li>
+            <li data-i18n="of.p2.i3"><b>Microdesign</b> : plan détaillé écran par écran, validé par vous</li>
+            <li data-i18n="of.p2.i4">Mises en situation et interactions</li>
+            <li data-i18n="of.p2.i5">Quiz et évaluation finale</li>
+            <li data-i18n="of.p2.i6">Narration IA réaliste, nouvelle génération (FR ou EN)</li>
+            <li data-i18n="of.p2.i7">2 rondes de révision</li>
+            <li data-i18n="of.p2.i8">Intégration et tests dans votre LMS</li>
+            <li data-i18n="of.p2.i9">Fichiers sources inclus</li>
+          </ul>
+          <p class="delay"><span data-i18n="of.delay">Délai indicatif</span> : <strong data-i18n="of.p2.delay">3 à 5 semaines</strong></p>
+          <a class="btn btn-primary plan-btn" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="plan">
+          <p class="plan-tag" data-i18n="of.p3.tag">Parcours complet</p>
+          <h3 data-i18n="of.p3.t">Changement de comportement</h3>
+          <p class="plan-desc" data-i18n="of.p3.d">Un parcours qui se mesure jusque sur le terrain, pour des résultats tangibles et durables.</p>
+          <p class="price"><strong data-i18n="of.est">Sur estimation</strong></p>
+          <ul class="incl">
+            <li data-i18n="of.p3.i1">Tout le forfait sur mesure</li>
+            <li data-i18n="of.p3.i2">Macrodesign et microdesign de l’ensemble du parcours, validés par vous</li>
+            <li data-i18n="of.p3.i3">Parcours de 3 modules ou plus</li>
+            <li data-i18n="of.p3.i4">Job aids et aide-mémoire</li>
+            <li data-i18n="of.p3.i5">Mesure avant, pendant et après la formation</li>
+            <li data-i18n="of.p3.i6">Suivi de l’application en milieu de travail</li>
+            <li data-i18n="of.p3.i7">Rapport d’analyse des résultats</li>
+          </ul>
+          <p class="delay"><span data-i18n="of.delay">Délai indicatif</span> : <strong data-i18n="of.p3.delay">6 à 10 semaines</strong></p>
+          <a class="btn btn-ghost plan-btn" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail><span data-i18n="of.cta.quote">Demander une estimation</span> <span aria-hidden="true">→</span></a>
+        </article>
       </div>
-      <p class="sub" data-i18n="of.proc.sub">Pour les modules sur mesure et les parcours, rien n’est produit avant que vous ayez approuvé le macrodesign, puis le microdesign.</p>
-    </div>
-    <ol class="steps6">
-      <li><span class="n">01</span><h3 data-i18n="of.o1.t">Appel découverte</h3><p data-i18n="of.o1.d">30 minutes, sans frais, pour comprendre votre besoin, votre public et vos contraintes.</p></li>
-      <li><span class="n">02</span><h3 data-i18n="of.o2.t">Estimation écrite</h3><p data-i18n="of.o2.d">Livrables, échéancier indicatif et prix, à approuver avant le début des travaux.</p></li>
-      <li class="ok"><span class="n">03</span><h3 data-i18n="of.o3.t">Macrodesign</h3><p data-i18n="of.o3.d">Plan à haut niveau : objectifs, structure, approche et évaluation. <b>Vous l’approuvez.</b></p></li>
-      <li class="ok"><span class="n">04</span><h3 data-i18n="of.o4.t">Microdesign</h3><p data-i18n="of.o4.d">Plan détaillé : contenu, écrans, interactions et narration. <b>Vous l’approuvez.</b></p></li>
-      <li><span class="n">05</span><h3 data-i18n="of.o5.t">Production et révisions</h3><p data-i18n="of.o5.d">Développement fidèle au microdesign approuvé, puis révisions selon le forfait.</p></li>
-      <li><span class="n">06</span><h3 data-i18n="of.o6.t">Livraison et intégration</h3><p data-i18n="of.o6.d">Mise en ligne et tests dans votre LMS, puis mesure des résultats selon le forfait.</p></li>
-    </ol>
-  </section>
-  <!-- ============ CONDITIONS ============ -->
-  <section class="wrap block" aria-labelledby="t-terms">
-    <div class="head">
-      <div>
-        <p class="eyebrow" data-i18n="of.terms.eyebrow">Conditions</p>
-        <h2 id="t-terms" data-i18n="of.terms.title">Simple et transparent.</h2>
+      <p class="note-valid" data-i18n="of.valid">Tarifs en vigueur au moment de la consultation. Estimation finale fournie par écrit.</p>
+    </section>
+    <!-- ============ STYLE ET NARRATION ============ -->
+    <section class="wrap block" aria-labelledby="t-style">
+      <div class="head">
+        <div>
+          <p class="eyebrow" data-i18n="of.style.eyebrow">Style et narration</p>
+          <h2 id="t-style" data-i18n="of.style.title">Vous choisissez le style de votre formation.</h2>
+        </div>
       </div>
-    </div>
-    <div class="terms">
-      <div><h3 data-i18n="of.c1.t">Paiement</h3><p data-i18n="of.c1.d">Aucun paiement au démarrage. Les travaux réalisés sont facturés chaque mois. Pour les projets d’envergure, des jalons de paiement sont convenus dans l’estimation. Prix en dollars canadiens.</p></div>
-      <div><h3 data-i18n="of.c2.t">Délais</h3><p data-i18n="of.c2.d">Les délais sont indicatifs. Dans les faits, les travaux sont généralement livrés le plus rapidement possible.</p></div>
-      <div><h3 data-i18n="of.c3.t">Révisions</h3><p data-i18n="of.c3.d">Les rondes prévues au forfait sont incluses. Les révisions additionnelles sont facturées au taux horaire.</p></div>
-      <div><h3 data-i18n="of.c4.t">Ce que vous fournissez</h3><p data-i18n="of.c4.d">Le contenu source, un expert de contenu disponible pour les validations et un accès de test à votre LMS.</p></div>
-      <div><h3 data-i18n="of.c5.t">Livrables et propriété</h3><p data-i18n="of.c5.d">Tous les livrables vous sont remis et vous appartiennent une fois payés. Une copie est aussi conservée sur mon serveur, ce qui facilite les mises à jour futures.</p></div>
-      <div><h3 data-i18n="of.c6.t">Hébergement et sécurité</h3><p data-i18n="of.c6.d">Toutes les données de projet sont hébergées et maintenues au Canada, dans l’infonuagique Microsoft Azure, selon les plus hauts standards de sécurité.</p></div>
-    </div>
-  </section>
-  <!-- ============ CONTACT ============ -->
-  <section class="wrap cta" aria-labelledby="t-cta">
-    <h2 id="t-cta" data-i18n="of.cta.title">Un projet, petit ou grand? <br><em>Parlons-en.</em></h2>
-    <p class="lead" data-i18n="of.cta.lead">Décrivez-moi votre besoin : je vous réponds avec une estimation écrite sous 2 jours ouvrables.</p>
-    <div class="btns">
-      <a class="btn btn-primary" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail>info@mirolagueux.com <span aria-hidden="true">→</span></a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mirolagueux" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
-    </div>
-  </section>
-</main>
-<footer class="bottom">
-  <span class="copy">
-    <span class="flags">
-      <svg class="flag" viewBox="0 0 48 32" role="img" aria-label="Drapeau du Québec" data-i18n-aria="aria.qc">
-        <rect width="48" height="32" fill="#003DA5"/>
-        <rect x="21" width="6" height="32" fill="#fff"/><rect y="13" width="48" height="6" fill="#fff"/>
-        <use href="#fleur" x="4" y="1" width="13" height="11"/><use href="#fleur" x="31" y="1" width="13" height="11"/>
-        <use href="#fleur" x="4" y="20" width="13" height="11"/><use href="#fleur" x="31" y="20" width="13" height="11"/>
-      </svg>
-      <svg class="flag" viewBox="0 0 9600 4800" role="img" aria-label="Drapeau du Canada" data-i18n-aria="aria.ca">
-        <rect width="9600" height="4800" fill="#D52B1E"/>
-        <rect x="2400" width="4800" height="4800" fill="#fff"/>
-        <path fill="#D52B1E" d="M4890 4430l-45-863a95 95 0 0 1 111-98l859 151-116-320a65 65 0 0 1 20-73l941-762-212-99a65 65 0 0 1-34-79l186-572-542 115a65 65 0 0 1-73-38l-105-247-423 454a65 65 0 0 1-111-57l204-1052-327 189a65 65 0 0 1-91-27l-332-652-332 652a65 65 0 0 1-91 27l-327-189 204 1052a65 65 0 0 1-111 57l-423-454-105 247a65 65 0 0 1-73 38l-542-115 186 572a65 65 0 0 1-34 79l-212 99 941 762a65 65 0 0 1 20 73l-116 320 859-151a95 95 0 0 1 111 98l-45 863z"/>
-      </svg>
+      <div class="duo">
+        <article class="info">
+          <h3 data-i18n="of.tools.t">Le bon outil pour le bon besoin</h3>
+          <p data-i18n="of.tools.d">Chaque outil a son style : microapprentissage épuré, scénarios interactifs, simulations ou quiz. Je travaille avec plusieurs outils et je vous propose celui qui convient à votre public et à votre LMS.</p>
+          <ul class="tags"><li>Articulate Rise</li><li>Articulate Storyline</li><li>iSpring</li><li>Adobe Captivate</li></ul>
+          <a class="more" href="demos.html" data-keep-lang><span data-i18n="of.tools.link">Comparer les styles sur la page Démos</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="info">
+          <h3 data-i18n="of.voice.t">Narration IA ou voix humaine</h3>
+          <p data-i18n="of.voice.d">La narration est produite avec les plus récents modèles de synthèse vocale : naturelle, expressive et très réaliste, en français et en anglais.</p>
+          <p data-i18n="of.voice.d2">Vous préférez une vraie voix? Je collabore aussi avec des narratrices et des narrateurs professionnels, en français et en anglais. Tarif sur demande.</p>
+          <ul class="tags"><li data-i18n="of.voice.tag1">Voix IA réaliste</li><li data-i18n="of.voice.tag2">Voix humaine</li><li>FR · EN</li></ul>
+        </article>
+      </div>
+    </section>
+    <!-- ============ DÉMARCHE ============ -->
+    <section class="wrap block" aria-labelledby="t-process">
+      <div class="head">
+        <div>
+          <p class="eyebrow" data-i18n="of.proc.eyebrow">Démarche</p>
+          <h2 id="t-process" data-i18n="of.proc.title">Comment ça fonctionne.</h2>
+        </div>
+        <p class="sub" data-i18n="of.proc.sub">Pour les modules sur mesure et les parcours, rien n’est produit avant que vous ayez approuvé le macrodesign, puis le microdesign.</p>
+      </div>
+      <ol class="steps6">
+        <li><span class="n">01</span><h3 data-i18n="of.o1.t">Appel découverte</h3><p data-i18n="of.o1.d">30 minutes, sans frais, pour comprendre votre besoin, votre public et vos contraintes.</p></li>
+        <li><span class="n">02</span><h3 data-i18n="of.o2.t">Estimation écrite</h3><p data-i18n="of.o2.d">Livrables, échéancier indicatif et prix, à approuver avant le début des travaux.</p></li>
+        <li class="ok"><span class="n">03</span><h3 data-i18n="of.o3.t">Macrodesign</h3><p data-i18n="of.o3.d">Plan à haut niveau : objectifs, structure, approche et évaluation. <b>Vous l’approuvez.</b></p></li>
+        <li class="ok"><span class="n">04</span><h3 data-i18n="of.o4.t">Microdesign</h3><p data-i18n="of.o4.d">Plan détaillé : contenu, écrans, interactions et narration. <b>Vous l’approuvez.</b></p></li>
+        <li><span class="n">05</span><h3 data-i18n="of.o5.t">Production et révisions</h3><p data-i18n="of.o5.d">Développement fidèle au microdesign approuvé, puis révisions selon le forfait.</p></li>
+        <li><span class="n">06</span><h3 data-i18n="of.o6.t">Livraison et intégration</h3><p data-i18n="of.o6.d">Mise en ligne et tests dans votre LMS, puis mesure des résultats selon le forfait.</p></li>
+      </ol>
+    </section>
+    <!-- ============ CONDITIONS ============ -->
+    <section class="wrap block" aria-labelledby="t-terms">
+      <div class="head">
+        <div>
+          <p class="eyebrow" data-i18n="of.terms.eyebrow">Conditions</p>
+          <h2 id="t-terms" data-i18n="of.terms.title">Simple et transparent.</h2>
+        </div>
+      </div>
+      <div class="terms">
+        <div><h3 data-i18n="of.c1.t">Paiement</h3><p data-i18n="of.c1.d">Aucun paiement au démarrage. Les travaux réalisés sont facturés chaque mois. Pour les projets d’envergure, des jalons de paiement sont convenus dans l’estimation. Prix en dollars canadiens.</p></div>
+        <div><h3 data-i18n="of.c2.t">Délais</h3><p data-i18n="of.c2.d">Les délais sont indicatifs. Dans les faits, les travaux sont généralement livrés le plus rapidement possible.</p></div>
+        <div><h3 data-i18n="of.c3.t">Révisions</h3><p data-i18n="of.c3.d">Les rondes prévues au forfait sont incluses. Les révisions additionnelles sont facturées au taux horaire.</p></div>
+        <div><h3 data-i18n="of.c4.t">Ce que vous fournissez</h3><p data-i18n="of.c4.d">Le contenu source, un expert de contenu disponible pour les validations et un accès de test à votre LMS.</p></div>
+        <div><h3 data-i18n="of.c5.t">Livrables et propriété</h3><p data-i18n="of.c5.d">Tous les livrables vous sont remis et vous appartiennent une fois payés. Une copie est aussi conservée sur mon serveur, ce qui facilite les mises à jour futures.</p></div>
+        <div><h3 data-i18n="of.c6.t">Hébergement et sécurité</h3><p data-i18n="of.c6.d">Toutes les données de projet sont hébergées et maintenues au Canada, dans l’infonuagique Microsoft Azure, selon les plus hauts standards de sécurité.</p></div>
+      </div>
+    </section>
+    <!-- ============ CONTACT ============ -->
+    <section class="wrap cta" aria-labelledby="t-cta">
+      <h2 id="t-cta" data-i18n="of.cta.title">Un projet, petit ou grand? <br><em>Parlons-en.</em></h2>
+      <p class="lead" data-i18n="of.cta.lead">Décrivez-moi votre besoin : je vous réponds avec une estimation écrite sous 2 jours ouvrables.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail>info@mirolagueux.com <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/mirolagueux" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <!-- ============ PIED DE PAGE (identique sur toutes les pages) ============ -->
+  <footer class="bottom">
+    <span class="copy">
+      <span class="flags">
+        <svg class="flag" viewBox="0 0 48 32" role="img" aria-label="Drapeau du Québec" data-i18n-aria="aria.qc">
+          <rect width="48" height="32" fill="#003DA5"/>
+          <rect x="21" width="6" height="32" fill="#fff"/><rect y="13" width="48" height="6" fill="#fff"/>
+          <use href="#fleur" x="4" y="1" width="13" height="11"/><use href="#fleur" x="31" y="1" width="13" height="11"/>
+          <use href="#fleur" x="4" y="20" width="13" height="11"/><use href="#fleur" x="31" y="20" width="13" height="11"/>
+        </svg>
+        <svg class="flag" viewBox="0 0 9600 4800" role="img" aria-label="Drapeau du Canada" data-i18n-aria="aria.ca">
+          <rect width="9600" height="4800" fill="#D52B1E"/>
+          <rect x="2400" width="4800" height="4800" fill="#fff"/>
+          <path fill="#D52B1E" d="M4890 4430l-45-863a95 95 0 0 1 111-98l859 151-116-320a65 65 0 0 1 20-73l941-762-212-99a65 65 0 0 1-34-79l186-572-542 115a65 65 0 0 1-73-38l-105-247-423 454a65 65 0 0 1-111-57l204-1052-327 189a65 65 0 0 1-91-27l-332-652-332 652a65 65 0 0 1-91 27l-327-189 204 1052a65 65 0 0 1-111 57l-423-454-105 247a65 65 0 0 1-73 38l-542-115 186 572a65 65 0 0 1-34 79l-212 99 941 762a65 65 0 0 1 20 73l-116 320 859-151a95 95 0 0 1 111 98l-45 863z"/>
+        </svg>
+      </span>
+      <span class="copytext">© <span id="year">2026</span> Miro Lagueux</span>
     </span>
-    <span>© <span id="year">2026</span> Miro Lagueux · info@mirolagueux.com · mirolagueux.com</span>
-  </span>
-  <div class="pager">
+    <div class="pager">
       <button type="button" class="arrow" id="prev" aria-label="Section précédente" data-i18n-aria="aria.prev">←</button>
       <span class="count"><b id="cur">01</b> / <span id="tot">08</span></span>
       <span class="bar"><span id="bar"></span></span>
       <button type="button" class="arrow" id="next" aria-label="Section suivante" data-i18n-aria="aria.next">→</button>
     </div>
-  <span class="valid" data-i18n="of.valid">Tarifs en vigueur au moment de la consultation. Estimation finale fournie par écrit.</span>
-</footer>
+    <button type="button" class="link" id="legalOpen" data-i18n="legal.link">Confidentialité</button>
+  </footer>
+</div>
+<!-- ============ CONFIDENTIALITÉ (identique sur toutes les pages) ============ -->
+<dialog id="legal" aria-labelledby="legalTitle">
+  <h2 id="legalTitle" data-i18n="legal.title">Confidentialité et mentions légales</h2>
+  <p data-i18n="legal.p1">Ce site ne recueille aucun renseignement personnel. Il n’utilise aucun formulaire, aucun témoin (cookie), aucun outil d’analyse ni traceur tiers, et ne charge aucune police ni aucun script externe.</p>
+  <p data-i18n="legal.p2">L’hébergeur peut conserver des journaux techniques usuels (comme l’adresse IP et le type de navigateur) à des fins de sécurité et de fonctionnement.</p>
+  <p data-i18n="legal.p3">Votre choix de langue est conservé uniquement dans l’adresse de la page. Site publié par Miro Lagueux.</p>
+  <button type="button" class="btn btn-primary" id="legalClose" data-i18n="legal.close">Fermer</button>
+</dialog>
 </body>
 </html>

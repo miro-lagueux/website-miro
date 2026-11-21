@@ -11,11 +11,12 @@
   <meta property="og:description" content="Comparez les styles de formation en ligne. Page en développement.">
   <meta property="og:image" content="https://mirolagueux.com/og-image.png">
   <meta property="og:url" content="https://mirolagueux.com/demos">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="miro.jpg">
-  <link rel="stylesheet" href="styles.css?v=15">
-  <script src="script.js?v=15" defer></script>
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="script.js?v=16" defer></script>
 </head>
-<body class="page-sub page-demos">
+<body class="page-sub page-demos" data-page="demos">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="fleur" viewBox="0 0 20 20">
@@ -23,148 +24,164 @@
     </symbol>
   </defs>
 </svg>
-<!-- ============ EN-TÊTE ============ -->
-<header class="top">
-  <a class="brand" href="index.html" data-keep-lang>
-    <img src="miro.jpg" alt="Miro Lagueux" width="36" height="36">
-    <span>Miro Lagueux<b>.</b></span>
-  </a>
-  <nav class="nav" id="nav">
-    <a href="index.html" data-keep-lang data-i18n="nav.home">Accueil</a>
-    <a href="index.html#services" data-keep-lang data-i18n="nav.services">Services</a>
-    <a href="index.html#approach" data-keep-lang data-i18n="nav.approach">Approche</a>
-    <a href="offre.html" data-keep-lang data-i18n="nav.offer">Offre</a>
-    <a href="demos.html" aria-current="page" data-keep-lang data-i18n="nav.demos">Démos</a>
-    <a href="index.html#contact" data-keep-lang data-i18n="nav.contact">Contact</a>
-  </nav>
-  <div class="tools">
-    <div class="lang" role="group" aria-label="Langue" data-i18n-aria="aria.lang">
-      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-    </div>
-    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu" data-i18n-aria="aria.menu"><span></span><span></span></button>
-  </div>
-</header>
-<main>
-  <!-- ============ INTRO ============ -->
-  <section class="hero wrap">
-    <p class="eyebrow" data-i18n="dm.eyebrow">Démos</p>
-    <h1 data-i18n="dm.title">Choisissez <em>votre style</em>.</h1>
-    <p class="lead" data-i18n="dm.lead">Chaque style répond à un besoin différent. Essayez les démos, comparez-les, puis dites-moi celui qui convient à votre public : je m’occupe du reste.</p>
-    <div class="notice" role="status">
-      <span class="notice-icon" aria-hidden="true"></span>
-      <div>
-        <p class="notice-t" data-i18n="dm.notice.t">Page en développement</p>
-        <p data-i18n="dm.notice.d">De premières démos sont en ligne. Les autres seront ajoutées sous peu. En attendant, je peux vous présenter des exemples lors d’un appel découverte.</p>
+<div class="app">
+  <!-- ============ EN-TÊTE (identique sur toutes les pages) ============ -->
+  <header class="top">
+    <a class="brand" href="index.html" data-keep-lang>
+      <img src="miro.jpg" alt="Miro Lagueux" width="36" height="36">
+      <span>Miro Lagueux<b>.</b></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html#home" data-step="home" data-keep-lang><i>01</i><span data-i18n="nav.home">Accueil</span></a>
+      <a href="index.html#services" data-step="services" data-keep-lang><i>02</i><span data-i18n="nav.services">Services</span></a>
+      <a href="index.html#approach" data-step="approach" data-keep-lang><i>03</i><span data-i18n="nav.approach">Approche</span></a>
+      <a href="index.html#work" data-step="work" data-keep-lang><i>04</i><span data-i18n="nav.work">Réalisations</span></a>
+      <a href="index.html#about" data-step="about" data-keep-lang><i>05</i><span data-i18n="nav.about">À propos</span></a>
+      <a href="offre.html" data-step="offre" data-keep-lang><i>06</i><span data-i18n="nav.offer">Offre</span></a>
+      <a href="demos.html" data-step="demos" data-keep-lang aria-current="page"><i>07</i><span data-i18n="nav.demos">Démos</span></a>
+      <a href="index.html#contact" data-step="contact" data-keep-lang><i>08</i><span data-i18n="nav.contact">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Langue" data-i18n-aria="aria.lang">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu" data-i18n-aria="aria.menu">
+        <span></span><span></span>
+      </button>
     </div>
-  </section>
-  <!-- ============ DÉMOS ============ -->
-  <section class="wrap block" aria-labelledby="t-demos">
-    <div class="head">
-      <div>
-        <p class="eyebrow" data-i18n="dm.list.eyebrow">Styles</p>
-        <h2 id="t-demos" data-i18n="dm.list.title">Un aperçu de chaque style.</h2>
+  </header>
+  <main class="scroll">
+    <!-- ============ INTRO ============ -->
+    <section class="hero wrap">
+      <p class="eyebrow" data-i18n="dm.eyebrow">Démos</p>
+      <h1 data-i18n="dm.title">Choisissez <em>votre style</em>.</h1>
+      <p class="lead" data-i18n="dm.lead">Chaque style répond à un besoin différent. Essayez les démos, comparez-les, puis dites-moi celui qui convient à votre public : je m’occupe du reste.</p>
+      <div class="notice" role="status">
+        <span class="notice-icon" aria-hidden="true"></span>
+        <div>
+          <p class="notice-t" data-i18n="dm.notice.t">Page en développement</p>
+          <p data-i18n="dm.notice.d">De premières démos sont en ligne. Les autres seront ajoutées sous peu. En attendant, je peux vous présenter des exemples lors d’un appel découverte.</p>
+        </div>
       </div>
-    </div>
-    <div class="demos">
-      <article class="demo is-live">
-        <a class="demo-visual" href="exemples/quiz-interactif/index.html" target="_blank" rel="noopener" aria-label="Ouvrir la démo du quiz dans un nouvel onglet" data-i18n-aria="dm.d3.aria">
-          <span class="play" aria-hidden="true"></span><span data-i18n="dm.v3">Quiz</span>
-        </a>
-        <div class="demo-body">
-          <p class="plan-tag" data-i18n="dm.d3.tag">Évaluation</p>
-          <h3 data-i18n="dm.d3.t">Quiz interactif</h3>
-          <p data-i18n="dm.d3.d">Des questions variées avec rétroaction immédiate, pour valider les acquis.</p>
-          <a class="demo-btn" href="exemples/quiz-interactif/index.html" target="_blank" rel="noopener"><span data-i18n="dm.try">Essayer la démo</span> <span aria-hidden="true">↗</span></a>
+    </section>
+    <!-- ============ DÉMOS ============ -->
+    <section class="wrap block" aria-labelledby="t-demos">
+      <div class="head">
+        <div>
+          <p class="eyebrow" data-i18n="dm.list.eyebrow">Styles</p>
+          <h2 id="t-demos" data-i18n="dm.list.title">Un aperçu de chaque style.</h2>
         </div>
-      </article>
-      <article class="demo is-live">
-        <a class="demo-visual" href="exemples/microapprentissage/index.html" target="_blank" rel="noopener" aria-label="Ouvrir la démo de microapprentissage dans un nouvel onglet" data-i18n-aria="dm.d1.aria">
-          <span class="play" aria-hidden="true"></span><span data-i18n="dm.v1">Microapprentissage</span>
-        </a>
-        <div class="demo-body">
-          <p class="plan-tag" data-i18n="dm.d1.tag">Style épuré</p>
-          <h3 data-i18n="dm.d1.t">Microapprentissage</h3>
-          <p data-i18n="dm.d1.d">Un module court, épuré et adaptatif, idéal sur ordinateur comme sur téléphone.</p>
-          <a class="demo-btn" href="exemples/microapprentissage/index.html" target="_blank" rel="noopener"><span data-i18n="dm.try">Essayer la démo</span> <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-      <article class="demo is-live">
-        <a class="demo-visual" href="exemples/job-aid-par5/index.html" target="_blank" rel="noopener" aria-label="Ouvrir la démo du job aid dans un nouvel onglet" data-i18n-aria="dm.d6.aria">
-          <span class="play" aria-hidden="true"></span><span data-i18n="dm.v6">Job aid</span>
-        </a>
-        <div class="demo-body">
-          <p class="plan-tag" data-i18n="dm.d6.tag">Outils de soutien</p>
-          <h3 data-i18n="dm.d6.t">Job aid interactif : PAR 5 en SST</h3>
-          <p data-i18n="dm.d6.d">Une fiche à remplir sur cellulaire avant une tâche, à télécharger en PDF ou à envoyer à son supérieur par courriel.</p>
-          <a class="demo-btn" href="exemples/job-aid-par5/index.html" target="_blank" rel="noopener"><span data-i18n="dm.try">Essayer la démo</span> <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-      <article class="demo is-live">
-        <div class="demo-visual voice-visual" aria-hidden="true">
-          <span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span data-i18n="dm.v5">Voix</span>
-        </div>
-        <div class="demo-body">
-          <p class="plan-tag" data-i18n="dm.d5.tag">Narration</p>
-          <h3 data-i18n="dm.d5.t">Narration IA nouvelle génération</h3>
-          <p data-i18n="dm.d5.d">Une voix naturelle, fluide et localisée. Écoutez la présentation de mes services.</p>
-          <audio class="demo-audio" controls preload="none" src="exemples/demo-voix/demo-voix.mp3" aria-label="Démo de narration" data-i18n-aria="dm.d5.aria"></audio>
-        </div>
-      </article>
-      <article class="demo">
-        <div class="demo-visual" aria-hidden="true"><span data-i18n="dm.v2">Scénario</span></div>
-        <div class="demo-body">
-          <p class="plan-tag" data-i18n="dm.d2.tag">Mise en situation</p>
-          <h3 data-i18n="dm.d2.t">Scénario à embranchements</h3>
-          <p data-i18n="dm.d2.d">Une mise en situation où chaque choix a des conséquences, pour pratiquer les bons comportements.</p>
-          <span class="soon" data-i18n="dm.soon">Bientôt disponible</span>
-        </div>
-      </article>
-      <article class="demo">
-        <div class="demo-visual" aria-hidden="true"><span data-i18n="dm.v4">Simulation</span></div>
-        <div class="demo-body">
-          <p class="plan-tag" data-i18n="dm.d4.tag">Pratique guidée</p>
-          <h3 data-i18n="dm.d4.t">Simulation logicielle</h3>
-          <p data-i18n="dm.d4.d">L’apprenant pratique une tâche dans un logiciel, étape par étape, en mode guidé puis autonome.</p>
-          <span class="soon" data-i18n="dm.soon">Bientôt disponible</span>
-        </div>
-      </article>
-    </div>
-  </section>
-  <!-- ============ CONTACT ============ -->
-  <section class="wrap cta" aria-labelledby="t-cta">
-    <h2 id="t-cta" data-i18n="dm.cta.title">Envie de voir un exemple <br><em>dès maintenant?</em></h2>
-    <p class="lead" data-i18n="dm.cta.lead">Écrivez-moi : je vous présente des exemples adaptés à votre besoin lors d’un appel de 30 minutes, sans frais.</p>
-    <div class="btns">
-      <a class="btn btn-primary" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail>info@mirolagueux.com <span aria-hidden="true">→</span></a>
-      <a class="btn btn-ghost" href="offre.html" data-keep-lang><span data-i18n="dm.cta.offer">Voir l’offre de services</span> <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-</main>
-<footer class="bottom">
-  <span class="copy">
-    <span class="flags">
-      <svg class="flag" viewBox="0 0 48 32" role="img" aria-label="Drapeau du Québec" data-i18n-aria="aria.qc">
-        <rect width="48" height="32" fill="#003DA5"/>
-        <rect x="21" width="6" height="32" fill="#fff"/><rect y="13" width="48" height="6" fill="#fff"/>
-        <use href="#fleur" x="4" y="1" width="13" height="11"/><use href="#fleur" x="31" y="1" width="13" height="11"/>
-        <use href="#fleur" x="4" y="20" width="13" height="11"/><use href="#fleur" x="31" y="20" width="13" height="11"/>
-      </svg>
-      <svg class="flag" viewBox="0 0 9600 4800" role="img" aria-label="Drapeau du Canada" data-i18n-aria="aria.ca">
-        <rect width="9600" height="4800" fill="#D52B1E"/>
-        <rect x="2400" width="4800" height="4800" fill="#fff"/>
-        <path fill="#D52B1E" d="M4890 4430l-45-863a95 95 0 0 1 111-98l859 151-116-320a65 65 0 0 1 20-73l941-762-212-99a65 65 0 0 1-34-79l186-572-542 115a65 65 0 0 1-73-38l-105-247-423 454a65 65 0 0 1-111-57l204-1052-327 189a65 65 0 0 1-91-27l-332-652-332 652a65 65 0 0 1-91 27l-327-189 204 1052a65 65 0 0 1-111 57l-423-454-105 247a65 65 0 0 1-73 38l-542-115 186 572a65 65 0 0 1-34 79l-212 99 941 762a65 65 0 0 1 20 73l-116 320 859-151a95 95 0 0 1 111 98l-45 863z"/>
-      </svg>
+      </div>
+      <div class="demos">
+        <article class="demo is-live">
+          <a class="demo-visual" href="exemples/quiz-interactif/index.html" target="_blank" rel="noopener" aria-label="Ouvrir la démo du quiz dans un nouvel onglet" data-i18n-aria="dm.d3.aria">
+            <span class="play" aria-hidden="true"></span><span data-i18n="dm.v3">Quiz</span>
+          </a>
+          <div class="demo-body">
+            <p class="plan-tag" data-i18n="dm.d3.tag">Évaluation</p>
+            <h3 data-i18n="dm.d3.t">Quiz interactif</h3>
+            <p data-i18n="dm.d3.d">Des questions variées avec rétroaction immédiate, pour valider les acquis.</p>
+            <a class="demo-btn" href="exemples/quiz-interactif/index.html" target="_blank" rel="noopener"><span data-i18n="dm.try">Essayer la démo</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="demo is-live">
+          <a class="demo-visual" href="exemples/microapprentissage/index.html" target="_blank" rel="noopener" aria-label="Ouvrir la démo de microapprentissage dans un nouvel onglet" data-i18n-aria="dm.d1.aria">
+            <span class="play" aria-hidden="true"></span><span data-i18n="dm.v1">Microapprentissage</span>
+          </a>
+          <div class="demo-body">
+            <p class="plan-tag" data-i18n="dm.d1.tag">Style épuré</p>
+            <h3 data-i18n="dm.d1.t">Microapprentissage</h3>
+            <p data-i18n="dm.d1.d">Un module court, épuré et adaptatif, idéal sur ordinateur comme sur téléphone.</p>
+            <a class="demo-btn" href="exemples/microapprentissage/index.html" target="_blank" rel="noopener"><span data-i18n="dm.try">Essayer la démo</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="demo is-live">
+          <a class="demo-visual" href="exemples/job-aid-par5/index.html" target="_blank" rel="noopener" aria-label="Ouvrir la démo du job aid dans un nouvel onglet" data-i18n-aria="dm.d6.aria">
+            <span class="play" aria-hidden="true"></span><span data-i18n="dm.v6">Job aid</span>
+          </a>
+          <div class="demo-body">
+            <p class="plan-tag" data-i18n="dm.d6.tag">Outils de soutien</p>
+            <h3 data-i18n="dm.d6.t">Job aid interactif : PAR 5 en SST</h3>
+            <p data-i18n="dm.d6.d">Une fiche à remplir sur cellulaire avant une tâche, à télécharger en PDF ou à envoyer à son supérieur par courriel.</p>
+            <a class="demo-btn" href="exemples/job-aid-par5/index.html" target="_blank" rel="noopener"><span data-i18n="dm.try">Essayer la démo</span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="demo is-live">
+          <div class="demo-visual voice-visual" aria-hidden="true">
+            <span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span data-i18n="dm.v5">Voix</span>
+          </div>
+          <div class="demo-body">
+            <p class="plan-tag" data-i18n="dm.d5.tag">Narration</p>
+            <h3 data-i18n="dm.d5.t">Narration IA nouvelle génération</h3>
+            <p data-i18n="dm.d5.d">Une voix naturelle, fluide et localisée. Écoutez la présentation de mes services.</p>
+            <audio class="demo-audio" controls preload="none" src="exemples/demo-voix/demo-voix.mp3" aria-label="Démo de narration" data-i18n-aria="dm.d5.aria"></audio>
+          </div>
+        </article>
+        <article class="demo">
+          <div class="demo-visual" aria-hidden="true"><span data-i18n="dm.v2">Scénario</span></div>
+          <div class="demo-body">
+            <p class="plan-tag" data-i18n="dm.d2.tag">Mise en situation</p>
+            <h3 data-i18n="dm.d2.t">Scénario à embranchements</h3>
+            <p data-i18n="dm.d2.d">Une mise en situation où chaque choix a des conséquences, pour pratiquer les bons comportements.</p>
+            <span class="soon" data-i18n="dm.soon">Bientôt disponible</span>
+          </div>
+        </article>
+        <article class="demo">
+          <div class="demo-visual" aria-hidden="true"><span data-i18n="dm.v4">Simulation</span></div>
+          <div class="demo-body">
+            <p class="plan-tag" data-i18n="dm.d4.tag">Pratique guidée</p>
+            <h3 data-i18n="dm.d4.t">Simulation logicielle</h3>
+            <p data-i18n="dm.d4.d">L’apprenant pratique une tâche dans un logiciel, étape par étape, en mode guidé puis autonome.</p>
+            <span class="soon" data-i18n="dm.soon">Bientôt disponible</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ============ CONTACT ============ -->
+    <section class="wrap cta" aria-labelledby="t-cta">
+      <h2 id="t-cta" data-i18n="dm.cta.title">Envie de voir un exemple <br><em>dès maintenant?</em></h2>
+      <p class="lead" data-i18n="dm.cta.lead">Écrivez-moi : je vous présente des exemples adaptés à votre besoin lors d’un appel de 30 minutes, sans frais.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:info@mirolagueux.com?subject=Demande%20d%E2%80%99estimation" data-i18n-mail>info@mirolagueux.com <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="offre.html" data-keep-lang><span data-i18n="dm.cta.offer">Voir l’offre de services</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+  <!-- ============ PIED DE PAGE (identique sur toutes les pages) ============ -->
+  <footer class="bottom">
+    <span class="copy">
+      <span class="flags">
+        <svg class="flag" viewBox="0 0 48 32" role="img" aria-label="Drapeau du Québec" data-i18n-aria="aria.qc">
+          <rect width="48" height="32" fill="#003DA5"/>
+          <rect x="21" width="6" height="32" fill="#fff"/><rect y="13" width="48" height="6" fill="#fff"/>
+          <use href="#fleur" x="4" y="1" width="13" height="11"/><use href="#fleur" x="31" y="1" width="13" height="11"/>
+          <use href="#fleur" x="4" y="20" width="13" height="11"/><use href="#fleur" x="31" y="20" width="13" height="11"/>
+        </svg>
+        <svg class="flag" viewBox="0 0 9600 4800" role="img" aria-label="Drapeau du Canada" data-i18n-aria="aria.ca">
+          <rect width="9600" height="4800" fill="#D52B1E"/>
+          <rect x="2400" width="4800" height="4800" fill="#fff"/>
+          <path fill="#D52B1E" d="M4890 4430l-45-863a95 95 0 0 1 111-98l859 151-116-320a65 65 0 0 1 20-73l941-762-212-99a65 65 0 0 1-34-79l186-572-542 115a65 65 0 0 1-73-38l-105-247-423 454a65 65 0 0 1-111-57l204-1052-327 189a65 65 0 0 1-91-27l-332-652-332 652a65 65 0 0 1-91 27l-327-189 204 1052a65 65 0 0 1-111 57l-423-454-105 247a65 65 0 0 1-73 38l-542-115 186 572a65 65 0 0 1-34 79l-212 99 941 762a65 65 0 0 1 20 73l-116 320 859-151a95 95 0 0 1 111 98l-45 863z"/>
+        </svg>
+      </span>
+      <span class="copytext">© <span id="year">2026</span> Miro Lagueux</span>
     </span>
-    <span>© <span id="year">2026</span> Miro Lagueux · info@mirolagueux.com · mirolagueux.com</span>
-  </span>
-  <div class="pager">
+    <div class="pager">
       <button type="button" class="arrow" id="prev" aria-label="Section précédente" data-i18n-aria="aria.prev">←</button>
       <span class="count"><b id="cur">01</b> / <span id="tot">08</span></span>
       <span class="bar"><span id="bar"></span></span>
       <button type="button" class="arrow" id="next" aria-label="Section suivante" data-i18n-aria="aria.next">→</button>
     </div>
-</footer>
+    <button type="button" class="link" id="legalOpen" data-i18n="legal.link">Confidentialité</button>
+  </footer>
+</div>
+<!-- ============ CONFIDENTIALITÉ (identique sur toutes les pages) ============ -->
+<dialog id="legal" aria-labelledby="legalTitle">
+  <h2 id="legalTitle" data-i18n="legal.title">Confidentialité et mentions légales</h2>
+  <p data-i18n="legal.p1">Ce site ne recueille aucun renseignement personnel. Il n’utilise aucun formulaire, aucun témoin (cookie), aucun outil d’analyse ni traceur tiers, et ne charge aucune police ni aucun script externe.</p>
+  <p data-i18n="legal.p2">L’hébergeur peut conserver des journaux techniques usuels (comme l’adresse IP et le type de navigateur) à des fins de sécurité et de fonctionnement.</p>
+  <p data-i18n="legal.p3">Votre choix de langue est conservé uniquement dans l’adresse de la page. Site publié par Miro Lagueux.</p>
+  <button type="button" class="btn btn-primary" id="legalClose" data-i18n="legal.close">Fermer</button>
+</dialog>
 </body>
 </html>

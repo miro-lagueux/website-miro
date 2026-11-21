@@ -4,9 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Miro Lagueux — Technopédagogie, LMS et linguistique</title>
-  <meta name="description" content="Parcours de formation complets, formations et quiz interactifs SCORM (Articulate Rise et Storyline, iSpring, Adobe Captivate), rédaction, traduction et localisation FR-EN, gestion LMS et intégration de contenu, capsules vidéo, tutoriels et guides techniques, création de contenu assistée par l’IA.">
+  <meta name="description" content="Parcours de formation complets, formations et quiz interactifs SCORM, rédaction, traduction et localisation FR-EN, gestion LMS et intégration de contenu, capsules vidéo, tutoriels et guides techniques, création de contenu assistée par l’IA.">
   <meta name="theme-color" content="#ffffff">
-  <!-- Aperçu LinkedIn / réseaux sociaux (remplacer le domaine si différent) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Miro Lagueux — Technopédagogie, LMS et linguistique">
   <meta property="og:description" content="Des formations qui changent les comportements.">
@@ -14,11 +13,10 @@
   <meta property="og:url" content="https://mirolagueux.com/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="miro.jpg">
-  <link rel="stylesheet" href="styles.css?v=15">
-  <script src="script.js?v=15" defer></script>
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="script.js?v=16" defer></script>
 </head>
-<body>
-<!-- Drapeaux (symboles réutilisables) -->
+<body class="page-home" data-page="home">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="fleur" viewBox="0 0 20 20">
@@ -27,21 +25,21 @@
   </defs>
 </svg>
 <div class="app">
-  <!-- ============ EN-TÊTE ============ -->
+  <!-- ============ EN-TÊTE (identique sur toutes les pages) ============ -->
   <header class="top">
     <a class="brand" href="#home">
       <img src="miro.jpg" alt="Miro Lagueux" width="36" height="36">
       <span>Miro Lagueux<b>.</b></span>
     </a>
     <nav class="nav" id="nav">
-      <a href="#home"><i>01</i><span data-i18n="nav.home">Accueil</span></a>
-      <a href="#services"><i>02</i><span data-i18n="nav.services">Services</span></a>
-      <a href="#approach"><i>03</i><span data-i18n="nav.approach">Approche</span></a>
-      <a href="#work"><i>04</i><span data-i18n="nav.work">Réalisations</span></a>
-      <a href="#about"><i>05</i><span data-i18n="nav.about">À propos</span></a>
-      <a href="offre.html" data-keep-lang><i>06</i><span data-i18n="nav.offer">Offre</span></a>
-      <a href="demos.html" data-keep-lang><i>07</i><span data-i18n="nav.demos">Démos</span></a>
-      <a href="#contact"><i>08</i><span data-i18n="nav.contact">Contact</span></a>
+      <a href="#home" data-step="home" aria-current="page"><i>01</i><span data-i18n="nav.home">Accueil</span></a>
+      <a href="#services" data-step="services"><i>02</i><span data-i18n="nav.services">Services</span></a>
+      <a href="#approach" data-step="approach"><i>03</i><span data-i18n="nav.approach">Approche</span></a>
+      <a href="#work" data-step="work"><i>04</i><span data-i18n="nav.work">Réalisations</span></a>
+      <a href="#about" data-step="about"><i>05</i><span data-i18n="nav.about">À propos</span></a>
+      <a href="offre.html" data-step="offre" data-keep-lang><i>06</i><span data-i18n="nav.offer">Offre</span></a>
+      <a href="demos.html" data-step="demos" data-keep-lang><i>07</i><span data-i18n="nav.demos">Démos</span></a>
+      <a href="#contact" data-step="contact"><i>08</i><span data-i18n="nav.contact">Contact</span></a>
     </nav>
     <div class="tools">
       <div class="lang" role="group" aria-label="Langue" data-i18n-aria="aria.lang">
@@ -53,10 +51,9 @@
       </button>
     </div>
   </header>
-  <!-- ============ SECTIONS ============ -->
   <main class="stage">
     <!-- 01 ACCUEIL -->
-    <section class="panel is-active" data-panel="home" data-num="01" aria-labelledby="t-home">
+    <section class="panel is-active" data-panel="home" aria-labelledby="t-home">
       <div class="wrap">
         <p class="eyebrow live" data-i18n="home.eyebrow">Technopédagogie · LMS · Linguistique</p>
         <h1 id="t-home" tabindex="-1" data-i18n="home.title">Des formations qui changent <em>les comportements</em>.</h1>
@@ -68,7 +65,7 @@
       </div>
     </section>
     <!-- 02 SERVICES -->
-    <section class="panel" data-panel="services" data-num="02" aria-labelledby="t-services">
+    <section class="panel" data-panel="services" aria-labelledby="t-services">
       <div class="wrap">
         <div class="head">
           <div>
@@ -88,7 +85,7 @@
       </div>
     </section>
     <!-- 03 APPROCHE -->
-    <section class="panel" data-panel="approach" data-num="03" aria-labelledby="t-approach">
+    <section class="panel" data-panel="approach" aria-labelledby="t-approach">
       <div class="wrap">
         <div class="head">
           <div>
@@ -106,7 +103,7 @@
       </div>
     </section>
     <!-- 04 RÉALISATIONS -->
-    <section class="panel" data-panel="work" data-num="04" aria-labelledby="t-work">
+    <section class="panel" data-panel="work" aria-labelledby="t-work">
       <div class="wrap">
         <div class="head">
           <div>
@@ -127,7 +124,7 @@
       </div>
     </section>
     <!-- 05 À PROPOS -->
-    <section class="panel" data-panel="about" data-num="05" aria-labelledby="t-about">
+    <section class="panel" data-panel="about" aria-labelledby="t-about">
       <div class="wrap about">
         <div>
           <p class="eyebrow" data-i18n="nav.about">À propos</p>
@@ -151,8 +148,8 @@
         </dl>
       </div>
     </section>
-    <!-- 06 CONTACT -->
-    <section class="panel" data-panel="contact" data-num="08" aria-labelledby="t-contact">
+    <!-- 08 CONTACT (06 et 07 = pages Offre et Démos) -->
+    <section class="panel" data-panel="contact" aria-labelledby="t-contact">
       <div class="wrap">
         <p class="eyebrow live" data-i18n="nav.contact">Contact</p>
         <h1 id="t-contact" tabindex="-1" class="contact-title" data-i18n="contact.title">Un projet de formation? <br><em>Parlons-en.</em></h1>
@@ -165,7 +162,7 @@
       </div>
     </section>
   </main>
-  <!-- ============ PIED DE PAGE ============ -->
+  <!-- ============ PIED DE PAGE (identique sur toutes les pages) ============ -->
   <footer class="bottom">
     <span class="copy">
       <span class="flags">
@@ -192,7 +189,7 @@
     <button type="button" class="link" id="legalOpen" data-i18n="legal.link">Confidentialité</button>
   </footer>
 </div>
-<!-- ============ CONFIDENTIALITÉ ============ -->
+<!-- ============ CONFIDENTIALITÉ (identique sur toutes les pages) ============ -->
 <dialog id="legal" aria-labelledby="legalTitle">
   <h2 id="legalTitle" data-i18n="legal.title">Confidentialité et mentions légales</h2>
   <p data-i18n="legal.p1">Ce site ne recueille aucun renseignement personnel. Il n’utilise aucun formulaire, aucun témoin (cookie), aucun outil d’analyse ni traceur tiers, et ne charge aucune police ni aucun script externe.</p>
