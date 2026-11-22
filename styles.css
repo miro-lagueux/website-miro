@@ -1,5 +1,5 @@
 /* =========================================================
-   Miro Lagueux — Site (v16)
+   Miro Lagueux — Site (v17)
    Structure commune à toutes les pages :
      .app = cadre plein écran (en-tête · contenu · pied de page)
      Accueil  : main.stage  → sections plein écran, sans défilement
@@ -270,6 +270,10 @@ h3 { font-weight: 600; letter-spacing: -.01em; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .notice-t { font-weight: 700; color: var(--accent); margin-bottom: 2px; }
 .notice p:not(.notice-t) { color: var(--soft); font-size: .93rem; }
+.notice + .notice { margin-top: 16px; }
+.notice-info { border-style: solid; background: #fff; }
+.notice-info .notice-icon { display: grid; place-items: center; color: #fff; font-weight: 700; font-style: italic; font-family: Georgia, serif; }
+.notice-info .notice-icon::before { display: none; }
 .demos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .demo { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); overflow: hidden; display: flex; flex-direction: column; }
 .demo-visual { aspect-ratio: 16 / 9; display: grid; place-items: center; background: repeating-linear-gradient(135deg, #f3f6fd 0 14px, #e9eefb 14px 28px); border-bottom: 1px solid var(--line); }
