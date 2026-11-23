@@ -181,7 +181,7 @@ h3 { font-weight: 600; letter-spacing: -.01em; }
 .clients { margin-top: clamp(14px, 3vh, 26px); gap: 8px; }
 .clients li { border-color: rgba(29, 78, 216, .3); color: var(--accent); background: var(--accent-soft); font-weight: 500; }
 .edu { margin-top: 8px; gap: 8px; }
-.edu li { font-weight: 500; }
+.edu li { border-color: rgba(29, 78, 216, .3); color: var(--accent); background: var(--accent-soft); font-weight: 500; }
 
 /* Approche : 5 étapes */
 .steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 24px); }
