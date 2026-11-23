@@ -1,0 +1,1073 @@
+{
+  "format": "scormstack-roundtrip",
+  "version": "1.0",
+  "generatedAt": "2026-11-23T16:51:09.194Z",
+  "course": {
+    "id": "b431175f-b431-4706-b9dd-eea99294dc96",
+    "title": "L’IA au travail : les bons réflexes dès le premier jour",
+    "description": "Cette formation aide les nouveaux employés à utiliser les outils d’intelligence artificielle de l’organisation de façon sécuritaire, responsable et efficace. Elle présente des situations concrètes pour protéger les données, vérifier les réponses générées, choisir l’approche adaptée à chaque tâche et collaborer avec des agents spécialisés. L’employé conserve la responsabilité de ses décisions et de la validation du travail produit.",
+    "cover_image": "media/course-b431175f-b431-4706-b9dd-eea99294dc96-card-thumbnail_0623c9c8.webp",
+    "theme_config": null,
+    "homepage": {
+      "hidden": true,
+      "showHero": true,
+      "showToc": true,
+      "showCta": true,
+      "heroLayout": "center",
+      "heroHeadingSize": "medium",
+      "tocLayout": "hierarchy",
+      "areaOrder": [
+        "hero",
+        "toc"
+      ],
+      "title": "",
+      "description": "",
+      "buttonLabel": "",
+      "buttonIcon": "arrow-right",
+      "logoImage": null,
+      "image": null,
+      "ctaSettings": {
+        "size": "medium",
+        "variant": "outline",
+        "buttonColor": ""
+      },
+      "heroFormat": {
+        "contentMaxWidth": 3,
+        "paddingTop": 32,
+        "paddingBottom": 32,
+        "paddingLinked": true,
+        "textAlign": "start",
+        "gap": 24,
+        "backgroundType": "THEME",
+        "overlayColor": "NONE",
+        "overlayOpacity": 0.4
+      },
+      "tocFormat": {
+        "contentMaxWidth": 3,
+        "paddingTop": 32,
+        "paddingBottom": 32,
+        "paddingLinked": true,
+        "textAlign": "start",
+        "gap": 24,
+        "backgroundType": "LIGHT",
+        "overlayColor": "NONE",
+        "overlayOpacity": 0.3
+      },
+      "sectionLabels": {},
+      "slideLabels": {},
+      "sectionImages": {},
+      "sectionIcons": {},
+      "slideIcons": {},
+      "blocks": []
+    },
+    "slides": [
+      {
+        "id": "19b17643-7611-45f4-bd09-075f997d36dc",
+        "title": "Bien travailler avec l'IA",
+        "content": {
+          "topic": "Utilisation responsable",
+          "objectives": [
+            "Reconnaître les quatre réflexes d’une utilisation sécuritaire, responsable et efficace de l’IA.",
+            "Maintenir la responsabilité humaine dans les décisions et la validation du travail produit."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:18.756597+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-23T13:54:57.066352+00:00",
+        "order_index": 0,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "288e6cba-1faf-4330-83a7-157999b55409",
+            "title": "Page Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Introduction",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "#000000",
+                "paddingTop": 64,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 64,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "#FFFFFF",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/1-intro_88feae05.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "CUSTOM",
+                "baseBackgroundColor": "#FFFFFF",
+                "backgroundImageMediaId": "88feae05-c13f-4851-a14d-a62760134c6c"
+              },
+              "duration": 120,
+              "objectives": [
+                {
+                  "icon": "",
+                  "text": " Introduction à l'utilisation de l'IA au travail"
+                }
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b0"
+          },
+          {
+            "originalId": "6478a534-ce7b-4e11-ad8a-eb088bb0a010",
+            "title": "Bien travailler avec l'IA",
+            "type": "audio",
+            "variant": "simple",
+            "content": {
+              "src": "media/1-Intro_91b1ef54.mp3",
+              "tts": {
+                "useAsSource": false
+              },
+              "loop": false,
+              "title": "Bien travailler avec l'IA",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "caption": "<p></p>",
+              "mediaId": "91b1ef54-a217-47e7-8e07-08f4b8626245",
+              "autoplay": true,
+              "duration": 19.644063,
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "showTitle": true,
+              "transcript": "<p><strong>Bien travailler avec l’IA</strong></p><p>L’intelligence artificielle peut vous faire gagner du temps et accélérer plusieurs étapes de votre travail. Mais il faut garder une chose en tête : l’IA ne remplace ni votre jugement, ni votre responsabilité. Pour bien l’utiliser au travail, adoptez quatre réflexes simples dès le premier jour.</p>",
+              "showProgress": true,
+              "showTranscript": true,
+              "showVisualization": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b1"
+          },
+          {
+            "originalId": "e7a8fbe5-3eb5-475c-aedf-31788d17c217",
+            "title": "Navigation Button",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Continue",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "next_slide",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "previous_block",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b2"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "c5bf8777-253d-4927-a646-86cfeb26a4ab",
+        "title": "L'IA au travail",
+        "content": {},
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-23T13:54:19.492999+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-23T14:24:00.027132+00:00",
+        "order_index": 1,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "c4d53a26-b1a0-45c9-9134-01c21b38e1a7",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "L’IA au travail : les bons <br>réflexes dès le premier jour.",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/2-ia-au-travail_3c4c3f21.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "LIGHT",
+                "showTableOfContent": false,
+                "backgroundImageMediaId": "3c4c3f21-0506-4507-97ea-66613a6b00e6"
+              },
+              "options": {
+                "headingSize": "medium"
+              },
+              "duration": 300,
+              "objectives": [
+                {
+                  "icon": "",
+                  "text": "Reconnaître les quatre réflexes d’une utilisation sécuritaire, responsable et efficace de l’IA."
+                },
+                {
+                  "icon": "",
+                  "text": "Maintenir la responsabilité humaine dans les décisions et la validation du travail produit."
+                }
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b3"
+          },
+          {
+            "originalId": "9cf4e4fd-3a94-4298-a3e3-3081c76d3a37",
+            "title": "L'IA au travail",
+            "type": "audio",
+            "variant": "simple",
+            "content": {
+              "src": "media/2-IA-au-Travail_3232bfa4.mp3",
+              "tts": {
+                "useAsSource": false
+              },
+              "loop": false,
+              "title": "L'IA au travail",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "caption": "<p></p>",
+              "mediaId": "3232bfa4-6a31-4b38-8866-9f37d05a8ff5",
+              "autoplay": true,
+              "duration": 42.370563,
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "showTitle": true,
+              "transcript": "<p>Dans cette leçon, nous allons découvrir les bons réflexes à adopter pour utiliser l’intelligence artificielle au travail. </p><p></p><p>L’objectif n’est pas simplement d’apprendre à utiliser un outil d’IA, mais surtout de savoir comment l’utiliser de façon sécuritaire, responsable et efficace. Nous verrons quatre réflexes essentiels qui vous aideront à mieux protéger l’information, à évaluer les réponses produites par l’IA et à utiliser le bon outil selon la situation. </p><p></p><p>Et surtout, nous verrons pourquoi la responsabilité humaine demeure essentielle. L’IA peut vous assister et accélérer votre travail, mais c’est toujours à vous de valider le résultat et de prendre la décision finale. Commençons par les quatre réflexes à adopter dès le premier jour.</p>",
+              "showProgress": true,
+              "showTranscript": true,
+              "showVisualization": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b4"
+          },
+          {
+            "originalId": "447cd843-1743-40ae-b13d-dc80e74d5208",
+            "title": "Navigation Button",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Continue",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "next_slide",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "previous_block",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b5"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "47b153ab-4e57-4d08-9472-6af183f84445",
+        "title": "4 réflexes à adopter",
+        "content": {},
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-23T13:51:52.102861+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-23T13:54:56.82872+00:00",
+        "order_index": 2,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "d7016a00-1d95-45d7-9f10-a14cb28be097",
+            "title": "Page Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "4 réflexes à adopter lors de l'utilisation de l'IA au travail",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 64,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 64,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/3-4-reflexes_33d40191.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "LIGHT",
+                "backgroundImageMediaId": "33d40191-1a67-477f-856c-e293b1c9e33d"
+              },
+              "duration": 300,
+              "objectives": []
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b6"
+          },
+          {
+            "originalId": "f6110630-a29d-4cc1-8adb-1fdf52e21b28",
+            "title": "4 réflexes à adopter",
+            "type": "audio",
+            "variant": "simple",
+            "content": {
+              "src": "media/1-4-reflexes_366ed4ac.mp3",
+              "tts": {
+                "useAsSource": false
+              },
+              "loop": false,
+              "title": "4 réflexes à adopter",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "caption": "<p></p>",
+              "mediaId": "366ed4ac-7909-4316-be68-ef3790ef46fb",
+              "autoplay": true,
+              "duration": 54.282438,
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "showTitle": true,
+              "transcript": "<p><strong>Premier réflexe : protégez les données.</strong></p><p>Lorsque vous travaillez avec des informations de l’entreprise, utilisez uniquement les outils et les environnements d’intelligence artificielle approuvés par votre organisation.</p><p></p><p><strong>Deuxième réflexe : vérifiez les réponses.</strong></p><p>Une réponse générée par l’IA peut sembler claire, précise et convaincante… tout en contenant une erreur ou même une information inventée. Prenez donc toujours le temps de valider les éléments importants.</p><p></p><p><strong>Troisième réflexe : choisissez le bon outil.</strong></p><p>Tous les outils d’intelligence artificielle n’ont pas les mêmes forces. Le bon choix dépend de la tâche à accomplir : rédiger, résumer, analyser, rechercher de l’information ou générer du contenu.</p><p></p><p><strong>Et quatrième réflexe : gardez l’humain dans la boucle.</strong></p><p>L’IA peut vous aider à produire ou à analyser de l’information, mais c’est à vous de valider le résultat et de prendre la décision finale.</p>",
+              "showProgress": true,
+              "showTranscript": true,
+              "showVisualization": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b7"
+          },
+          {
+            "originalId": "b1992310-31a2-4f4e-a0ec-fa903a322c85",
+            "title": "List block",
+            "type": "list",
+            "variant": "numbered",
+            "content": {
+              "items": [
+                {
+                  "id": "item-1",
+                  "content": "<p>Protégez les données : utilisez uniquement un environnement d’IA approuvé par l’organisation pour les informations de l’entreprise.</p>"
+                },
+                {
+                  "id": "item-2",
+                  "content": "<p>Vérifiez les réponses : une réponse claire et convaincante peut contenir une erreur ou une information inventée.</p>"
+                },
+                {
+                  "id": "item-3",
+                  "content": "<p>Choisissez le bon outil : adaptez le modèle ou l’outil au type de tâche à réaliser.</p>"
+                },
+                {
+                  "id": "item-4",
+                  "content": "<p>Gardez l’humain dans la boucle : validez le résultat et prenez vous-même la décision finale.</p>"
+                }
+              ],
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "columns": 1,
+                "iconSize": "md",
+                "markerSize": 32,
+                "markerColor": "",
+                "markerStyle": "disc",
+                "iconPosition": "left",
+                "showDividers": false,
+                "numberingStyle": "decimal"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b8"
+          },
+          {
+            "originalId": "87f78863-3c66-4a9f-8196-55a044521315",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Schéma : une personne et l'IA au centre, entourées des quatre réflexes : protéger les données, vérifier les réponses, choisir l'outil et garder l'humain dans la boucle.",
+                  "src": "media/01_quatre-reflexes_13c3dfc2.svg",
+                  "width": 100,
+                  "caption": "Les quatre réflexes à adopter dès le premier jour.",
+                  "mediaId": null,
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b9"
+          },
+          {
+            "originalId": "e4f280a9-0102-4b3d-9eba-953ec38a0032",
+            "title": "Le réflexe à retenir",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "important",
+              "title": "Le réflexe à retenir",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>L’IA peut accélérer votre travail. Vous demeurez responsable des données utilisées, de la validation des résultats et de la décision finale.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b10"
+          },
+          {
+            "originalId": "a5124e24-c924-4b57-bf1c-7930cd334eff",
+            "title": "Navigation Button",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Continue",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "next_slide",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "previous_block",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 5,
+            "id": "b11"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "1781de3f-c58e-4c63-a1fe-0589581e4bf2",
+        "title": "Protégez les données de l’entreprise.",
+        "content": {
+          "topic": "Microsoft 365/Copilot",
+          "objectives": [
+            "Distinguer un compte d’entreprise approuvé d’un compte personnel.",
+            "Identifier les renseignements à ne pas transmettre à un outil d’IA non autorisé."
+          ]
+        },
+        "duration": 0,
+        "course_id": "b431175f-b431-4706-b9dd-eea99294dc96",
+        "created_at": "2026-11-20T03:37:19.010073+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-23T13:54:57.028893+00:00",
+        "order_index": 3,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "d612e257-9b61-44fd-956f-cd3ac15f66a5",
+            "title": "Slide Intro",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Protégez les données <br>de l’entreprise.",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 64,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 64,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/4-safety_91f293f1.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "GRAY",
+                "showTableOfContent": false,
+                "backgroundImageMediaId": "91f293f1-052c-4f26-b73f-d94cf3bb8270"
+              },
+              "duration": 300,
+              "objectives": [
+                {
+                  "icon": "",
+                  "text": "Distinguer un compte d’entreprise approuvé d’un compte personnel."
+                },
+                {
+                  "icon": "",
+                  "text": "Identifier les renseignements à ne pas transmettre à un outil d’IA non autorisé."
+                }
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b12"
+          },
+          {
+            "originalId": "edb8b2f7-696f-4894-8864-0f95c3d61a53",
+            "title": "Copy of 4 réflexes à adopter",
+            "type": "audio",
+            "variant": "simple",
+            "content": {
+              "src": "media/4-proteger-donnes_42a70c47.mp3",
+              "tts": {
+                "useAsSource": false
+              },
+              "loop": false,
+              "title": "Protégez les données",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "caption": "<p></p>",
+              "mediaId": "42a70c47-e404-4dbd-ab02-a38095dd9e9f",
+              "autoplay": true,
+              "duration": 75.728938,
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "showTitle": true,
+              "transcript": "<p>Lorsque vous utilisez l’intelligence artificielle au travail, un premier réflexe est essentiel : <strong>protéger les données de l’entreprise</strong>.</p><p></p><p>Et pour cela, l’environnement que vous utilisez est important. Si vous travaillez avec des informations de votre organisation, utilisez uniquement un environnement d’intelligence artificielle approuvé par celle-ci, comme Microsoft 365 Copilot, lorsqu’il est autorisé pour la tâche que vous réalisez.</p><p></p><p><strong>Pourquoi?</strong></p><p>Parce qu’un environnement d’entreprise peut être configuré selon les exigences de sécurité, de confidentialité et de gestion des données de votre organisation. Un compte personnel, même s’il donne accès à un outil d’intelligence artificielle que vous connaissez bien, n’offre pas nécessairement les mêmes protections.</p><p></p><p>Prenons un exemple. Vous devez résumer un document interne contenant des renseignements sur un projet en cours. Copier ce document dans votre compte personnel d’un service d’IA peut exposer des informations qui ne devraient jamais quitter l’environnement approuvé par votre entreprise.Le bon réflexe est donc simple : <strong>données de l’entreprise, environnement approuvé par l’entreprise</strong>.</p><p></p><p>Et si vous avez un doute? Ne copiez pas l’information. Vérifiez d’abord quel outil est autorisé.Dans la suite, nous allons voir plus précisément quels types d’informations nécessitent cette vigilance.</p>",
+              "showProgress": true,
+              "showTranscript": true,
+              "showVisualization": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b13"
+          },
+          {
+            "originalId": "7c63d71d-943f-4a64-afe1-1c9558d0cedf",
+            "title": "",
+            "type": "image",
+            "variant": "image",
+            "content": {
+              "text": "",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "images": {
+                "image_1": {
+                  "alt": "Schéma : un document de l'entreprise peut aller vers l'environnement approuvé (Microsoft 365 / Copilot de l'organisation), mais pas vers un compte personnel d'IA.",
+                  "src": "media/02_environnement-approuve_226654fd.svg",
+                  "width": "100",
+                  "caption": "Données de l'entreprise = environnement approuvé par l'entreprise.",
+                  "position": "center",
+                  "verticalAlign": "top"
+                }
+              },
+              "options": {
+                "box_shadow": true,
+                "grid_columns": 3,
+                "show_caption": true
+              }
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b14"
+          },
+          {
+            "originalId": "ca53c60d-244b-4c2d-8aaf-fcc67536eddf",
+            "title": "Accordion",
+            "type": "accordion",
+            "variant": "accordion",
+            "content": {
+              "items": [
+                {
+                  "title": "Compte d’entreprise approuvé",
+                  "content": "<p>C’est l’environnement fourni ou autorisé par l’organisation pour le travail. Utilisez-le selon les règles internes et les autorisations applicables, notamment lorsque vous devez traiter des informations liées à des clients, à des employés ou à des projets.</p>"
+                },
+                {
+                  "title": "Compte personnel",
+                  "content": "<p>C’est un compte que vous utilisez à titre individuel sur un service d’IA. Même si l’outil est pratique ou performant, ne copiez-y pas de renseignements confidentiels, personnels, nominatifs ou non publics de l’organisation.</p>"
+                },
+                {
+                  "title": "Informations à protéger",
+                  "content": "<p>Ne transmettez pas à un outil non autorisé un nom de client ou d’employé, une adresse courriel personnelle, un numéro de téléphone, une adresse, un dossier d’employé, des informations financières, des données contractuelles ou un document interne confidentiel.</p>"
+                }
+              ],
+              "format": {
+                "gap": 16,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "options": {
+                "type": "single"
+              },
+              "settings": {
+                "completionMode": "tried"
+              }
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b15"
+          },
+          {
+            "originalId": "38b25a68-03f0-43f2-8b2d-355307460035",
+            "title": "La règle à retenir",
+            "type": "callout",
+            "variant": "default",
+            "content": {
+              "icon": "information-circle",
+              "type": "important",
+              "title": "La règle à retenir",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "content": "<p>Données de l’entreprise = environnement approuvé par l’entreprise. Si vous hésitez, ne copiez pas l’information dans un compte personnel et vérifiez quel outil est autorisé.</p>",
+              "iconPosition": "left"
+            },
+            "custom_layout_id": null,
+            "position": 4,
+            "id": "b16"
+          },
+          {
+            "originalId": "346d4f93-211b-4dfe-b057-fe59aa416bfe",
+            "title": "Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?",
+            "type": "assessment",
+            "variant": "multiple_choice",
+            "content": {
+              "name": "Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "questions": [
+                {
+                  "id": "question-1795145842375-7cbf9584ad6b1",
+                  "type": "MultipleChoice",
+                  "title": "<p>Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-question-1795145842375-7cbf9584ad6b1-3",
+                      "hint": "Cette solution ne suffit pas : les noms de clients et les informations contractuelles peuvent aussi être sensibles ou non publics.",
+                      "text": "Remplacer uniquement les numéros de téléphone par des astérisques et utiliser ensuite le compte personnel.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145842375-7cbf9584ad6b1-1",
+                      "hint": "Cette action reste risquée : supprimer la conversation ne transforme pas un compte personnel en environnement approuvé et ne change pas la nature sensible des données.",
+                      "text": "Copier le document dans votre compte personnel, puis supprimer la conversation après le résumé.",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-question-1795145842375-7cbf9584ad6b1-2",
+                      "hint": "Bonne décision : les données de l’entreprise doivent être traitées dans un environnement approuvé par l’organisation.",
+                      "text": "Utiliser Microsoft 365/Copilot approuvé par l’organisation, selon les règles internes applicables.",
+                      "correct": true
+                    }
+                  ],
+                  "solution": "<p>Le critère principal est l’environnement autorisé, et non la commodité du service ni la suppression ultérieure de la conversation. Les renseignements nominatifs et contractuels doivent rester dans un outil approuvé par l’organisation.</p>",
+                  "description": ""
+                }
+              ],
+              "description": "",
+              "display_mode": "inline",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "showAnswer": "always",
+                "maxAttempts": 3
+              },
+              "show_navigation": false,
+              "display_intro_page": false,
+              "display_summary_page": false
+            },
+            "custom_layout_id": null,
+            "position": 5,
+            "id": "b17",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          },
+          {
+            "originalId": "5f149ce0-aa13-4782-912a-713a6abc8cbf",
+            "title": "Navigation Button",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Compléter et fermer l'activité",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "finish_and_exit_course",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "previous_block",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 6,
+            "id": "b18"
+          }
+        ],
+        "variantIndices": null
+      }
+    ],
+    "sections": [],
+    "variants": [],
+    "checkpoints": [],
+    "linearOrder": [
+      {
+        "type": "slide",
+        "linearIndex": 0,
+        "id": "19b17643-7611-45f4-bd09-075f997d36dc",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 1,
+        "id": "c5bf8777-253d-4927-a646-86cfeb26a4ab",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 2,
+        "id": "47b153ab-4e57-4d08-9472-6af183f84445",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 3,
+        "id": "1781de3f-c58e-4c63-a1fe-0589581e4bf2",
+        "sectionId": null,
+        "variantIndices": null
+      }
+    ],
+    "totalAssessments": 1,
+    "assessmentIds": [
+      "b17"
+    ],
+    "settings": {
+      "navigation": {
+        "showScore": true,
+        "sidebarColor": "var(--background)",
+        "navigationType": "SIDEBAR",
+        "showCoverImage": false,
+        "navigationEnabled": true,
+        "restrictNavigation": true,
+        "slideNavigationBar": "DISABLED",
+        "showScrollTopButton": false,
+        "showFullscreenButton": false,
+        "navigationButtonStyle": "FULL",
+        "showNavigationButtons": true,
+        "sidebarExpandedByDefault": true
+      },
+      "grading_policy": {
+        "GRADER": [],
+        "enabled": false,
+        "GRADE_CUTOFFS": {
+          "Pass": 0.8
+        },
+        "completionMode": "both",
+        "completionThreshold": 100,
+        "completion_requirements": {
+          "require_all_graders": true,
+          "require_minimum_counts": true
+        }
+      },
+      "navigationGuidance": {
+        "enabled": true
+      },
+      "scorm": {
+        "enableDebugging": false
+      }
+    },
+    "gradingData": {
+      "policy": {
+        "GRADER": [],
+        "enabled": false,
+        "GRADE_CUTOFFS": {
+          "Pass": 0.8
+        },
+        "completionMode": "both",
+        "completionThreshold": 100,
+        "completion_requirements": {
+          "require_all_graders": true,
+          "require_minimum_counts": true
+        }
+      },
+      "enabled": false,
+      "graders": [],
+      "gradeCutoffs": {
+        "Pass": 0.8
+      },
+      "metadata": {
+        "hasGradingPolicy": false,
+        "totalGraders": 0,
+        "graderTypes": [],
+        "exportedAt": "2026-11-23T16:51:08.293Z"
+      }
+    },
+    "assessmentMapping": {
+      "b17": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Vous devez résumer un document contenant le nom de clients, leurs numéros de téléphone et des informations contractuelles. Vous avez accès à Microsoft 365/Copilot fourni par l’organisation et à un compte personnel d’IA. Quelle action convient le mieux?",
+          "description": "",
+          "gradeRequired": 0.6,
+          "totalQuestions": 1
+        }
+      }
+    }
+  },
+  "settings": {
+    "themeCSS": "@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n\n:root {\n  --dark-color: oklch(0.176746 0.011438 260.635176);\n  --dark: oklch(0.176746 0.011438 260.635176);\n  --gray-color: oklch(0.973048 0.006996 268.548104);\n  --gray: oklch(0.973048 0.006996 268.548104);\n  --accent-color: oklch(0.713740 0.143381 254.624021);\n  --accent: oklch(0.713740 0.143381 254.624021);\n  --danger-color: oklch(0.538572 0.193727 26.724902);\n  --danger: oklch(0.538572 0.193727 26.724902);\n  --heading-color: oklch(0.12 0.02 200);\n  --primary-color: oklch(0.488198 0.217165 264.376304);\n  --primary: oklch(0.488198 0.217165 264.376304);\n  --success-color: oklch(0.527299 0.137103 150.069279);\n  --success: oklch(0.527299 0.137103 150.069279);\n  --warning-color: oklch(0.768590 0.164659 70.080390);\n  --warning: oklch(0.768590 0.164659 70.080390);\n  --background-color: oklch(1 0 0);\n  --background: oklch(1 0 0);\n  --foreground-color: oklch(0.176746 0.011438 260.635176);\n  --foreground: oklch(0.176746 0.011438 260.635176);\n  --primary-foreground: white;\n  --gray-foreground: oklch(0.176746 0.011438 260.635176);\n  --font-body: \"Montserrat\", system-ui, sans-serif;\n  --font-heading: \"Montserrat Alternates\", system-ui, sans-serif;\n  --radius: 0.625rem;\n  --card-border-width: 1px;\n  --card-border-color: oklch(0.95 0 0);\n  --heading-weight: 700;\n}\n\n.font-heading { font-family: var(--font-heading); }\n.font-body { font-family: var(--font-body); }\n\n/* Override heading weight */\nh1, h2, h3, h4, h5, h6 { font-weight: var(--heading-weight) !important; }\n",
+    "locale": "fr",
+    "direction": "ltr",
+    "customLayouts": {}
+  }
+}
