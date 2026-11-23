@@ -34,9 +34,9 @@ const EN = {
   /* ---------- Accueil (index.html) ---------- */
   "home.meta.title": "Miro Lagueux — Learning Technology, LMS & Linguistics",
   "home.meta.desc": "Complete learning paths, interactive SCORM training and quizzes, FR-EN writing, translation and localization, LMS management and content integration, microlearning videos, tutorials and technical guides, AI-assisted content creation with a human touch.",
-  "home.eyebrow": "Learning technology · LMS · Linguistics",
-  "home.title": "With AI, <em>the human touch makes the difference</em>.",
-  "home.lead": "Today, anyone can create content in a few clicks. What matters is quality and the human touch, even when using AI and the latest technologies. We design turnkey training that lastingly changes how people work, and we measure the results.",
+  "home.eyebrow": "Online training content · LMS · Linguistics",
+  "home.title": "Human-centred training that <em>changes behaviour</em>.",
+  "home.lead": "Today, anyone can create content in a few clicks. What matters is quality and the human touch, even when using AI and the latest technologies. We design turnkey online training content that lastingly changes how people work, and we measure the results.",
   "home.cta1": "View services",
   "home.cta2": "Get in touch",
   "services.title": "What we deliver, turnkey.",
