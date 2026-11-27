@@ -225,7 +225,7 @@ const EN = {
 
   /* ---------- Démos (demos.html) ---------- */
   "demos.meta.title": "Demos — Miro Lagueux",
-  "demos.meta.desc": "E-learning style demos: quiz, custom modular blocks, interactive job aid, narration, scenario and simulation.",
+  "demos.meta.desc": "E-learning style demos: quiz, custom modular blocks, interactive job aid, narration, video tutorial, scenario and simulation.",
   "dm.eyebrow": "Demos",
   "dm.title": "Choose <em>your style</em>.",
   "dm.lead": "Each style meets a different need. Try the demos, compare them, then tell us which one suits your audience: we’ll take care of the rest.",
@@ -263,6 +263,11 @@ const EN = {
   "dm.d6.t": "Interactive job aid: PAR 5 in OHS",
   "dm.d6.d": "A form to fill out on a phone before a task, download as PDF or email to a supervisor.",
   "dm.d6.aria": "Open the job aid demo in a new tab",
+  "dm.d7.tag": "Video",
+  "dm.d7.t": "Video tutorial",
+  "dm.d7.d": "A clear, polished tutorial that guides users through a task step by step. Play the video or watch it full screen.",
+  "dm.d7.aria": "Video tutorial demo",
+  "dm.d7.fallback": "Download the video",
   "dm.cta.title": "Want to see an example <br><em>right now?</em>",
   "dm.cta.lead": "Write to us: we’ll show you examples tailored to your need during a free 30-minute call.",
   "dm.cta.offer": "See the service offer"

@@ -1,5 +1,5 @@
 /* =========================================================
-   Miro Lagueux — Site (v17)
+   Miro Lagueux — Site (v20)
    Structure commune à toutes les pages :
      .app = cadre plein écran (en-tête · contenu · pied de page)
      Accueil  : main.stage  → sections plein écran, sans défilement
@@ -302,6 +302,7 @@ h3 { font-weight: 600; letter-spacing: -.01em; }
 .wave i:nth-child(7) { height: 12px; animation-delay: .6s; }
 @keyframes wave { 0%, 100% { transform: scaleY(.5); } 50% { transform: scaleY(1); } }
 .demo-audio { width: 100%; margin-top: auto; transform: translateY(12px); height: 44px; }
+.demo-video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #0e1116; border-bottom: 1px solid var(--line); }
 
 /* =========================================================
    5. ADAPTATIF (mêmes règles pour toutes les pages)
