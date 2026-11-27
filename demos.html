@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Démos — Miro Lagueux</title>
-  <meta name="description" content="Démos de styles de formation en ligne : quiz, blocs modulaires personnalisés, job aid interactif, narration, tutoriel vidéo, scénario et simulation.">
+  <meta name="description" content="Démos de styles de formation en ligne : quiz, blocs modulaires personnalisés, job aid interactif, narration, tutoriel vidéo et scénario.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Démos — Miro Lagueux">
@@ -13,8 +13,8 @@
   <meta property="og:url" content="https://mirolagueux.com/demos">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="miro.jpg">
-  <link rel="stylesheet" href="styles.css?v=20">
-  <script src="script.js?v=20" defer></script>
+  <link rel="stylesheet" href="styles.css?v=21">
+  <script src="script.js?v=21" defer></script>
 </head>
 <body class="page-sub page-demos" data-page="demos">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -118,16 +118,6 @@
             <audio class="demo-audio" controls preload="none" src="exemples/demo-voix/demo-voix.mp3" aria-label="Démo de narration" data-i18n-aria="dm.d5.aria"></audio>
           </div>
         </article>
-        <article class="demo is-live">
-          <video class="demo-video" controls preload="metadata" playsinline src="exemples/tutoriel/tutoriel.mp4" aria-label="Démo de tutoriel vidéo" data-i18n-aria="dm.d7.aria">
-            <a href="exemples/tutoriel/tutoriel.mp4" data-i18n="dm.d7.fallback">Télécharger la vidéo</a>
-          </video>
-          <div class="demo-body">
-            <p class="plan-tag" data-i18n="dm.d7.tag">Capsules vidéo</p>
-            <h3 data-i18n="dm.d7.t">Tutoriel vidéo</h3>
-            <p data-i18n="dm.d7.d">Un tutoriel clair et soigné, qui guide l’utilisateur pas à pas dans une tâche. Lancez la vidéo ou affichez-la en plein écran.</p>
-          </div>
-        </article>
         <article class="demo">
           <div class="demo-visual" aria-hidden="true"><span data-i18n="dm.v2">Scénario</span></div>
           <div class="demo-body">
@@ -137,13 +127,15 @@
             <span class="soon" data-i18n="dm.soon">Bientôt disponible</span>
           </div>
         </article>
-        <article class="demo">
-          <div class="demo-visual" aria-hidden="true"><span data-i18n="dm.v4">Simulation</span></div>
+        <article class="demo is-live">
+          <video class="demo-video" controls preload="metadata" playsinline aria-label="Démo de tutoriel vidéo" data-i18n-aria="dm.d4.aria">
+            <source src="exemples/tutoriel/tutoriel.mp4" type="video/mp4">
+            <a href="exemples/tutoriel/tutoriel.mp4" data-i18n="dm.d4.fallback">Télécharger la vidéo</a>
+          </video>
           <div class="demo-body">
-            <p class="plan-tag" data-i18n="dm.d4.tag">Pratique guidée</p>
-            <h3 data-i18n="dm.d4.t">Simulation logicielle</h3>
-            <p data-i18n="dm.d4.d">L’apprenant pratique une tâche dans un logiciel, étape par étape, en mode guidé puis autonome.</p>
-            <span class="soon" data-i18n="dm.soon">Bientôt disponible</span>
+            <p class="plan-tag" data-i18n="dm.d4.tag">Capsules vidéo</p>
+            <h3 data-i18n="dm.d4.t">Tutoriel vidéo</h3>
+            <p data-i18n="dm.d4.d">Un tutoriel clair et soigné, qui guide l’utilisateur pas à pas dans une tâche. Lancez la vidéo ou affichez-la en plein écran.</p>
           </div>
         </article>
       </div>
