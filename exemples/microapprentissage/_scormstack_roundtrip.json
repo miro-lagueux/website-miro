@@ -1,0 +1,861 @@
+{
+  "format": "scormstack-roundtrip",
+  "version": "1.0",
+  "generatedAt": "2026-11-28T16:45:34.071Z",
+  "course": {
+    "id": "2f16704d-8ba6-4b90-9fb2-cea6e17feb7d",
+    "title": "L'IA agentique avec Copilot Studio",
+    "description": "",
+    "cover_image": "media/course-2f16704d-8ba6-4b90-9fb2-cea6e17feb7d-card-thumbnail_694cc971.webp",
+    "theme_config": null,
+    "homepage": {
+      "hidden": true,
+      "showHero": true,
+      "showToc": true,
+      "showCta": true,
+      "heroLayout": "center",
+      "heroHeadingSize": "medium",
+      "tocLayout": "hierarchy",
+      "areaOrder": [
+        "hero",
+        "toc"
+      ],
+      "title": "",
+      "description": "",
+      "buttonLabel": "",
+      "buttonIcon": "arrow-right",
+      "logoImage": null,
+      "image": null,
+      "ctaSettings": {
+        "size": "medium",
+        "variant": "outline",
+        "buttonColor": ""
+      },
+      "heroFormat": {
+        "contentMaxWidth": 3,
+        "paddingTop": 32,
+        "paddingBottom": 32,
+        "paddingLinked": true,
+        "textAlign": "start",
+        "gap": 24,
+        "backgroundType": "THEME",
+        "overlayColor": "NONE",
+        "overlayOpacity": 0.4
+      },
+      "tocFormat": {
+        "contentMaxWidth": 3,
+        "paddingTop": 32,
+        "paddingBottom": 32,
+        "paddingLinked": true,
+        "textAlign": "start",
+        "gap": 24,
+        "backgroundType": "LIGHT",
+        "overlayColor": "NONE",
+        "overlayOpacity": 0.3
+      },
+      "sectionLabels": {},
+      "slideLabels": {},
+      "sectionImages": {},
+      "sectionIcons": {},
+      "slideIcons": {},
+      "blocks": []
+    },
+    "slides": [
+      {
+        "id": "4d008a1c-9316-489a-8a05-4c047e8be251",
+        "title": "Créer un assistant IA dans Copilot Studio",
+        "content": {},
+        "duration": 0,
+        "course_id": "2f16704d-8ba6-4b90-9fb2-cea6e17feb7d",
+        "created_at": "2026-11-27T22:42:26.679903+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-27T22:50:33.645576+00:00",
+        "order_index": 0,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "979d2faf-c5b1-4472-ad5e-66c239df6491",
+            "title": "Créer un assistant IA dans Copilot Studio",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Créer un assistant IA dans Copilot Studio",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "#000000",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "#e1dced",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/agents-copilot-studio_f1f3c0d3.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "CUSTOM",
+                "baseBackgroundColor": "#e1dced",
+                "backgroundImageMediaId": "f1f3c0d3-b5af-4278-978f-5fbb5544ca0d"
+              },
+              "duration": 300,
+              "objectives": [
+                {
+                  "icon": "",
+                  "text": "Définir le rôle, le public cible et les limites de votre assistant avant de le créer."
+                },
+                {
+                  "icon": "",
+                  "text": "Créer un nouvel assistant dans Copilot Studio et configurer ses instructions de base."
+                },
+                {
+                  "icon": "",
+                  "text": "Tester l'assistant et ajuster ses réponses avant de le partager."
+                }
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b0"
+          },
+          {
+            "originalId": "202f6f65-5f4f-43c9-83e6-9f114b18f737",
+            "title": "Créer un assistant IA dans Copilot Studio",
+            "type": "video",
+            "variant": "video",
+            "content": {
+              "url": "media/Tutoriel-Copilot_82e0c859.mp4",
+              "loop": false,
+              "color": "var(--primary)",
+              "muted": false,
+              "title": "Video title",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "poster": "media/vlcsnap-2026-11-27-17h45m23s940_1c19b6a0.png",
+              "caption": "<p>Add a caption to describe the video.</p>",
+              "endTime": 0,
+              "mediaId": "82e0c859-c925-43f9-a11a-3f5025cdcc96",
+              "preload": "metadata",
+              "allowPip": true,
+              "autoplay": true,
+              "controls": true,
+              "provider": "upload",
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "startTime": 0,
+              "subtitles": [],
+              "durationMs": 60627,
+              "showVolume": true,
+              "aspectRatio": 1.7777777777777777,
+              "description": "<p>Describe what learners will discover in this video.</p>",
+              "showPlaybar": false,
+              "posterOrigin": "custom",
+              "enableKeyboard": true,
+              "allowFullscreen": true,
+              "showCaptionsByDefault": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b1"
+          },
+          {
+            "originalId": "8b261749-42cd-4649-9b52-d5d36031da34",
+            "title": "",
+            "type": "assessment",
+            "variant": "assessment_stack",
+            "content": {
+              "name": "Quiz de la leçon 1 : créer un assistant",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "GRAY",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "weight": null,
+              "settings": {
+                "completionMode": "tried"
+              },
+              "questions": [
+                {
+                  "id": "question-1",
+                  "type": "MultipleChoice",
+                  "title": "<p>Depuis la page d’accueil de Copilot Studio, quelle option permet de concevoir des interfaces personnalisées qui combinent des écrans, des données et de la logique métier?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-1-1",
+                      "hint": "Non : l’assistant (aussi nommé agent) répond à des questions, consulte des sources d’information et effectue certaines actions.",
+                      "text": "Créer un assistant",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-1-2",
+                      "hint": "Non : le flux de travail automatise des processus à plusieurs étapes à l’aide de déclencheurs et d’actions.",
+                      "text": "Créer un flux de travail",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-1-3",
+                      "hint": "Exact : l’application sert à concevoir des interfaces personnalisées.",
+                      "text": "Créer une application",
+                      "correct": true
+                    }
+                  ],
+                  "feedback": {
+                    "correct": {
+                      "text": "Bonne réponse!",
+                      "image": ""
+                    },
+                    "incorrect": {
+                      "text": "Ce n’est pas la bonne réponse.",
+                      "image": ""
+                    },
+                    "try_again": {
+                      "text": "Essayez encore.",
+                      "image": ""
+                    }
+                  },
+                  "solution": "<p>Depuis la page d’accueil, vous avez trois possibilités : créer un assistant, un flux de travail ou une application. C’est l’application qui sert à concevoir des interfaces personnalisées.</p>",
+                  "description": "Choisissez la meilleure réponse.",
+                  "choiceDisplay": "rows"
+                },
+                {
+                  "id": "question-2",
+                  "type": "MultipleResponse",
+                  "title": "<p>Parmi les propositions suivantes, lesquelles décrivent ce qu’un assistant peut faire?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-2-1",
+                      "hint": "Exact : répondre à des questions fait partie des capacités d’un assistant.",
+                      "text": "Répondre à des questions",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-2-2",
+                      "hint": "Exact : un assistant peut consulter des sources d’information.",
+                      "text": "Consulter des sources d’information",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-2-3",
+                      "hint": "Exact : un assistant peut effectuer certaines actions.",
+                      "text": "Effectuer certaines actions",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-2-4",
+                      "hint": "Non : cela correspond à l’option Créer une application.",
+                      "text": "Concevoir des écrans et des interfaces personnalisées",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-2-5",
+                      "hint": "Non : cela correspond à l’option Créer un flux de travail.",
+                      "text": "Automatiser un processus à plusieurs étapes à l’aide de déclencheurs",
+                      "correct": false
+                    }
+                  ],
+                  "feedback": {
+                    "correct": {
+                      "text": "Bonne réponse!",
+                      "image": ""
+                    },
+                    "incorrect": {
+                      "text": "Ce n’est pas la bonne réponse.",
+                      "image": ""
+                    },
+                    "try_again": {
+                      "text": "Essayez encore.",
+                      "image": ""
+                    }
+                  },
+                  "solution": "<p>Un assistant, que Microsoft nomme aussi agent, peut répondre à des questions, consulter des sources d’information et effectuer certaines actions. Les interfaces personnalisées relèvent des applications, et les processus automatisés par déclencheurs, des flux de travail.</p>",
+                  "description": "Sélectionnez toutes les bonnes réponses.",
+                  "choiceDisplay": "rows"
+                },
+                {
+                  "id": "question-3",
+                  "type": "MultipleChoice",
+                  "title": "<p>Quelle séquence correspond à la création d’un nouvel assistant?</p>",
+                  "choices": [
+                    {
+                      "id": "choice-3-1",
+                      "hint": "Non : il faut d’abord cliquer sur Assistant depuis la page d’accueil.",
+                      "text": "Nommer l’assistant, le décrire en langage naturel, puis cliquer sur Assistant",
+                      "correct": false
+                    },
+                    {
+                      "id": "choice-3-2",
+                      "hint": "Exact : on clique sur Assistant, on donne un nom, puis on décrit ce que l’assistant doit accomplir.",
+                      "text": "Cliquer sur Assistant, le nommer, puis le décrire en langage naturel",
+                      "correct": true
+                    },
+                    {
+                      "id": "choice-3-3",
+                      "hint": "Non : on donne d’abord un nom à l’assistant, puis on le décrit.",
+                      "text": "Cliquer sur Assistant, le décrire en langage naturel, puis le nommer",
+                      "correct": false
+                    }
+                  ],
+                  "feedback": {
+                    "correct": {
+                      "text": "Bonne réponse!",
+                      "image": ""
+                    },
+                    "incorrect": {
+                      "text": "Ce n’est pas la bonne réponse.",
+                      "image": ""
+                    },
+                    "try_again": {
+                      "text": "Essayez encore.",
+                      "image": ""
+                    }
+                  },
+                  "solution": "<p>Cliquez sur Assistant depuis la page d’accueil, donnez un nom à votre nouvel assistant, puis décrivez en langage naturel ce que vous désirez qu’il accomplisse.</p>",
+                  "description": "Choisissez la bonne séquence d’étapes.",
+                  "choiceDisplay": "rows"
+                },
+                {
+                  "id": "question-4",
+                  "type": "StringResponse",
+                  "title": "<p>Complétez la phrase : Microsoft nomme aussi un assistant un ______.</p>",
+                  "answer": "agent",
+                  "feedback": {
+                    "correct": {
+                      "text": "Bonne réponse!",
+                      "image": ""
+                    },
+                    "incorrect": {
+                      "text": "Ce n’est pas la bonne réponse.",
+                      "image": ""
+                    },
+                    "try_again": {
+                      "text": "Essayez encore.",
+                      "image": ""
+                    }
+                  },
+                  "solution": "<p>Microsoft nomme aussi un assistant un agent.</p>",
+                  "description": "Entrez un seul mot.",
+                  "caseSensitive": false,
+                  "additionalAnswers": [
+                    "un agent"
+                  ]
+                }
+              ],
+              "description": "Vérifiez ce que vous avez retenu de la capsule. Ce quiz comporte 4 questions.",
+              "display_mode": "stacks",
+              "grade_required": 0.6,
+              "problemSettings": {
+                "weight": null,
+                "showAnswer": "always",
+                "maxAttempts": 2
+              },
+              "show_navigation": true,
+              "display_intro_page": true,
+              "display_summary_page": true
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b2",
+            "adaptiveCheckpointRefs": [],
+            "adaptiveCheckpointIndices": [],
+            "hasAdaptiveCheckpointRules": false
+          },
+          {
+            "originalId": "471ed9d6-d627-489d-a67d-5cfcb0cfcc9e",
+            "title": "Suivant",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Suivant",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "THEME_TINT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "next_slide",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "all_previous_blocks",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 3,
+            "id": "b3"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "71e8ef58-cdbc-43b2-9bef-27a26008f5ee",
+        "title": "Créer un flux de travail dans Copilot Studio",
+        "content": {},
+        "duration": 0,
+        "course_id": "2f16704d-8ba6-4b90-9fb2-cea6e17feb7d",
+        "created_at": "2026-11-27T22:55:40.282402+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-27T22:56:16.536456+00:00",
+        "order_index": 1,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "289728a3-78a3-40c0-90c7-3e8c9b2ffe65",
+            "title": "Créer un flux de travail dans Copilot Studio",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Créer un flux de travail dans<br>Copilot Studio",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "#000000",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "#e1dced",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/FLUX-copilot-studio_ee04b899.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "CUSTOM",
+                "baseBackgroundColor": "#e1dced",
+                "backgroundImageMediaId": "ee04b899-c5af-4d9b-bc46-2bb437189b48"
+              },
+              "duration": 300,
+              "objectives": [
+                {
+                  "icon": "",
+                  "text": "Identifier une tâche répétitive qui peut être automatisée par un flux de travail."
+                },
+                {
+                  "icon": "",
+                  "text": "Construire un flux de travail simple avec un déclencheur, une condition et des actions."
+                },
+                {
+                  "icon": "",
+                  "text": "Tester le flux de travail et corriger les erreurs avant de l'activer."
+                }
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b4"
+          },
+          {
+            "originalId": "f2f2836d-3064-4884-879d-df0cef9969ab",
+            "title": "Video",
+            "type": "video",
+            "variant": "video",
+            "content": {
+              "url": "media/default_video_u1pkvbs.mp4",
+              "loop": false,
+              "color": "var(--primary)",
+              "muted": false,
+              "title": "Video title",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "poster": "",
+              "caption": "<p>Add a caption to describe the video.</p>",
+              "endTime": 0,
+              "preload": "metadata",
+              "allowPip": true,
+              "autoplay": true,
+              "controls": true,
+              "provider": "upload",
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "startTime": 0,
+              "subtitles": [],
+              "showVolume": true,
+              "aspectRatio": 1.7777777777777777,
+              "description": "<p>Describe what learners will discover in this video.</p>",
+              "showPlaybar": false,
+              "enableKeyboard": true,
+              "allowFullscreen": true,
+              "showCaptionsByDefault": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b5"
+          },
+          {
+            "originalId": "79265fb7-09b9-4875-98bf-363ae8d7718a",
+            "title": "Suivant",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Suivant",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "THEME_TINT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "next_slide",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "all_previous_blocks",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b6"
+          }
+        ],
+        "variantIndices": null
+      },
+      {
+        "id": "2ccb3e2d-feea-4d54-bed5-aa2d27166d59",
+        "title": "Créer une application Copilot Studio",
+        "content": {},
+        "duration": 0,
+        "course_id": "2f16704d-8ba6-4b90-9fb2-cea6e17feb7d",
+        "created_at": "2026-11-27T22:58:24.878209+00:00",
+        "objectives": [],
+        "section_id": null,
+        "slide_type": "content",
+        "updated_at": "2026-11-27T22:58:43.772895+00:00",
+        "order_index": 2,
+        "variant_ids": null,
+        "blocks": [
+          {
+            "originalId": "aea12002-4747-414e-8786-41eef5643db5",
+            "title": "Créer une application Copilot Studio",
+            "type": "slide_intro",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "title": "Créer une application <br>Copilot Studio",
+              "custom": {},
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "textColor": "#000000",
+                "paddingTop": 32,
+                "showLesson": true,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundSize": "cover",
+                "backgroundType": "IMAGE",
+                "showObjectives": true,
+                "backgroundColor": "#e1dced",
+                "contentMaxWidth": 3,
+                "backgroundRepeat": "no-repeat",
+                "backgroundImageAlt": "",
+                "backgroundImageSrc": "media/APP-copilot-studio_6fab1ac0.png",
+                "backgroundPosition": "center",
+                "baseBackgroundType": "CUSTOM",
+                "baseBackgroundColor": "#e1dced",
+                "backgroundImageMediaId": "6fab1ac0-58a6-42bc-9f4e-0db9b680b337"
+              },
+              "duration": 300,
+              "objectives": [
+                {
+                  "icon": "",
+                  "text": "Identifier une tâche répétitive qui peut être automatisée par un flux de travail."
+                },
+                {
+                  "icon": "",
+                  "text": "Construire un flux de travail simple avec un déclencheur, une condition et des actions."
+                },
+                {
+                  "icon": "",
+                  "text": "Tester le flux de travail et corriger les erreurs avant de l'activer."
+                }
+              ]
+            },
+            "custom_layout_id": null,
+            "position": 0,
+            "id": "b7"
+          },
+          {
+            "originalId": "33d20142-c9ac-4629-b92b-dc5a5b632cb9",
+            "title": "Video",
+            "type": "video",
+            "variant": "video",
+            "content": {
+              "url": "media/default_video_u1pkvbs.mp4",
+              "loop": false,
+              "color": "var(--primary)",
+              "muted": false,
+              "title": "Video title",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "start",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "LIGHT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "poster": "",
+              "caption": "<p>Add a caption to describe the video.</p>",
+              "endTime": 0,
+              "preload": "metadata",
+              "allowPip": true,
+              "autoplay": true,
+              "controls": true,
+              "provider": "upload",
+              "settings": {
+                "completionMode": "completed"
+              },
+              "showSpeed": false,
+              "startTime": 0,
+              "subtitles": [],
+              "showVolume": true,
+              "aspectRatio": 1.7777777777777777,
+              "description": "<p>Describe what learners will discover in this video.</p>",
+              "showPlaybar": false,
+              "enableKeyboard": true,
+              "allowFullscreen": true,
+              "showCaptionsByDefault": false
+            },
+            "custom_layout_id": null,
+            "position": 1,
+            "id": "b8"
+          },
+          {
+            "originalId": "349962fc-b570-44f0-a6a3-346be5d51abf",
+            "title": "Terminer l'activité",
+            "type": "navigation_button",
+            "variant": "default",
+            "content": {
+              "icon": "",
+              "text": "Terminer l'activité",
+              "format": {
+                "gap": 24,
+                "width": 100,
+                "textAlign": "center",
+                "textColor": "",
+                "paddingTop": 32,
+                "accentColor": "",
+                "paddingBottom": 32,
+                "paddingLinked": true,
+                "backgroundType": "THEME_TINT",
+                "backgroundColor": "",
+                "contentMaxWidth": 3
+              },
+              "settings": {
+                "size": "medium",
+                "width": "auto",
+                "variant": "filled",
+                "buttonColor": ""
+              },
+              "actionType": "finish_and_exit_course",
+              "externalUrl": "",
+              "targetSlide": null,
+              "autoContinue": false,
+              "navigationGuidance": true,
+              "enablementCondition": "all_previous_blocks",
+              "reloadLmsPageOnFinish": false
+            },
+            "custom_layout_id": null,
+            "position": 2,
+            "id": "b9"
+          }
+        ],
+        "variantIndices": null
+      }
+    ],
+    "sections": [],
+    "variants": [],
+    "checkpoints": [],
+    "linearOrder": [
+      {
+        "type": "slide",
+        "linearIndex": 0,
+        "id": "4d008a1c-9316-489a-8a05-4c047e8be251",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 1,
+        "id": "71e8ef58-cdbc-43b2-9bef-27a26008f5ee",
+        "sectionId": null,
+        "variantIndices": null
+      },
+      {
+        "type": "slide",
+        "linearIndex": 2,
+        "id": "2ccb3e2d-feea-4d54-bed5-aa2d27166d59",
+        "sectionId": null,
+        "variantIndices": null
+      }
+    ],
+    "totalAssessments": 1,
+    "assessmentIds": [
+      "b2"
+    ],
+    "settings": {
+      "navigation": {
+        "showScore": true,
+        "sidebarColor": "var(--background)",
+        "navigationType": "SIDEBAR",
+        "showCoverImage": false,
+        "navigationEnabled": true,
+        "restrictNavigation": true,
+        "slideNavigationBar": "DISABLED",
+        "showScrollTopButton": false,
+        "showFullscreenButton": false,
+        "navigationButtonStyle": "FULL",
+        "showNavigationButtons": true,
+        "sidebarExpandedByDefault": true
+      },
+      "grading_policy": {
+        "GRADER": [],
+        "enabled": false,
+        "GRADE_CUTOFFS": {
+          "Pass": 0.6
+        },
+        "completionMode": "both",
+        "completionThreshold": 100,
+        "completion_requirements": {
+          "require_all_graders": true,
+          "require_minimum_counts": true
+        }
+      },
+      "navigationGuidance": {
+        "enabled": true
+      },
+      "scorm": {
+        "enableDebugging": false
+      }
+    },
+    "gradingData": {
+      "policy": {
+        "GRADER": [],
+        "enabled": false,
+        "GRADE_CUTOFFS": {
+          "Pass": 0.6
+        },
+        "completionMode": "both",
+        "completionThreshold": 100,
+        "completion_requirements": {
+          "require_all_graders": true,
+          "require_minimum_counts": true
+        }
+      },
+      "enabled": false,
+      "graders": [],
+      "gradeCutoffs": {
+        "Pass": 0.6
+      },
+      "metadata": {
+        "hasGradingPolicy": false,
+        "totalGraders": 0,
+        "graderTypes": [],
+        "exportedAt": "2026-11-28T16:45:32.769Z"
+      }
+    },
+    "assessmentMapping": {
+      "b2": {
+        "individualWeight": 1,
+        "isOptionalForCompletion": false,
+        "isViewedCompletion": false,
+        "isSimpleWeight": true,
+        "assessmentInfo": {
+          "name": "Quiz de la leçon 1 : créer un assistant",
+          "description": "Vérifiez ce que vous avez retenu de la capsule. Ce quiz comporte 4 questions.",
+          "gradeRequired": 0.6,
+          "totalQuestions": 4
+        }
+      }
+    }
+  },
+  "settings": {
+    "themeCSS": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n\n:root {\n  --dark-color: oklch(0.260325 0.000000 0.000000);\n  --dark: oklch(0.260325 0.000000 0.000000);\n  --gray-color: oklch(0.961638 0.001716 67.802164);\n  --gray: oklch(0.961638 0.001716 67.802164);\n  --accent-color: oklch(0.710139 0.120949 203.128145);\n  --accent: oklch(0.710139 0.120949 203.128145);\n  --danger-color: oklch(0.569667 0.193436 24.684084);\n  --danger: oklch(0.569667 0.193436 24.684084);\n  --heading-color: oklch(0.260325 0.000000 0.000000);\n  --primary-color: oklch(0.495521 0.130457 293.709078);\n  --primary: oklch(0.495521 0.130457 293.709078);\n  --success-color: oklch(0.510350 0.165397 142.668077);\n  --success: oklch(0.510350 0.165397 142.668077);\n  --warning-color: oklch(0.829017 0.171221 81.038071);\n  --warning: oklch(0.829017 0.171221 81.038071);\n  --background-color: oklch(1 0 0);\n  --background: oklch(1 0 0);\n  --foreground-color: oklch(0.260325 0.000000 0.000000);\n  --foreground: oklch(0.260325 0.000000 0.000000);\n  --primary-foreground: white;\n  --gray-foreground: oklch(0.260325 0.000000 0.000000);\n  --font-body: \"Inter\", system-ui, sans-serif;\n  --font-heading: \"Poppins\", system-ui, sans-serif;\n  --radius: 0.625rem;\n  --card-border-width: 1px;\n  --card-border-color: oklch(0.95 0 0);\n  --heading-weight: 700;\n}\n\n.font-heading { font-family: var(--font-heading); }\n.font-body { font-family: var(--font-body); }\n\n/* Override heading weight */\nh1, h2, h3, h4, h5, h6 { font-weight: var(--heading-weight) !important; }\n",
+    "locale": "fr",
+    "direction": "ltr",
+    "customLayouts": {}
+  }
+}
